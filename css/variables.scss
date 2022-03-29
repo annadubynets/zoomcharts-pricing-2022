@@ -1,0 +1,148 @@
+$black: #000000;
+$silver: #CACACA;
+$darkgrey: #585858;
+$grey: #848484;
+$mediumpurple: #BF3EFE;
+$deepskyblue: #1B9EFF;
+$yellow: #f2c811;
+$white: #FFFFFF;
+$whitesmoke: #FCFCFC;
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+.font-family-second {
+    font-family: 'Merriweather';
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    color: $white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: $black;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: $black;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 25px;
+    color: $black;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 17px;
+    color: $black;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    color: $grey;
+}
+
+.shadow {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.02)!important;
+}
+
+.shadow-sm {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)!important;
+}
+
+.bg-linear-gradient {
+    background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
+    &:hover {
+        box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+    }
+}
+
+.bg-secondary {
+    background-color: #F1F1F1!important;
+}
+
+.pt-116px {
+    padding-top: 116px;
+}
+
+.pb-120px {
+    padding-bottom: 120px;
+}
+
+.pb-60px {
+    padding-bottom: 60px;
+}
+
+.pb-80px {
+    padding-bottom: 80px;
+}
+
+.mb-68px {
+    margin-bottom: 68px;
+}
+
+.mb-80px {
+    margin-bottom: 80px;
+}
+
+.mb-120px {
+    margin-bottom: 120px;
+}
+
+.font-size-30px {
+    font-size: 30px!important;
+}
+
+.font-size-24px {
+    font-size: 24px!important;
+}
+
+.font-size-21px {
+    font-size: 21px!important;
+}
+
+.font-size-16px {
+    font-size: 16px!important;
+}
+
+.font-size-12px {
+    font-size: 12px!important;
+}
+
+.text-secondary {
+    color: $darkgrey!important;
+}
+
+.text-muted {
+    color: $grey!important;
+}
+
+.text-dark {
+    color: $black!important;
+}
+
+.p-50px {
+    padding: 50px;
+}
+
+.rounded {
+    border-radius: 10px!important;
+}
+
+.rounded-pill {
+    border-radius: 40px!important;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.border-dotted-bottom {
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+}

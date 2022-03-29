@@ -1,0 +1,94 @@
+
+/* ------------ Pagination ------------  */
+
+.zc_pagination{
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.zc_pagination ul li:last-child{
+	margin-right: 0px;
+}
+.zc_pagination ul li input{
+	width: 32px;
+	height: 32px;
+	text-align:center;
+	outline: none;
+	border:0px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius:4px;
+	text-align:center;
+	font-weight:bold;
+	font-family:"FuturaBold" ,sans-serif;
+}
+.zc_pagination .zc_disabled a{
+	opacity:.5;
+	pointer-events: none;
+}
+.zc_pagination ul li img{
+	max-width:24px;
+}
+.zc_pagination ul li{
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	margin-right:12px;
+}
+.zc_pagination ul li a:hover{
+	border-color:#03A9F4;
+	color:#03A9F4;
+}
+.zc_pagination ul li span{
+	min-width:32px;
+	max-width:32px;
+	min-height:32px;
+	max-height:32px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	display: inline-flex;
+	align-items:center;
+	justify-content:center;
+	font-weight:bold;
+	font-family:"FuturaBold" ,sans-serif;
+	font-size:14px;
+	line-height: 20px;
+}
+.zc_pagination ul li a:hover img{
+	filter: invert(55%) sepia(14%) saturate(5743%) hue-rotate(164deg) brightness(96%) contrast(100%);
+}
+.zc_pagination ul li a:focus , 
+.zc_pagination ul li a:active,
+.zc_pagination ul li a.active {
+	border-color:#3C4858;
+	color:#3C4858;
+}
+.zc_pagination ul li a:focus img , .zc_pagination ul li a:active img{
+	filter: none;
+}
+.zc_pagination ul li a {
+	display: inline-flex;
+	align-items:center;
+	color:rgba(60, 72, 88, 1);
+	font-size:14px;
+	line-height:20px;
+	font-weight:bold;
+	font-family:"FuturaBold" ,sans-serif;
+	justify-content:center;
+	text-decoration: none;
+	min-width:38px;
+	max-width:38px;
+	transition:.2s ease all;
+	min-height:38px;
+	max-height:38px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+.zc_pagination ul{
+	padding:0px;
+	list-style-type: none;
+	margin:0px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+

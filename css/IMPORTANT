@@ -1,0 +1,17 @@
+IMPORTANT!
+
+-----------------
+
+DO NOT EDIT DIRECTLY style.css FILE.
+INSTEAD EDIT style.scss and run preprocessing (SASS) function to compile .css file out of .scss
+
+CHANGES DIRECTLY IN style.css WITHOUT UPDATING style.scss WILL NOT BE APPROVED.
+
+----------------
+
+
+
+
+
+
+
