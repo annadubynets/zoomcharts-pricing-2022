@@ -833,8 +833,17 @@ input {
             cursor: pointer;
         }
     }
-    .accordion-item {
-        border: 1px dashed #B0BBC9;
+    // .accordion-item {
+    //     border: 1px dashed #B0BBC9;
+    // }
+    .request-link {
+        font-weight: normal;
+        font-size: 26px;
+        color: $yellow;
+        text-decoration: underline;
+        &:hover {
+            color: $black;
+        }
     }
     .accordion-body {
         font-size: 26px;

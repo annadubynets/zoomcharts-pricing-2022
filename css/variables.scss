@@ -67,6 +67,10 @@ p {
     background-color: #F1F1F1!important;
 }
 
+.bg-light {
+    background-color: $white!important;
+}
+
 .pt-116px {
     padding-top: 116px;
 }
@@ -137,6 +141,14 @@ p {
 
 .p-50px {
     padding: 50px;
+}
+
+.pt-150px {
+    padding-top: 150px;
+}
+
+.pb-150px {
+    padding-bottom: 150px;
 }
 
 .rounded {

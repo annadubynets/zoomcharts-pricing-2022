@@ -11876,6 +11876,10 @@ p {
   background-color: #F1F1F1 !important;
 }
 
+.bg-light {
+  background-color: #FFFFFF !important;
+}
+
 .pt-116px {
   padding-top: 116px;
 }
@@ -11946,6 +11950,14 @@ p {
 
 .p-50px {
   padding: 50px;
+}
+
+.pt-150px {
+  padding-top: 150px;
+}
+
+.pb-150px {
+  padding-bottom: 150px;
 }
 
 .rounded {
@@ -13093,8 +13105,14 @@ input {
   vertical-align: middle;
   cursor: pointer;
 }
-.pricing-page .accordion-item {
-  border: 1px dashed #B0BBC9;
+.pricing-page .request-link {
+  font-weight: normal;
+  font-size: 26px;
+  color: #f2c811;
+  text-decoration: underline;
+}
+.pricing-page .request-link:hover {
+  color: #000000;
 }
 .pricing-page .accordion-body {
   font-size: 26px;
