@@ -11817,6 +11817,25 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot?ff4b6fb9ce8e8f9d8ce67f04a525b5d1?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?ff4b6fb9ce8e8f9d8ce67f04a525b5d1") format("woff2"), url("../fonts/iconfont.woff?ff4b6fb9ce8e8f9d8ce67f04a525b5d1") format("woff"), url("../fonts/iconfont.ttf?ff4b6fb9ce8e8f9d8ce67f04a525b5d1") format("truetype"), url("../fonts/iconfont.svg?ff4b6fb9ce8e8f9d8ce67f04a525b5d1#iconfont") format("svg");
+}
+i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
+  font-family: iconfont !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-information:before {
+  content: "";
+}
+
 .font-family-second {
   font-family: "Merriweather";
 }

@@ -1,0 +1,23 @@
+{
+  "name": "zoomcharts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate-fonts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-fonts": "icon-font-generator --cssfontsurl=../fonts --height=1000 --name iconfont -p iconfont --csspath ./css/modules/_iconfont.scss  font-icons/*.svg -o ./fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annadubynets/zoomcharts-pricing-2022.git"
+  },
+  "author": "Ivan D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annadubynets/zoomcharts-pricing-2022/issues"
+  },
+  "homepage": "https://github.com/annadubynets/zoomcharts-pricing-2022#readme",
+  "dependencies": {
+    "icon-font-generator": "^2.1.11"
+  }
+}
