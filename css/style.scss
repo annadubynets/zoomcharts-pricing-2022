@@ -663,6 +663,17 @@ input {
 }
 
 .pricing-page {
+    h1 {
+        font-family: 'Futura';
+        font-weight: bold;
+        font-size: 44px;
+    }
+    .alert {
+        font-size: 18px;
+        color: $black;
+        border-radius: 10px;
+        padding: 26px 80px;
+    }
     .hero {
         background: #292929;
         padding-top: 166px;

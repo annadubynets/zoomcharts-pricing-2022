@@ -4,3 +4,11 @@ $(function() {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 });
+
+// pricing options logic
+
+$(function() {
+    $('.pricing .options [type=checkbox]').on('change', function() {
+        $(this).closest('.option').toggleClass('active', $(this).is(':checked'));
+    })
+})

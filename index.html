@@ -18,8 +18,9 @@
         <div class="container">
             <div class="row pb-5">
                 <div class="col-xxl-6">
-                    <p class="fw-normal font-size-35px text-white text-uppercase text-lg-start text-center pb-lg-4 pb-3">PRICING AND PLANS</p>
+                    <p class="fw-normal font-size-35px text-white text-uppercase text-lg-start text-center pb-lg-5 pb-3">PRICING AND PLANS</p>
                     <h1 class="mb-md-3 mb-2 text-lg-start text-center"><span class="text-warning">Most Popular Power BI</span> <span class="d-inline-block">Paid Visuals in AppSource</span></h1>
+                    <p class="fw-bold font-size-15px text-white">(109 AppSource rating)</p>
 
                     <div class="d-lg-none d-block mb-xl-0 mb-4">
                         <img src="images/hero-bg.png" alt="Main" class="w-100">
@@ -29,10 +30,21 @@
                     <div class="shadow-bg mb-4">
                         <img src="images/hero-bg.png" alt="Main" class="w-100">
                     </div>
+                    <p class="fw-bold font-size-15px text-white text-center">9 visuals + more coming</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-light alert-dismissible fade show mb-5" role="alert">
+                        <span class="fw-bold">User</span> applies to anyone who creates and/or views reports using ZoomCharts’s visuals. Every creator and/or viewer requires a license.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <section id="pricing" class="pricing">
         <div class="container">
@@ -110,10 +122,35 @@
 
                             <input type="range" class="form-range" id="customRange1">
                             <div class="d-flex justify-content-between">
-                                <div>5</div>
-                                <div>10</div>
-                                <div>15</div>
-                                <div>19</div>
+                                <div>20</div>
+                                <div>30</div>
+                                <div>40</div>
+                                <div>50</div>
+                            </div>
+
+                            <div class="text-center d-flex justify-content-between align-items-center pb-4">
+                                <select class="selectpicker">
+                                    <option data-content="<span class='icon-user pe-3'></span>5 report editors/viewers">5 report editors/viewers</option>
+                                    <option data-content="<span class='icon-user pe-3'></span>15 report editors/viewers">15 report editors/viewers</option>
+                                    <option data-content="<span class='icon-user pe-3'></span>25 report editors/viewers">25 report editors/viewers</option>
+                                </select>
+                                <span class="icon-information font-size-20px text-muted ps-2" data-bs-toggle="tooltip" data-bs-placement="right" title="€ 2.99/month per user. 
+                                A user license is required for every creator and viewer of a Power BI Report or Dashboard containing Drill Down Visuals by ZoomCharts."></span>
+                            </div>
+                            <div class="options d-flex justify-content-between align-items-center">
+                                <div class="option">
+                                    <input type="checkbox" class="addon" id="addon_1" />
+                                    <label for="addon_1"><span class="fw-normal font-size-22px text-muted ps-3">Publish to Web</span></label>
+
+                                    <div class="extra">
+                                        <select class="selectpicker">
+                                            <option data-content="<span class='icon-map pe-3'></span>1 domain">1 domain</option>
+                                            <option data-content="<span class='icon-map pe-3'></span>1 domain">2 domain</option>
+                                            <option data-content="<span class='icon-map pe-3'></span>1 domain">3 domain</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <span class="icon-information font-size-20px text-muted ps-2" data-bs-toggle="tooltip" data-bs-placement="right" title="€ 99.00/month. This add-on permits an unlimited number of Report Viewers, External Named Report Viewers, External Public Report Viewers to view and interact with the Company’s BI Objects which are made available through Power BI’s Publish-to-Web feature on a single domain. "></span>
                             </div>
 
                         </div>
@@ -369,7 +406,10 @@
             </div>
         </div>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.12.4.js "></script>
+    <script src="js/jquery-ui.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/bootstrap-select.min.js "></script>
     <script src="js/scripts.js"></script>
 </body>
 
