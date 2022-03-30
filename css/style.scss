@@ -1,11 +1,12 @@
-@import "./bootstrap.min";
-@import "./bootstrap-select.min";
+
+
 @import "./owl.carousel.min";
 @import "fonts.css";
+@import "modules/bootstrap";
 @import "modules/iconfont";
-@import "variables";
 @import "modules/navbar";
 @import "modules/paginator";
+@import "./bootstrap-select.min";
 body {
     font-family: 'Roboto';
     background-color: $whitesmoke;
