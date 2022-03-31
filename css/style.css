@@ -12163,6 +12163,11 @@ a {
   border-radius: 4px;
   padding: 12px 50px;
 }
+.btn-success:hover {
+  box-shadow: 0 14px 26px -12px rgba(242, 200, 17, 0.32), 0 4px 23px 0px rgba(0, 0, 0, 0.32), 0 8px 10px -5px rgba(242, 200, 17, 0.3);
+  background-color: #f2c811;
+  color: #FFFFFF;
+}
 
 .dropdown-menu {
   border: 1px solid #E2E2E2;
@@ -12670,6 +12675,11 @@ input {
   font-family: "Futura";
   font-weight: bold;
 }
+.pricing-page .main-description {
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-size: 21px !important;
+}
 .pricing-page .alert {
   font-family: "Futura";
   font-size: 18px;
@@ -12689,6 +12699,11 @@ input {
 }
 .pricing-page .pricing {
   background: linear-gradient(to bottom, #292929 30%, #FFFFFF 30%);
+}
+@media (max-width: 991px) {
+  .pricing-page .pricing {
+    background: linear-gradient(to bottom, #292929 5%, #FFFFFF 5%);
+  }
 }
 .pricing-page .pricing label {
   font-weight: 700;
@@ -13023,6 +13038,10 @@ input {
 
   p {
     font-size: 16px !important;
+  }
+
+  .main-description {
+    font-size: 25px !important;
   }
 
   .list-item {
