@@ -266,8 +266,8 @@ p {
   background-color: #F1F1F1 !important;
 }
 
-.bg-light {
-  background-color: #FFFFFF !important;
+.bg-white {
+  background-color: #FFFFFF;
 }
 
 .pt-116px {
@@ -330,12 +330,20 @@ p {
   font-size: 12px !important;
 }
 
+.font-size-10px {
+  font-size: 10px !important;
+}
+
 .text-secondary {
   color: #585858 !important;
 }
 
 .text-muted {
   color: #848484 !important;
+}
+
+.text-grey {
+  color: #B0BBC9 !important;
 }
 
 .text-dark {
@@ -2838,7 +2846,7 @@ textarea.form-control-lg {
 
 .form-range {
   width: 100%;
-  height: 1.5rem;
+  height: 1.75rem;
   padding: 0;
   background-color: transparent;
   appearance: none;
@@ -2847,20 +2855,20 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .form-range::-moz-focus-outer {
   border: 0;
 }
 .form-range::-webkit-slider-thumb {
-  width: 1rem;
-  height: 1rem;
-  margin-top: -0.25rem;
-  background-color: #0d6efd;
-  border: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: -0.3435rem;
+  background-color: #FFFFFF;
+  border: 0.063rem solid #F8F5FB;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -2871,22 +2879,22 @@ textarea.form-control-lg {
   }
 }
 .form-range::-webkit-slider-thumb:active {
-  background-color: #b6d4fe;
+  background-color: #FFFFFF;
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
-  height: 0.5rem;
+  height: 0.563rem;
   color: transparent;
   cursor: pointer;
-  background-color: #dee2e6;
+  background-color: #f2c811;
   border-color: transparent;
-  border-radius: 1rem;
+  border-radius: 1.688rem;
 }
 .form-range::-moz-range-thumb {
-  width: 1rem;
-  height: 1rem;
-  background-color: #0d6efd;
-  border: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #FFFFFF;
+  border: 0.063rem solid #F8F5FB;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
@@ -2897,16 +2905,16 @@ textarea.form-control-lg {
   }
 }
 .form-range::-moz-range-thumb:active {
-  background-color: #b6d4fe;
+  background-color: #FFFFFF;
 }
 .form-range::-moz-range-track {
   width: 100%;
-  height: 0.5rem;
+  height: 0.563rem;
   color: transparent;
   cursor: pointer;
-  background-color: #dee2e6;
+  background-color: #f2c811;
   border-color: transparent;
-  border-radius: 1rem;
+  border-radius: 1.688rem;
 }
 .form-range:disabled {
   pointer-events: none;
@@ -11111,9 +11119,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.form-range::-webkit-slider-thumb {
+  box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+.form-range::-moz-range-thumb {
+  box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/iconfont.eot?ff4b6fb9ce8e8f9d8ce67f04a525b5d1?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?ff4b6fb9ce8e8f9d8ce67f04a525b5d1") format("woff2"), url("../fonts/iconfont.woff?ff4b6fb9ce8e8f9d8ce67f04a525b5d1") format("woff"), url("../fonts/iconfont.ttf?ff4b6fb9ce8e8f9d8ce67f04a525b5d1") format("truetype"), url("../fonts/iconfont.svg?ff4b6fb9ce8e8f9d8ce67f04a525b5d1#iconfont") format("svg");
+  src: url("../fonts/iconfont.eot?47a295d3c2c98f720b798b8deadc43fa?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?47a295d3c2c98f720b798b8deadc43fa") format("woff2"), url("../fonts/iconfont.woff?47a295d3c2c98f720b798b8deadc43fa") format("woff"), url("../fonts/iconfont.ttf?47a295d3c2c98f720b798b8deadc43fa") format("truetype"), url("../fonts/iconfont.svg?47a295d3c2c98f720b798b8deadc43fa#iconfont") format("svg");
 }
 i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   font-family: iconfont !important;
@@ -11126,8 +11141,40 @@ i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.iconfont-information:before {
+.iconfont-arrow-down:before {
   content: "";
+}
+
+.iconfont-checkbox:before {
+  content: "";
+}
+
+.iconfont-close:before {
+  content: "";
+}
+
+.iconfont-control:before {
+  content: "";
+}
+
+.iconfont-ellipse:before {
+  content: "";
+}
+
+.iconfont-information:before {
+  content: "";
+}
+
+.iconfont-smile:before {
+  content: "";
+}
+
+.iconfont-star-half:before {
+  content: "";
+}
+
+.iconfont-star:before {
+  content: "";
 }
 
 .navbar {
@@ -12107,6 +12154,7 @@ a {
 }
 
 .btn-success {
+  font-family: "Futura";
   font-weight: bold;
   font-size: 12px;
   color: #FFFFFF;
@@ -12618,11 +12666,22 @@ input {
   font-weight: bold;
   font-size: 44px;
 }
+.pricing-page h3, .pricing-page .h3 {
+  font-family: "Futura";
+  font-weight: bold;
+}
 .pricing-page .alert {
+  font-family: "Futura";
   font-size: 18px;
   color: #000000;
   border-radius: 10px;
   padding: 26px 80px;
+}
+.pricing-page .btn-close {
+  background: none !important;
+  font-size: 12px;
+  padding: 15px;
+  opacity: 1;
 }
 .pricing-page .hero {
   background: #292929;
@@ -12638,6 +12697,12 @@ input {
   padding: 15px 20px;
   background: #FFFFFF;
   border-radius: 10px;
+}
+.pricing-page .pricing .form-check-label {
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
 }
 .pricing-page .pricing .card {
   background: #FFFFFF;
@@ -12679,6 +12744,7 @@ input {
 .pricing-page .pricing .card ul li {
   font-family: "Merriweather";
   font-size: 12px;
+  padding: 6px 0;
 }
 .pricing-page .pricing .card ul li.inactive {
   color: #B0BBC9;
@@ -12718,11 +12784,11 @@ input {
 .pricing-page .pricing .dropdown-item:active {
   background-color: #f2c811;
 }
-.pricing-page .pricing .options .option {
-  border: 2px solid #edeff3;
-  border-radius: 5px;
+.pricing-page .pricing .options {
+  background: #F4F7FB;
+  border-radius: 100px;
   cursor: pointer;
-  padding: 14px 20px;
+  padding: 11px 20px;
   transition: all 0.2s;
   width: 100%;
 }
@@ -12785,6 +12851,27 @@ input {
   vertical-align: middle;
   cursor: pointer;
 }
+.pricing-page .form-check.form-switch .form-check-input {
+  width: 38px;
+  height: 20px;
+  background-color: #B0BBC9;
+  border: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+}
+.pricing-page .form-check.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+  box-shadow: none;
+}
+.pricing-page .form-check.form-switch .form-check-input:checked {
+  background-color: #0BD474;
+}
+.pricing-page .form-check-input:checked {
+  background-color: #0BD474;
+  border-color: #000000;
+}
+.pricing-page .form-check .form-check-input {
+  border: 1px solid #000000;
+}
 .pricing-page .request-link {
   font-weight: normal;
   font-size: 26px;
@@ -12810,10 +12897,10 @@ input {
 }
 .pricing-page .accordion-button::after {
   background-image: none;
-  font-family: "icomoon";
-  content: "";
+  font-family: iconfont !important;
+  content: "";
   color: #000000;
-  font-size: 14px;
+  font-size: 18px;
 }
 .pricing-page .accordion-button:not(.collapsed) {
   color: #000000;
@@ -12849,6 +12936,85 @@ input {
 }
 .pricing-page ul {
   list-style-type: none;
+}
+.pricing-page .checkbox .form-check-input {
+  background: #FFFFFF;
+  border: 2px solid #EDEFF3;
+}
+.pricing-page .checkbox {
+  padding-left: 30px;
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.pricing-page .checkbox input {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: -30px;
+}
+.pricing-page .checkbox input:checked + label::before {
+  border-color: #000000;
+}
+.pricing-page .checkbox input:checked + label::after {
+  font-family: iconfont !important;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 3px;
+  top: 0;
+  margin-left: -30px;
+  border: 1px solid #f2c811;
+  border-radius: 0.25rem;
+  background-color: #f2c811;
+}
+.pricing-page .checkbox label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #202325;
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+.pricing-page .checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  margin-left: -30px;
+  border: 2px solid #EDEFF3;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+.pricing-page .checkbox.disabled label {
+  color: #000000;
+}
+.pricing-page .checkbox.disabled label::before {
+  opacity: 0.54;
+}
+.pricing-page .checkbox input:checked + label::before {
+  border: 1px solid #f2c811;
+  background-color: #f2c811;
+}
+.pricing-page .checkbox input:checked + label::after {
+  font-family: iconfont !important;
+  content: "";
+  font-size: 12px;
+  color: #FFFFFF;
+  background: #f2c811;
+  top: 0;
+  left: 3px;
+  border-color: transparent;
+  background-color: transparent;
+}
+.pricing-page .checkbox label::before {
+  border-radius: 0.25rem;
 }
 
 @media (max-width: 991px) {

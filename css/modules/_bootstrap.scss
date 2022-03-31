@@ -5,7 +5,6 @@
 @import "../libs/bootstrap-5.0.2/scss/variables";
 @import "../libs/bootstrap-5.0.2/scss/mixins";
 @import "../libs/bootstrap-5.0.2/scss/utilities";
-
 // Layout & components
 @import "../libs/bootstrap-5.0.2/scss/root";
 @import "../libs/bootstrap-5.0.2/scss/reboot";
@@ -37,10 +36,10 @@
 @import "../libs/bootstrap-5.0.2/scss/carousel";
 @import "../libs/bootstrap-5.0.2/scss/spinners";
 @import "../libs/bootstrap-5.0.2/scss/offcanvas";
-
 // Helpers
 @import "../libs/bootstrap-5.0.2/scss/helpers";
-
 // Utilities
 @import "../libs/bootstrap-5.0.2/scss/utilities/api";
 // scss-docs-end import-stack
+// custom components
+@import "./form-range";

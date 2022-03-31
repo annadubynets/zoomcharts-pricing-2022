@@ -67,8 +67,8 @@ p {
     background-color: #F1F1F1!important;
 }
 
-.bg-light {
-    background-color: $white!important;
+.bg-white {
+    background-color: $white;
 }
 
 .pt-116px {
@@ -131,12 +131,20 @@ p {
     font-size: 12px!important;
 }
 
+.font-size-10px {
+    font-size: 10px!important;
+}
+
 .text-secondary {
     color: $darkgrey!important;
 }
 
 .text-muted {
     color: $grey!important;
+}
+
+.text-grey {
+    color: #B0BBC9!important
 }
 
 .text-dark {
@@ -170,3 +178,16 @@ p {
 .border-dotted-bottom {
     border-bottom: 1px dashed rgba(0, 0, 0, .2);
 }
+
+$form-range-thumb-bg: $white;
+$form-range-thumb-box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08),
+0px 1px 1px rgba(0, 0, 0, 0.12);
+$form-range-thumb-focus-box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08),
+0px 1px 1px rgba(0, 0, 0, 0.12);
+$form-range-thumb-active-bg: $white;
+$form-range-thumb-width: 1.25rem;
+$form-range-thumb-height: 1.25rem;
+$form-range-thumb-border: 0.063rem solid #F8F5FB;
+$form-range-track-height: .563rem;
+$form-range-track-border-radius: 1.688rem;
+$form-range-track-bg: $yellow;

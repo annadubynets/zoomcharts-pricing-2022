@@ -1,5 +1,3 @@
-
-
 @import "./owl.carousel.min";
 @import "fonts.css";
 @import "modules/bootstrap";
@@ -114,6 +112,7 @@ a {
 }
 
 .btn-success {
+    font-family: 'Futura';
     font-weight: bold;
     font-size: 12px;
     color: $white;
@@ -670,11 +669,22 @@ input {
         font-weight: bold;
         font-size: 44px;
     }
+    h3 {
+        font-family: 'Futura';
+        font-weight: bold;
+    }
     .alert {
+        font-family: 'Futura';
         font-size: 18px;
         color: $black;
         border-radius: 10px;
         padding: 26px 80px;
+    }
+    .btn-close {
+        background: none!important;
+        font-size: 12px;
+        padding: 15px;
+        opacity: 1;
     }
     .hero {
         background: #292929;
@@ -689,6 +699,12 @@ input {
             padding: 15px 20px;
             background: #FFFFFF;
             border-radius: 10px;
+        }
+        .form-check-label {
+            font-family: 'Futura PT';
+            font-weight: 400;
+            font-size: 14px;
+            color: $black;
         }
         .card {
             background: #FFFFFF;
@@ -730,6 +746,7 @@ input {
                 li {
                     font-family: 'Merriweather';
                     font-size: 12px;
+                    padding: 6px 0;
                     &.inactive {
                         color: #B0BBC9;
                     }
@@ -776,13 +793,13 @@ input {
             background-color: $yellow;
         }
         .options {
+            background: #F4F7FB;
+            border-radius: 100px;
+            cursor: pointer;
+            padding: 11px 20px;
+            transition: all 0.2s;
+            width: 100%;
             .option {
-                border: 2px solid #edeff3;
-                border-radius: 5px;
-                cursor: pointer;
-                padding: 14px 20px;
-                transition: all 0.2s;
-                width: 100%;
                 label {
                     padding: 0;
                     width: 100%;
@@ -849,6 +866,27 @@ input {
     // .accordion-item {
     //     border: 1px dashed #B0BBC9;
     // }
+    .form-check.form-switch .form-check-input {
+        width: 38px;
+        height: 20px;
+        background-color: #B0BBC9;
+        border: none;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+        &:focus {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+            box-shadow: none;
+        }
+        &:checked {
+            background-color: #0BD474;
+        }
+    }
+    .form-check-input:checked {
+        background-color: #0BD474;
+        border-color: $black;
+    }
+    .form-check .form-check-input {
+        border: 1px solid $black;
+    }
     .request-link {
         font-weight: normal;
         font-size: 26px;
@@ -873,10 +911,10 @@ input {
         }
         &::after {
             background-image: none;
-            font-family: 'icomoon';
-            content: "\e903";
+            font-family: iconfont !important;
+            content: "\f101";
             color: $black;
-            font-size: 14px;
+            font-size: 18px;
         }
     }
     .accordion-button:not(.collapsed) {
@@ -913,6 +951,85 @@ input {
     }
     ul {
         list-style-type: none;
+    }
+    .checkbox .form-check-input {
+        background: $white;
+        border: 2px solid #EDEFF3;
+    }
+    .checkbox {
+        padding-left: 30px;
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .checkbox input {
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        margin-left: -30px;
+    }
+    .checkbox input:checked+label::before {
+        border-color: $black;
+    }
+    .checkbox input:checked+label::after {
+        font-family: iconfont !important;
+        content: "\f102";
+        display: inline-block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 3px;
+        top: 0;
+        margin-left: -30px;
+        border: 1px solid $yellow;
+        border-radius: 0.25rem;
+        background-color: $yellow;
+    }
+    .checkbox label {
+        font-size: 12px;
+        font-weight: bold;
+        color: #202325;
+        display: inline-block;
+        position: relative;
+        padding-left: 10px;
+    }
+    .checkbox label::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 0;
+        margin-left: -30px;
+        border: 2px solid #EDEFF3;
+        border-radius: 0.25rem;
+        background-color: #fff;
+    }
+    .checkbox.disabled label {
+        color: $black;
+    }
+    .checkbox.disabled label::before {
+        opacity: .54;
+    }
+    .checkbox input:checked+label::before {
+        border: 1px solid $yellow;
+        background-color: $yellow;
+    }
+    .checkbox input:checked+label::after {
+        font-family: iconfont !important;
+        content: "\f102";
+        font-size: 12px;
+        color: $white;
+        background: $yellow;
+        top: 0;
+        left: 3px;
+        border-color: transparent;
+        background-color: transparent;
+    }
+    .checkbox label::before {
+        border-radius: 0.25rem;
     }
 }
 
