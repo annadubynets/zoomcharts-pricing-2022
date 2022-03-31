@@ -12967,9 +12967,6 @@ input {
   left: 3px;
   top: 0;
   margin-left: -30px;
-  border: 1px solid #f2c811;
-  border-radius: 0.25rem;
-  background-color: #f2c811;
 }
 .pricing-page .checkbox label {
   font-size: 12px;
@@ -12999,18 +12996,7 @@ input {
   opacity: 0.54;
 }
 .pricing-page .checkbox input:checked + label::before {
-  border: 1px solid #f2c811;
-  background-color: #f2c811;
-}
-.pricing-page .checkbox input:checked + label::after {
-  font-family: iconfont !important;
-  content: "";
-  font-size: 12px;
-  color: #FFFFFF;
-  background: #f2c811;
-  top: 0;
-  left: 3px;
-  border-color: transparent;
+  border: 2px solid #000000;
   background-color: transparent;
 }
 .pricing-page .checkbox label::before {
