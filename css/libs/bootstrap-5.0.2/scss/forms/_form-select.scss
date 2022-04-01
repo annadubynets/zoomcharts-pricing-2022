@@ -24,6 +24,8 @@
   @include box-shadow($form-select-box-shadow);
   @include transition($form-select-transition);
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   &:focus {
     border-color: $form-select-focus-border-color;

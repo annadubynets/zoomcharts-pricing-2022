@@ -9,6 +9,8 @@
     padding: 0; // Need to reset padding
     background-color: transparent;
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     &:focus {
         outline: 0;
         // Pseudo-elements must be split across multiple rulesets to have an effect.
@@ -33,6 +35,8 @@
         @include box-shadow($form-range-thumb-box-shadow);
         @include transition($form-range-thumb-transition);
         appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
         &:active {
             @include gradient-bg($form-range-thumb-active-bg);
         }
@@ -56,6 +60,8 @@
         @include box-shadow($form-range-thumb-box-shadow);
         @include transition($form-range-thumb-transition);
         appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
         &:active {
             @include gradient-bg($form-range-thumb-active-bg);
         }
