@@ -12807,28 +12807,24 @@ input {
   transition: all 0.2s;
   width: 100%;
 }
-.pricing-page .pricing .options .option label {
-  padding: 0;
-  width: 100%;
-}
-.pricing-page .pricing .options .option.active, .pricing-page .pricing .options .option:hover {
-  border-color: #EDC821;
-  color: #3C4858;
-}
-.pricing-page .pricing .options .option .extra {
+.pricing-page .pricing .options .options-body {
   display: none;
-  border-top: 1px dashed #B0BBC9;
-  margin-top: 15px;
 }
-.pricing-page .pricing .options .option .extra .bootstrap-select {
-  width: 100% !important;
+.pricing-page .pricing .options.active {
+  background: #f4fbf4;
+  border-radius: 50px;
 }
-.pricing-page .pricing .options .option .extra .bootstrap-select .btn-light {
-  border: none;
-  padding: 14px 0 0;
+.pricing-page .pricing .options.active .options-body {
+  display: block;
 }
-.pricing-page .pricing .options .option input[type=checkbox]:checked + label + .extra {
+.pricing-page .pricing .options .options-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing-page .pricing .options .options-header .label-wrapper {
+  display: flex;
+  align-items: center;
 }
 .pricing-page .pricing .addon {
   display: none;

@@ -8,7 +8,20 @@ $(function() {
 // pricing options logic
 
 $(function() {
-    $('.pricing .options [type=checkbox]').on('change', function() {
-        $(this).closest('.option').toggleClass('active', $(this).is(':checked'));
-    })
+    var pricingOptions = document.querySelectorAll('.pricing .options');
+    pricingOptions.forEach(function(optionsElem) {
+        var checkboxInput = optionsElem.querySelector('[type=checkbox]');
+        
+        checkboxInput.addEventListener('change', function() {
+            syncCheckboxState();
+        })
+
+        function syncCheckboxState() {
+            // when checkbox is selected, we add a special class 'active' to options element. 
+            // it changes the style and expands the block
+            optionsElem.classList.toggle('active', checkboxInput.checked);
+        }
+
+        syncCheckboxState();
+    });
 })
