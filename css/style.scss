@@ -812,30 +812,28 @@ input {
             padding: 11px 20px;
             transition: all 0.2s;
             width: 100%;
-            .option {
-                label {
-                    padding: 0;
-                    width: 100%;
+
+            .options-body {
+                display: none;
+            }
+
+            &.active {
+                background: #f4fbf4;
+                border-radius: 50px;
+
+                .options-body {
+                    display: block;
                 }
-                &.active,
-                &:hover {
-                    border-color: #EDC821;
-                    color: #3C4858;
-                }
-                .extra {
-                    display: none;
-                    border-top: 1px dashed #B0BBC9;
-                    margin-top: 15px;
-                    .bootstrap-select {
-                        width: 100%!important;
-                        .btn-light {
-                            border: none;
-                            padding: 14px 0 0;
-                        }
-                    }
-                }
-                input[type=checkbox]:checked+label+.extra {
+            }
+
+            .options-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .label-wrapper {
                     display: flex;
+                    align-items: center;
                 }
             }
         }
