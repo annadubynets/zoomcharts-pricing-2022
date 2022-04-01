@@ -12698,6 +12698,24 @@ input {
   padding: 15px;
   opacity: 1;
 }
+.pricing-page .border-end-long-style:after {
+  content: "";
+  display: inline;
+  width: 1px;
+  height: 12px;
+  background-color: #E1E1E1;
+  border-radius: 4px;
+  position: absolute;
+}
+.pricing-page .border-end-short-style:after {
+  content: "";
+  display: inline;
+  width: 1px;
+  height: 6px;
+  background-color: #E1E1E1;
+  border-radius: 4px;
+  position: absolute;
+}
 .pricing-page .hero {
   background: #292929;
   padding-top: 166px;
@@ -12725,6 +12743,7 @@ input {
   color: #000000;
 }
 .pricing-page .pricing .card {
+  font-family: "Futura PT";
   background: #FFFFFF;
   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -12769,6 +12788,14 @@ input {
 .pricing-page .pricing .card ul li.inactive {
   color: #B0BBC9;
 }
+.pricing-page .pricing .card ul:after {
+  display: block;
+  content: "";
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  width: calc(100% + 3.125rem);
+  margin-left: -1.563rem;
+  padding-top: 20px;
+}
 .pricing-page .pricing .bootstrap-select {
   flex-grow: 1 !important;
 }
@@ -12807,7 +12834,15 @@ input {
 .pricing-page .pricing .tooltip-inner {
   font-family: "Merriweather";
   font-weight: 400;
-  text-align: start;
+  text-align: start !important;
+}
+.pricing-page .pricing .range-decor::after {
+  display: block;
+  content: "";
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  width: calc(100% + 3.125rem);
+  margin-left: -1.563rem;
+  margin-bottom: 30px;
 }
 .pricing-page .pricing .options {
   background: #F4F7FB;
@@ -12907,11 +12942,13 @@ input {
   color: #000000;
 }
 .pricing-page .accordion-body {
+  font-family: "Futura PT";
   font-size: 26px;
   color: #CACACA;
   padding: 16px 0 30px 0;
 }
 .pricing-page .accordion-button {
+  font-family: "Futura PT";
   font-weight: 400;
   font-size: 26px;
   color: #000000;
