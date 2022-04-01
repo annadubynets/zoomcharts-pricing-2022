@@ -12803,7 +12803,7 @@ input {
   background: #F4F7FB;
   border-radius: 100px;
   cursor: pointer;
-  padding: 11px 20px;
+  padding: 10px 20px;
   transition: all 0.2s;
   width: 100%;
 }
@@ -12930,7 +12930,7 @@ input {
   font-family: "Merriweather";
   font-weight: normal;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 8px 10px;
   background-color: transparent;
   color: #000000;
   border: 2px solid #EDEFF3;
