@@ -127,6 +127,10 @@ p {
     font-size: 14px!important;
 }
 
+.font-size-13px {
+    font-size: 13px!important;
+}
+
 .font-size-12px {
     font-size: 12px!important;
 }
@@ -191,3 +195,10 @@ $form-range-thumb-border: 0.063rem solid #F8F5FB;
 $form-range-track-height: .563rem;
 $form-range-track-border-radius: 1.688rem;
 $form-range-track-bg: $yellow;
+$tooltip-bg:rgba(0, 0, 0, 0.84);
+$tooltip-arrow-color: rgba(0, 0, 0, 0.84);
+$tooltip-border-radius: .625rem;
+$tooltip-max-width: 13rem;
+$tooltip-font-size: .688rem;
+$tooltip-padding-y: .875rem;
+$tooltip-padding-x: .625rem;

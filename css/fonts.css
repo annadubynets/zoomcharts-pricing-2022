@@ -71,6 +71,22 @@
 }
 
 @font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Book.eot');
+    src: local('../fonts/Futura PT Book'), local('FuturaPT-Book'), url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaPT-Book.woff') format('woff'), url('../fonts/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Bold.eot');
+    src: local('../fonts/Futura PT Bold'), local('FuturaPT-Bold'), url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaPT-Bold.woff') format('woff'), url('../fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?ufipcr');
     src: url('../fonts/icomoon.eot?ufipcr#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ufipcr') format('truetype'), url('../fonts/icomoon.woff?ufipcr') format('woff'), url('../fonts/icomoon.svg?ufipcr#icomoon') format('svg');

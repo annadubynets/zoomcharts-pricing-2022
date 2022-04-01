@@ -326,6 +326,10 @@ p {
   font-size: 14px !important;
 }
 
+.font-size-13px {
+  font-size: 13px !important;
+}
+
 .font-size-12px {
   font-size: 12px !important;
 }
@@ -3073,12 +3077,12 @@ textarea.form-control-lg {
   z-index: 5;
   display: none;
   max-width: 100%;
-  padding: 0.25rem 0.5rem;
+  padding: 0.875rem 0.625rem;
   margin-top: 0.1rem;
-  font-size: 0.875rem;
+  font-size: 0.688rem;
   color: #FFFFFF;
   background-color: rgba(25, 135, 84, 0.9);
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 
 .was-validated :valid ~ .valid-feedback,
@@ -3162,12 +3166,12 @@ textarea.form-control-lg {
   z-index: 5;
   display: none;
   max-width: 100%;
-  padding: 0.25rem 0.5rem;
+  padding: 0.875rem 0.625rem;
   margin-top: 0.1rem;
-  font-size: 0.875rem;
+  font-size: 0.688rem;
   color: #FFFFFF;
   background-color: rgba(220, 53, 69, 0.9);
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 
 .was-validated :invalid ~ .invalid-feedback,
@@ -5836,7 +5840,7 @@ textarea.form-control-lg {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.875rem;
+  font-size: 0.688rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5865,7 +5869,7 @@ textarea.form-control-lg {
 .bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
   top: -1px;
   border-width: 0.4rem 0.4rem 0;
-  border-top-color: #000000;
+  border-top-color: rgba(0, 0, 0, 0.84);
 }
 
 .bs-tooltip-end, .bs-tooltip-auto[data-popper-placement^=right] {
@@ -5879,7 +5883,7 @@ textarea.form-control-lg {
 .bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
   right: -1px;
   border-width: 0.4rem 0.4rem 0.4rem 0;
-  border-right-color: #000000;
+  border-right-color: rgba(0, 0, 0, 0.84);
 }
 
 .bs-tooltip-bottom, .bs-tooltip-auto[data-popper-placement^=bottom] {
@@ -5891,7 +5895,7 @@ textarea.form-control-lg {
 .bs-tooltip-bottom .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
   bottom: -1px;
   border-width: 0 0.4rem 0.4rem;
-  border-bottom-color: #000000;
+  border-bottom-color: rgba(0, 0, 0, 0.84);
 }
 
 .bs-tooltip-start, .bs-tooltip-auto[data-popper-placement^=left] {
@@ -5905,16 +5909,16 @@ textarea.form-control-lg {
 .bs-tooltip-start .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
   left: -1px;
   border-width: 0.4rem 0 0.4rem 0.4rem;
-  border-left-color: #000000;
+  border-left-color: rgba(0, 0, 0, 0.84);
 }
 
 .tooltip-inner {
-  max-width: 200px;
-  padding: 0.25rem 0.5rem;
+  max-width: 13rem;
+  padding: 0.875rem 0.625rem;
   color: #FFFFFF;
   text-align: center;
-  background-color: #000000;
-  border-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.84);
+  border-radius: 0.625rem;
 }
 
 .popover {
@@ -12154,7 +12158,7 @@ a {
 }
 
 .btn-success {
-  font-family: "Futura";
+  font-family: "Futura PT";
   font-weight: bold;
   font-size: 12px;
   color: #FFFFFF;
@@ -12667,12 +12671,12 @@ input {
 }
 
 .pricing-page h1, .pricing-page .h1 {
-  font-family: "Futura";
+  font-family: "Futura PT";
   font-weight: bold;
   font-size: 44px;
 }
 .pricing-page h3, .pricing-page .h3 {
-  font-family: "Futura";
+  font-family: "Futura PT";
   font-weight: bold;
 }
 .pricing-page .main-description {
@@ -12681,7 +12685,8 @@ input {
   font-size: 21px !important;
 }
 .pricing-page .alert {
-  font-family: "Futura";
+  font-family: "Futura PT";
+  font-weight: 400;
   font-size: 18px;
   color: #000000;
   border-radius: 10px;
@@ -12731,11 +12736,11 @@ input {
   padding: 30px;
 }
 .pricing-page .pricing .card .card-header .card-title {
-  font-family: "Futura";
+  font-family: "Futura PT";
   font-size: 20px;
 }
 .pricing-page .pricing .card .card-text {
-  font-family: "Futura";
+  font-family: "Futura PT";
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -12799,6 +12804,11 @@ input {
 .pricing-page .pricing .dropdown-item:active {
   background-color: #f2c811;
 }
+.pricing-page .pricing .tooltip-inner {
+  font-family: "Merriweather";
+  font-weight: 400;
+  text-align: start;
+}
 .pricing-page .pricing .options {
   background: #F4F7FB;
   border-radius: 100px;
@@ -12809,10 +12819,13 @@ input {
 }
 .pricing-page .pricing .options .options-body {
   display: none;
+  padding: 10px 20px;
+  border-top: 1px solid #0BD474;
 }
 .pricing-page .pricing .options.active {
-  background: #f4fbf4;
-  border-radius: 50px;
+  background: #F5FDF9;
+  border: 1px solid #0BD474;
+  border-radius: 20px;
 }
 .pricing-page .pricing .options.active .options-body {
   display: block;
@@ -12821,6 +12834,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
 }
 .pricing-page .pricing .options .options-header .label-wrapper {
   display: flex;
