@@ -127,6 +127,14 @@ a {
     }
 }
 
+.btn-outline-dark {
+    color: $black;
+    background-color: $white;
+    border-color: $black;
+    border-radius: 10px;
+    padding: 9px 52px;
+}
+
 .dropdown-menu {
     border: 1px solid #E2E2E2;
     .dropdown-item {
@@ -690,12 +698,18 @@ input {
         color: $black;
         border-radius: 10px;
         padding: 26px 80px;
+        @media (max-width: 991px) {
+            padding: 20px 34px;
+        }
     }
     .btn-close {
         background: none!important;
         font-size: 12px;
         padding: 15px;
         opacity: 1;
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
     .border-end-long-style {
         &:after {

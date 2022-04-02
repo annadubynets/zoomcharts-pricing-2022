@@ -12183,6 +12183,14 @@ a {
   color: #FFFFFF;
 }
 
+.btn-outline-dark {
+  color: #000000;
+  background-color: #FFFFFF;
+  border-color: #000000;
+  border-radius: 10px;
+  padding: 9px 52px;
+}
+
 .dropdown-menu {
   border: 1px solid #E2E2E2;
 }
@@ -12702,11 +12710,21 @@ input {
   border-radius: 10px;
   padding: 26px 80px;
 }
+@media (max-width: 991px) {
+  .pricing-page .alert {
+    padding: 20px 34px;
+  }
+}
 .pricing-page .btn-close {
   background: none !important;
   font-size: 12px;
   padding: 15px;
   opacity: 1;
+}
+@media (max-width: 991px) {
+  .pricing-page .btn-close {
+    display: none;
+  }
 }
 .pricing-page .border-end-long-style:after {
   content: "";

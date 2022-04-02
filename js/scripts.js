@@ -11,7 +11,7 @@ $(function() {
     var pricingOptions = document.querySelectorAll('.pricing .options');
     pricingOptions.forEach(function(optionsElem) {
         var checkboxInput = optionsElem.querySelector('[type=checkbox]');
-        
+
         checkboxInput.addEventListener('change', function() {
             syncCheckboxState();
         })
@@ -24,4 +24,30 @@ $(function() {
 
         syncCheckboxState();
     });
+})
+
+$(function() {
+    $(document).scroll(function() {
+        var $nav = $(".navbar.fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
+    });
+});
+
+$(function() {
+    var navbarCollapse = document.getElementById('navbarCollapse')
+    navbarCollapse.addEventListener('hide.bs.collapse', function(e) {
+        e.target.closest('html').classList.remove('nav-opened');
+    })
+
+    navbarCollapse.addEventListener('hidden.bs.collapse', function(e) {
+        e.target.closest('html').classList.remove('nav-opened');
+    })
+
+    navbarCollapse.addEventListener('show.bs.collapse', function(e) {
+        e.target.closest('html').classList.add('nav-opened');
+    })
+
+    navbarCollapse.addEventListener('shown.bs.collapse', function(e) {
+        e.target.closest('html').classList.add('nav-opened');
+    })
 })
