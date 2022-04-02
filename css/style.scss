@@ -787,10 +787,13 @@ input {
             .card-footer {
                 border-top: 1px dashed rgba(0, 0, 0, .2);
                 background-color: transparent;
-                padding: 30px 30px 50px 30px;
+                padding: 20px 30px 50px 30px;
                 .main-description {
                     color: $black;
-                    font-size: 30px;
+                    font-size: 30px!important;
+                }
+                sup {
+                    top: -1rem;
                 }
             }
             ul {
@@ -1017,6 +1020,15 @@ input {
         }
         &.mw-55px {
             max-width: 55px;
+        }
+        &.mh-35px {
+            max-height: 35px;
+        }
+        &.lh-1 {
+            line-height: 15px!important;
+        }
+        &.font-family-futura {
+            font-family: 'Futura PT';
         }
     }
     ul {

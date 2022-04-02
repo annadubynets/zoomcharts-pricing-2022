@@ -366,6 +366,10 @@ p {
   padding-bottom: 150px;
 }
 
+.mb-30px {
+  margin-bottom: 30px;
+}
+
 .rounded {
   border-radius: 10px !important;
 }
@@ -12802,11 +12806,14 @@ input {
 .pricing-page .pricing .card .card-footer {
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
   background-color: transparent;
-  padding: 30px 30px 50px 30px;
+  padding: 20px 30px 50px 30px;
 }
 .pricing-page .pricing .card .card-footer .main-description {
   color: #000000;
-  font-size: 30px;
+  font-size: 30px !important;
+}
+.pricing-page .pricing .card .card-footer sup {
+  top: -1rem;
 }
 .pricing-page .pricing .card ul li {
   font-family: "Merriweather";
@@ -13023,6 +13030,15 @@ input {
 }
 .pricing-page .form-control.mw-55px {
   max-width: 55px;
+}
+.pricing-page .form-control.mh-35px {
+  max-height: 35px;
+}
+.pricing-page .form-control.lh-1 {
+  line-height: 15px !important;
+}
+.pricing-page .form-control.font-family-futura {
+  font-family: "Futura PT";
 }
 .pricing-page ul {
   list-style-type: none;
