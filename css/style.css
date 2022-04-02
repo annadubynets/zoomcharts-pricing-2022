@@ -12730,6 +12730,12 @@ input {
     display: none;
   }
 }
+.pricing-page .btn-close:focus {
+  box-shadow: none;
+}
+.pricing-page .btn-close i:hover {
+  color: #f2c811 !important;
+}
 .pricing-page .border-end-long-style:after {
   content: "";
   display: inline;

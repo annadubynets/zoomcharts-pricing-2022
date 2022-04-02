@@ -710,6 +710,14 @@ input {
         @media (max-width: 991px) {
             display: none;
         }
+        &:focus {
+            box-shadow: none;
+        }
+        i {
+            &:hover {
+                color: $yellow!important;
+            }
+        }
     }
     .border-end-long-style {
         &:after {
