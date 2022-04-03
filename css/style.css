@@ -12892,6 +12892,7 @@ input {
   padding: 10px 20px;
   transition: all 0.2s;
   width: 100%;
+  border: 1px solid transparent;
 }
 .pricing-page .pricing .options .options-body {
   display: none;
