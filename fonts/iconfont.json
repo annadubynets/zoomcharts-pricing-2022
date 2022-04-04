@@ -4,8 +4,9 @@
     "close": "\\f103",
     "control": "\\f104",
     "ellipse": "\\f105",
-    "information": "\\f106",
-    "smile": "\\f107",
-    "star-half": "\\f108",
-    "star": "\\f109"
+    "eye": "\\f106",
+    "information": "\\f107",
+    "smile": "\\f108",
+    "star-half": "\\f109",
+    "star": "\\f10a"
 }
