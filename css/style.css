@@ -11161,11 +11161,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.form-range::-webkit-slider-thumb {
-  box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
+.form-range {
+  --form-range-value: 50%;
+  --form-range-thumb-color: #FFFFFF;
+  --form-range-right-color: #EDEFF3;
+  --form-range-left-color: #f2c811;
 }
-.form-range::-moz-range-thumb {
-  box-shadow: 0px 2px 5px rgba(60, 66, 87, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.12);
+.form-range::-webkit-slider-runnable-track {
+  background-color: var(--form-range-right-color);
+  background: linear-gradient(to right, var(--form-range-left-color) 0%, var(--form-range-left-color) var(--form-range-value), var(--form-range-right-color) var(--form-range-value), var(--form-range-right-color) 100%) !important;
+}
+.form-range::-webkit-slider-thumb {
+  background-color: var(--form-range-thumb-color);
 }
 
 @font-face {
@@ -12744,7 +12751,7 @@ input {
   font-size: 18px;
   color: #000000;
   border-radius: 10px;
-  padding: 26px 80px;
+  padding: 26px 40px;
 }
 @media (max-width: 991px) {
   .pricing-page .alert {
@@ -12791,12 +12798,7 @@ input {
   padding-top: 166px;
 }
 .pricing-page .pricing {
-  background: linear-gradient(to bottom, #292929 30%, #FFFFFF 30%);
-}
-@media (max-width: 991px) {
-  .pricing-page .pricing {
-    background: linear-gradient(to bottom, #292929 5%, #FFFFFF 5%);
-  }
+  background: linear-gradient(to bottom, #292929 55px, #FFFFFF 0);
 }
 .pricing-page .pricing label {
   font-weight: 700;
@@ -13152,11 +13154,6 @@ input {
   border-radius: 0.25rem;
 }
 
-@media (min-width: 1900px) {
-  .home-page .container {
-    max-width: 1140px;
-  }
-}
 .home-page h1, .home-page .h1 {
   font-weight: bold;
   font-size: 50px;
@@ -13367,7 +13364,7 @@ input {
 }
 @media (min-width: 1900px) {
   .container {
-    max-width: 1480px;
+    max-width: 1140px;
   }
 }
 

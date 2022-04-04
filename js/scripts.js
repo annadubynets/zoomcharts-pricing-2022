@@ -51,3 +51,42 @@ $(function() {
         e.target.closest('html').classList.add('nav-opened');
     })
 })
+
+/**
+ * Adds the ability to fill one side of the input range slider with the different color.
+ * See style details in ./style/theme/components/_form-range.scss
+ * @param {HTMInputElement} elem 
+ */
+function InputRangeSlider(elem) {
+    this.rangeInput = elem;
+
+    this.init = function() {
+        this.rangeInput.addEventListener('input', function() {
+            this._initSlider(this.rangeInput);
+        }.bind(this));
+
+        this._initSlider(this.rangeInput);
+    }
+
+    this._initSlider = function(input) {
+        var value = (input.value - input.min) / (input.max - input.min) * 100
+        input.style.setProperty('--form-range-value', value + "%");
+    }.bind(this);
+}
+
+/**
+ * Helper function for initialization input range sliders
+ * 
+ * @param {string} selector 
+ */
+function initFormRangeControls(selector) {
+    var inputs = document.querySelectorAll(selector);
+    inputs.forEach(function(input) {
+        var slider = new InputRangeSlider(input);
+        slider.init();
+    })
+}
+
+$(function() {
+    initFormRangeControls('.form-range');
+});

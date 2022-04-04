@@ -698,7 +698,7 @@ input {
         font-size: 18px;
         color: $black;
         border-radius: 10px;
-        padding: 26px 80px;
+        padding: 26px 40px;
         @media (max-width: 991px) {
             padding: 20px 34px;
         }
@@ -747,10 +747,7 @@ input {
         padding-top: 166px;
     }
     .pricing {
-        background: linear-gradient(to bottom, #292929 30%, $white 30%);
-        @media (max-width: 991px) {
-            background: linear-gradient(to bottom, #292929 5%, $white 5%);
-        }
+        background: linear-gradient(to bottom, #292929 55px, $white 0);
         label {
             font-weight: 700;
             font-size: 20px;
@@ -1116,11 +1113,6 @@ input {
 }
 
 .home-page {
-    @media (min-width: 1900px) {
-        .container {
-            max-width: 1140px;
-        }
-    }
     h1 {
         font-weight: bold;
         font-size: 50px;
@@ -1335,6 +1327,6 @@ input {
 
 @media (min-width: 1900px) {
     .container {
-        max-width: 1480px;
+        max-width: 1140px;
     }
 }

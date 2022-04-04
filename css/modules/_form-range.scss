@@ -4,10 +4,15 @@
 // elements cannot be mixed. As such, there are no shared styles for focus or
 // active states on prefixed selectors.
 .form-range {
-    &::-webkit-slider-thumb {
-        box-shadow: $form-range-thumb-box-shadow;
+    --form-range-value: 50%;
+    --form-range-thumb-color: #{$form-range-thumb-bg};
+    --form-range-right-color: #{#EDEFF3};
+    --form-range-left-color: #{$form-range-track-bg};
+    &::-webkit-slider-runnable-track {
+        background-color: var(--form-range-right-color);
+        background: linear-gradient(to right, var(--form-range-left-color) 0%, var(--form-range-left-color) var(--form-range-value), var(--form-range-right-color) var(--form-range-value), var(--form-range-right-color) 100%)!important;
     }
-    &::-moz-range-thumb {
-        box-shadow: $form-range-thumb-box-shadow;
+    &::-webkit-slider-thumb {
+        background-color: var(--form-range-thumb-color);
     }
 }
