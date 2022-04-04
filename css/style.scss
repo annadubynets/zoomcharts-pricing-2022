@@ -813,13 +813,17 @@ input {
                         color: #B0BBC9;
                     }
                 }
+            }
+            .card-divider {
+                position: relative;
                 &:after {
                     display: block;
                     content: "";
                     border-bottom: 1px dashed rgba(0, 0, 0, .2);
                     width: calc(100% + 3.125rem);
                     margin-left: -1.563rem;
-                    padding-top: 20px;
+                    position: absolute;
+                    bottom: 30px;
                 }
             }
         }

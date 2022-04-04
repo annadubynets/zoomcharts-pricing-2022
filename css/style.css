@@ -366,6 +366,10 @@ p {
   padding-bottom: 150px;
 }
 
+.pb-30px {
+  padding-bottom: 30px;
+}
+
 .mb-30px {
   margin-bottom: 30px;
 }
@@ -12829,13 +12833,17 @@ input {
 .pricing-page .pricing .card ul li.inactive {
   color: #B0BBC9;
 }
-.pricing-page .pricing .card ul:after {
+.pricing-page .pricing .card .card-divider {
+  position: relative;
+}
+.pricing-page .pricing .card .card-divider:after {
   display: block;
   content: "";
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   width: calc(100% + 3.125rem);
   margin-left: -1.563rem;
-  padding-top: 20px;
+  position: absolute;
+  bottom: 30px;
 }
 .pricing-page .pricing .bootstrap-select {
   flex-grow: 1 !important;
