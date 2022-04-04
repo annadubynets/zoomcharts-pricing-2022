@@ -13158,6 +13158,23 @@ input {
 .pricing-page .checkbox label::before {
   border-radius: 0.25rem;
 }
+.pricing-page .hi-slide .hi-prev,
+.pricing-page .hi-slide .hi-next {
+  top: 56%;
+  height: 40px;
+  margin-top: -40px;
+  border-radius: 50px;
+  line-height: 42px;
+  font-size: 24px;
+}
+.pricing-page .hi-slide > ul > li {
+  border: none;
+  border-radius: 11px;
+  background-color: transparent;
+}
+.pricing-page .hi-slide > ul > li img {
+  object-fit: contain;
+}
 
 .home-page h1, .home-page .h1 {
   font-weight: bold;

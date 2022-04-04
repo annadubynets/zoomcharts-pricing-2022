@@ -90,3 +90,5 @@ function initFormRangeControls(selector) {
 $(function() {
     initFormRangeControls('.form-range');
 });
+
+$('.img-area').hiSlide();
