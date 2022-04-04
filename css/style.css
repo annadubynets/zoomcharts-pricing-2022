@@ -12740,6 +12740,10 @@ input {
   font-family: "Futura PT";
   font-weight: bold;
 }
+.pricing-page h4, .pricing-page .h4 {
+  font-family: "Futura PT";
+  font-weight: bold;
+}
 .pricing-page .main-description {
   font-family: "Futura PT";
   font-weight: 400;
@@ -13022,17 +13026,18 @@ input {
   color: #000000;
 }
 .pricing-page .accordion-body {
-  font-family: "Futura PT";
-  font-size: 26px;
-  color: #CACACA;
-  padding: 16px 0 30px 0;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Merriweather", sans-serif;
+  color: #000000;
+  padding: 14px 0;
 }
 .pricing-page .accordion-button {
-  font-family: "Futura PT";
-  font-weight: 400;
-  font-size: 26px;
-  color: #000000;
-  padding: 24px 0;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Merriweather", sans-serif;
+  color: #333;
+  padding: 14px 0;
 }
 .pricing-page .accordion-button:focus {
   box-shadow: none;

@@ -687,6 +687,10 @@ input {
         font-family: 'Futura PT';
         font-weight: bold;
     }
+    h4 {
+        font-family: 'Futura PT';
+        font-weight: bold;
+    }
     .main-description {
         font-family: 'Futura PT';
         font-weight: 400;
@@ -979,17 +983,18 @@ input {
         }
     }
     .accordion-body {
-        font-family: 'Futura PT';
-        font-size: 26px;
-        color: $silver;
-        padding: 16px 0 30px 0;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: "Merriweather", sans-serif;
+        color: $black;
+        padding: 14px 0;
     }
     .accordion-button {
-        font-family: 'Futura PT';
-        font-weight: 400;
-        font-size: 26px;
-        color: $black;
-        padding: 24px 0;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: "Merriweather", sans-serif;
+        color: #333;
+        padding: 14px 0;
         &:focus {
             box-shadow: none;
         }
