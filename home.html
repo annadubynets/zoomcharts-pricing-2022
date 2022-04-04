@@ -659,12 +659,15 @@
                                     <option>Training</option>
                                 </select>
                             </div>
-                            <div class="col-xl-3 col-lg-4">
+                            <div class="col-xl-3 col-lg-4 pb-lg-0 pb-3">
                                 <label class="form-label">Category</label>
-                                <select id="inputCategory" class="selectpicker d-block" placeholder="All">
-                                    <option>Category 1</option>
-                                    <option>Category 2</option>
-                                </select>
+                                <div class="d-flex justify-content-between">
+                                    <select id="inputCategory" class="selectpicker d-block" placeholder="All">
+                                        <option>Category 1</option>
+                                        <option>Category 2</option>
+                                    </select>
+                                    <a href="#" class="btn btn-link">Clear all</a>
+                                </div>
                             </div>
                             <div class="col-xl-3 col-lg-4">
                                 <label class="form-label">Sort by</label>
@@ -1416,7 +1419,9 @@
         </div>
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
