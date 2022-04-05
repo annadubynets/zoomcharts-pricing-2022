@@ -989,6 +989,12 @@ input {
         font-family: "Merriweather", sans-serif;
         color: $black;
         padding: 14px 0;
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            font-family: "Merriweather", sans-serif;
+        }
     }
     .accordion-button {
         font-size: 13px;

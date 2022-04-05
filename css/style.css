@@ -13067,6 +13067,11 @@ input {
   color: #000000;
   padding: 14px 0;
 }
+.pricing-page .accordion-body a {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Merriweather", sans-serif;
+}
 .pricing-page .accordion-button {
   font-size: 13px;
   font-weight: 600;
