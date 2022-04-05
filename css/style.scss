@@ -6,6 +6,7 @@
 @import "modules/paginator";
 @import "modules/typography";
 @import "modules/utilities";
+@import "modules/hislide";
 @import "./bootstrap-select.min";
 body {
     font-family: 'Roboto';
@@ -989,6 +990,12 @@ input {
         font-family: "Merriweather", sans-serif;
         color: $black;
         padding: 14px 0;
+
+        a {
+            font-size: 12px;
+            font-weight: 400;
+            font-family: "Merriweather", sans-serif;
+        }
     }
     .accordion-button {
         font-size: 13px;
@@ -1115,25 +1122,6 @@ input {
     }
     .checkbox label::before {
         border-radius: 0.25rem;
-    }
-    .hi-slide {
-        .hi-prev,
-        .hi-next {
-            top: 56%;
-            height: 40px;
-            margin-top: -40px;
-            border-radius: 50px;
-            line-height: 42px;
-            font-size: 24px;
-        }
-    }
-    .hi-slide>ul>li {
-        border: none;
-        border-radius: 11px;
-        background-color: transparent;
-        img {
-            object-fit: contain;
-        }
     }
 }
 

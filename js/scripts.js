@@ -11,6 +11,13 @@ $(function() {
     var pricingOptions = document.querySelectorAll('.pricing .options');
     pricingOptions.forEach(function(optionsElem) {
         var checkboxInput = optionsElem.querySelector('[type=checkbox]');
+        var header = optionsElem.querySelector('.options-header');
+        header.addEventListener('click', function(e) {
+            if (!e.target.classList.contains('form-check-input')) {
+                checkboxInput.checked = !checkboxInput.checked;
+                syncCheckboxState();
+            }
+        });
 
         checkboxInput.addEventListener('change', function() {
             syncCheckboxState();
