@@ -13167,17 +13167,17 @@ input {
   margin-left: -30px;
 }
 .pricing-page .checkbox input:checked + label::before {
-  border-color: #000000;
+  border-color: #585858;
 }
 .pricing-page .checkbox input:checked + label::after {
   font-family: iconfont !important;
   content: "";
   display: inline-block;
+  font-size: 9px;
+  color: #585858;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 3px;
-  top: 0;
+  left: 4px;
+  top: 4px;
   margin-left: -30px;
 }
 .pricing-page .checkbox label {
@@ -13208,7 +13208,7 @@ input {
   opacity: 0.54;
 }
 .pricing-page .checkbox input:checked + label::before {
-  border: 2px solid #000000;
+  border: 2px solid #585858;
   background-color: transparent;
 }
 .pricing-page .checkbox label::before {

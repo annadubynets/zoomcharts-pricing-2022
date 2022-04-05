@@ -937,24 +937,24 @@
 
                             <p class="card-text fw-bold text-center pb-4">fill in the form</p>
 
-                            <form>
+                            <form id="request-quote-form">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="nameInput" placeholder="Name*">
+                                    <input type="text" class="form-control" id="name" placeholder="Name*">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="companyNameInput" placeholder="Company Name*">
+                                    <input type="text" class="form-control" id="company" placeholder="Company Name*">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" id="emailInput" placeholder="Work Email*">
+                                    <input type="email" class="form-control" id="email" placeholder="Work Email*">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="tel" class="form-control" id="phoneInput" placeholder="Work Phone">
+                                    <input type="text" class="form-control" id="phone" placeholder="Work Phone">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="number" class="form-control" id="numberInput" placeholder="Expected number of creators and viewers">
+                                    <input type="number" class="form-control" id="number" placeholder="Expected number of creators and viewers">
                                 </div>
                                 <div class="mb-3">
-                                    <textarea class="form-control" id="describeTextarea" rows="3" placeholder="Please describe your requirements"></textarea>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Please describe your requirements"></textarea>
                                 </div>
                             </form>
                             <div class="checkbox">
@@ -971,7 +971,7 @@
                             </div>
                         </div>
                         <div class="card-footer text-center border-0">
-                            <a href="#" class="btn btn-success d-grid">REQUEST A QUOTE</a>
+                            <a href="#" id="btn-request-quote" class="btn btn-success d-grid">REQUEST A QUOTE</a>
                         </div>
                     </div>
                 </div>
