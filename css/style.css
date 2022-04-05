@@ -11591,6 +11591,41 @@ i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   width: 50px;
 }
 
+.hi-slide {
+  width: 100%;
+  height: 230px;
+}
+.hi-slide .hi-prev,
+.hi-slide .hi-next {
+  top: 56%;
+  height: 40px;
+  margin-top: -40px;
+  border-radius: 50px;
+  line-height: 42px;
+  font-size: 24px;
+}
+.hi-slide > ul {
+  width: 100%;
+  height: 230px;
+}
+
+.hi-slide > ul > li {
+  border: none;
+  border-radius: 11px;
+  background-color: transparent;
+}
+.hi-slide > ul > li img {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hi-slide {
+    height: 180px;
+  }
+  .hi-slide > ul {
+    height: 180px;
+  }
+}
 /*!
  * Bootstrap-select v1.14.0-beta2 (https://developer.snapappointments.com/bootstrap-select)
  *
@@ -13157,23 +13192,6 @@ input {
 }
 .pricing-page .checkbox label::before {
   border-radius: 0.25rem;
-}
-.pricing-page .hi-slide .hi-prev,
-.pricing-page .hi-slide .hi-next {
-  top: 56%;
-  height: 40px;
-  margin-top: -40px;
-  border-radius: 50px;
-  line-height: 42px;
-  font-size: 24px;
-}
-.pricing-page .hi-slide > ul > li {
-  border: none;
-  border-radius: 11px;
-  background-color: transparent;
-}
-.pricing-page .hi-slide > ul > li img {
-  object-fit: contain;
 }
 
 .home-page h1, .home-page .h1 {
