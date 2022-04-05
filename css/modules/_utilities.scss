@@ -1,3 +1,70 @@
 .w-50px {
     width: 50px;
 }
+
+.rounded {
+    border-radius: 10px!important;
+}
+
+.rounded-pill {
+    border-radius: 40px!important;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.border-dotted-bottom {
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+}
+
+.border-dotted {
+    border: 1px dashed #585858;
+}
+
+.shadow {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.02)!important;
+}
+
+.shadow-sm {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)!important;
+}
+
+.text-secondary {
+    color: $darkgrey!important;
+}
+
+.text-muted {
+    color: $grey!important;
+}
+
+.text-grey {
+    color: #B0BBC9!important
+}
+
+.text-dark {
+    color: $black!important;
+}
+
+.text-black {
+    color: $darkgrey;
+}
+
+.bg-linear-gradient {
+    background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
+    &:hover {
+        box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+    }
+}
+
+.bg-secondary {
+    background-color: #F1F1F1!important;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-light {
+    background-color: #F6F6F6;
+}

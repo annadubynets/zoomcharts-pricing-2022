@@ -207,73 +207,6 @@
   width: 100%;
 }
 
-.font-family-second {
-  font-family: "Merriweather";
-}
-
-h1, .h1 {
-  font-weight: 600;
-  font-size: 60px;
-  color: #FFFFFF;
-}
-
-h2, .h2 {
-  font-weight: 700;
-  font-size: 45px;
-  color: #000000;
-}
-
-h3, .h3 {
-  font-weight: bold;
-  font-size: 30px;
-  color: #000000;
-}
-
-h4, .h4 {
-  font-weight: bold;
-  font-size: 25px;
-  color: #000000;
-}
-
-h5, .h5 {
-  font-weight: bold;
-  font-size: 17px;
-  color: #000000;
-}
-
-p {
-  font-weight: 400;
-  font-size: 20px;
-  color: #848484;
-}
-
-.shadow {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.02) !important;
-}
-
-.shadow-sm {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
-}
-
-.bg-linear-gradient {
-  background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
-}
-.bg-linear-gradient:hover {
-  box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
-}
-
-.bg-secondary {
-  background-color: #F1F1F1 !important;
-}
-
-.bg-white {
-  background-color: #FFFFFF;
-}
-
-.bg-light {
-  background-color: #F6F6F6;
-}
-
 .pt-116px {
   padding-top: 116px;
 }
@@ -294,6 +227,10 @@ p {
   padding-bottom: 80px;
 }
 
+.mb-60px {
+  margin-bottom: 60px;
+}
+
 .mb-68px {
   margin-bottom: 68px;
 }
@@ -308,70 +245,6 @@ p {
 
 .ps-60px {
   padding-left: 60px !important;
-}
-
-.font-size-30px {
-  font-size: 30px !important;
-}
-
-.font-size-24px {
-  font-size: 24px !important;
-}
-
-.font-size-21px {
-  font-size: 21px !important;
-}
-
-.font-size-20px {
-  font-size: 20px !important;
-}
-
-.font-size-18px {
-  font-size: 18px !important;
-}
-
-.font-size-16px {
-  font-size: 16px !important;
-}
-
-.font-size-15px {
-  font-size: 15px !important;
-}
-
-.font-size-14px {
-  font-size: 14px !important;
-}
-
-.font-size-13px {
-  font-size: 13px !important;
-}
-
-.font-size-12px {
-  font-size: 12px !important;
-}
-
-.font-size-10px {
-  font-size: 10px !important;
-}
-
-.text-secondary {
-  color: #585858 !important;
-}
-
-.text-muted {
-  color: #848484 !important;
-}
-
-.text-grey {
-  color: #B0BBC9 !important;
-}
-
-.text-dark {
-  color: #000000 !important;
-}
-
-.text-black {
-  color: #585858;
 }
 
 .p-50px {
@@ -394,20 +267,8 @@ p {
   margin-bottom: 30px;
 }
 
-.rounded {
-  border-radius: 10px !important;
-}
-
-.rounded-pill {
-  border-radius: 40px !important;
-}
-
-.z-index-1 {
-  z-index: 1;
-}
-
-.border-dotted-bottom {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+.mb-40px {
+  margin-bottom: 40px;
 }
 
 :root {
@@ -11587,8 +11448,163 @@ i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   justify-content: center;
 }
 
+.font-family-second {
+  font-family: "Merriweather";
+}
+
+h1, .h1 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+h2, .h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color: #000000;
+}
+
+h3, .h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+}
+
+h4, .h4 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+}
+
+h5, .h5 {
+  font-weight: bold;
+  font-size: 17px;
+  color: #000000;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #848484;
+}
+
+.font-size-30px {
+  font-size: 30px !important;
+}
+
+.font-size-24px {
+  font-size: 24px !important;
+}
+
+.font-size-21px {
+  font-size: 21px !important;
+}
+
+.font-size-20px {
+  font-size: 20px !important;
+}
+
+.font-size-19px {
+  font-size: 19px !important;
+}
+
+.font-size-18px {
+  font-size: 18px !important;
+}
+
+.font-size-16px {
+  font-size: 16px !important;
+}
+
+.font-size-15px {
+  font-size: 15px !important;
+}
+
+.font-size-14px {
+  font-size: 14px !important;
+}
+
+.font-size-13px {
+  font-size: 13px !important;
+}
+
+.font-size-12px {
+  font-size: 12px !important;
+}
+
+.font-size-10px {
+  font-size: 10px !important;
+}
+
 .w-50px {
   width: 50px;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.rounded-pill {
+  border-radius: 40px !important;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.border-dotted-bottom {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.border-dotted {
+  border: 1px dashed #585858;
+}
+
+.shadow {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.02) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+}
+
+.text-secondary {
+  color: #585858 !important;
+}
+
+.text-muted {
+  color: #848484 !important;
+}
+
+.text-grey {
+  color: #B0BBC9 !important;
+}
+
+.text-dark {
+  color: #000000 !important;
+}
+
+.text-black {
+  color: #585858;
+}
+
+.bg-linear-gradient {
+  background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
+}
+.bg-linear-gradient:hover {
+  box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+}
+
+.bg-secondary {
+  background-color: #F1F1F1 !important;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-light {
+  background-color: #F6F6F6;
 }
 
 /*!
@@ -13178,11 +13194,15 @@ input {
 
 .home-page h1, .home-page .h1 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.125rem;
+}
+.home-page h3, .home-page .h3 {
+  font-weight: bold;
+  font-size: 1.875rem;
 }
 .home-page h4, .home-page .h4 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .home-page .hero {
   padding-top: 150px;
@@ -13242,6 +13262,17 @@ input {
 }
 .home-page .btn-light {
   border: 1px solid #585858;
+}
+
+.inner-page .btn-outline-primary {
+  padding: 11px 30px;
+}
+.inner-page ul li {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 19px;
+  color: #848484;
 }
 
 @media (max-width: 991px) {
