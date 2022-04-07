@@ -38,7 +38,7 @@ $(function() {
     pricingRangeGroups.forEach(function(rangeGroup) {
         var formInput = rangeGroup.querySelector('[type="number"]');
         var formRange = rangeGroup.querySelector('[type="range"]');
-        
+
         formInput.addEventListener('change', function() {
             if (formRange.value != this.value) {
                 formRange.value = this.value;
@@ -56,9 +56,31 @@ $(function() {
 })
 
 $(function() {
+    var $nav = $(".navbar.fixed-top");
+
+    // Get the alert
+    var alert = document.querySelector(".sticky-alert");
+    var prevAlertPosition = 0;
+    
+    if (alert) {
+        prevAlertPosition = alert.offsetTop;
+    }
+
+    function dockStickyAlert() {
+        if (window.pageYOffset > prevAlertPosition - $nav.height()) {
+            alert.classList.add("docked");
+        } else {
+            alert.classList.remove("docked");
+        }
+    }
+
     $(document).scroll(function() {
-        var $nav = $(".navbar.fixed-top");
+        
         $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
+
+        if (alert) {
+            dockStickyAlert();
+        }
     });
 });
 
