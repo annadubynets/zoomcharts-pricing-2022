@@ -12237,6 +12237,450 @@ p {
   float: none;
 }
 
+.pricing-page h1, .pricing-page .h1 {
+  font-family: "Futura PT";
+  font-weight: bold;
+  font-size: 44px;
+}
+.pricing-page h3, .pricing-page .h3 {
+  font-family: "Futura PT";
+  font-weight: bold;
+}
+.pricing-page h4, .pricing-page .h4 {
+  font-family: "Futura PT";
+  font-weight: bold;
+}
+.pricing-page .main-description {
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-size: 21px !important;
+}
+.pricing-page .alert {
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  border-radius: 10px;
+  padding: 26px 40px;
+}
+@media (max-width: 991px) {
+  .pricing-page .alert {
+    padding: 20px 34px;
+  }
+}
+.pricing-page .btn-close {
+  background: none !important;
+  font-size: 12px;
+  padding: 15px;
+  opacity: 1;
+}
+@media (max-width: 991px) {
+  .pricing-page .btn-close {
+    display: none;
+  }
+}
+.pricing-page .btn-close:focus {
+  box-shadow: none;
+}
+.pricing-page .btn-close i:hover {
+  color: #f2c811 !important;
+}
+.pricing-page .border-end-long-style:after {
+  content: "";
+  display: inline;
+  width: 1px;
+  height: 12px;
+  background-color: #E1E1E1;
+  border-radius: 4px;
+  position: absolute;
+}
+.pricing-page .border-end-short-style:after {
+  content: "";
+  display: inline;
+  width: 1px;
+  height: 6px;
+  background-color: #E1E1E1;
+  border-radius: 4px;
+  position: absolute;
+}
+.pricing-page .hero {
+  background: #292929;
+  padding-top: 166px;
+}
+.pricing-page .pricing {
+  background: linear-gradient(to bottom, #292929 55px, #FFFFFF 0);
+}
+.pricing-page .pricing label {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  padding: 15px 20px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+.pricing-page .pricing .form-check-label {
+  font-family: "Futura PT";
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.pricing-page .pricing .card {
+  font-family: "Futura PT";
+  background: #FFFFFF;
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 0;
+}
+.pricing-page .pricing .card .card-header {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  padding: 30px;
+}
+.pricing-page .pricing .card .card-header .card-title {
+  font-family: "Futura PT";
+  font-size: 20px;
+}
+.pricing-page .pricing .card .card-text {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #292929;
+}
+.pricing-page .pricing .card .card-body {
+  padding: 30px 25px;
+}
+.pricing-page .pricing .card .card-footer {
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  padding: 20px 30px 50px 30px;
+}
+.pricing-page .pricing .card .card-footer .main-description {
+  color: #000000;
+  font-size: 30px !important;
+}
+.pricing-page .pricing .card .card-footer sup {
+  top: -1rem;
+}
+.pricing-page .pricing .card ul li {
+  font-family: "Merriweather";
+  font-size: 12px;
+  padding: 6px 0;
+}
+.pricing-page .pricing .card ul li.inactive {
+  color: #B0BBC9;
+}
+.pricing-page .pricing .card .card-divider {
+  position: relative;
+}
+.pricing-page .pricing .card .card-divider:after {
+  display: block;
+  content: "";
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  width: calc(100% + 3.125rem);
+  margin-left: -1.563rem;
+  position: absolute;
+  bottom: 30px;
+}
+.pricing-page .pricing .bootstrap-select {
+  flex-grow: 1 !important;
+}
+.pricing-page .pricing .bootstrap-select .dropdown-menu span {
+  display: none;
+}
+.pricing-page .pricing .btn-check:active + .btn-light:focus,
+.pricing-page .pricing .btn-check:checked + .btn-light:focus,
+.pricing-page .pricing .btn-light.active:focus,
+.pricing-page .pricing .btn-light:active:focus,
+.pricing-page .pricing .show > .btn-light.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.pricing-page .pricing .bootstrap-select .dropdown-toggle:focus,
+.pricing-page .pricing .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+  outline: 0 !important;
+  background-color: #FFFFFF;
+  border: 2px solid #EDEFF3;
+}
+.pricing-page .pricing .dropdown-toggle span {
+  color: #f2c811;
+}
+.pricing-page .pricing .dropdown-toggle span.icon-information {
+  color: #CACACA;
+}
+.pricing-page .pricing .dropdown-toggle::after {
+  border: none;
+  font-family: "icomoon";
+  content: "";
+  font-size: 10px;
+}
+.pricing-page .pricing .dropdown-item.active,
+.pricing-page .pricing .dropdown-item:active {
+  background-color: #f2c811;
+}
+.pricing-page .pricing .tooltip-inner {
+  font-family: "Merriweather";
+  font-weight: 400;
+  text-align: start !important;
+}
+.pricing-page .pricing .range-decor::after {
+  display: block;
+  content: "";
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  width: calc(100% + 3.125rem);
+  margin-left: -1.563rem;
+  margin-bottom: 30px;
+}
+.pricing-page .pricing .options {
+  background: #F4F7FB;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.2s;
+  width: 100%;
+  border: 1px solid transparent;
+}
+.pricing-page .pricing .options .options-body {
+  display: none;
+  padding: 10px 20px;
+  border-top: 1px solid #0BD474;
+}
+.pricing-page .pricing .options.active {
+  background: #F5FDF9;
+  border: 1px solid #0BD474;
+  border-radius: 20px;
+}
+.pricing-page .pricing .options.active .options-body {
+  display: block;
+}
+.pricing-page .pricing .options .options-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.pricing-page .pricing .options .options-header .label-wrapper {
+  display: flex;
+  align-items: center;
+}
+.pricing-page .pricing .addon {
+  display: none;
+}
+.pricing-page .pricing .addon + label {
+  user-select: none;
+  /* standard syntax */
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  cursor: pointer;
+}
+.pricing-page .pricing .addon + label:before {
+  font-family: "icomoon";
+  content: "";
+  font-size: 16px;
+  display: inline-block;
+  min-width: 20px;
+  color: #f2c811;
+  cursor: pointer;
+  transition: tra;
+}
+.pricing-page .pricing .addon:checked + label:before {
+  font-family: "icomoon";
+  content: "";
+  font-size: 16px;
+  color: #f2c811;
+  display: inline-block;
+  min-width: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.pricing-page .form-check.form-switch .form-check-input {
+  width: 38px;
+  height: 20px;
+  background-color: #B0BBC9;
+  border: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+}
+.pricing-page .form-check.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
+  box-shadow: none;
+}
+.pricing-page .form-check.form-switch .form-check-input:checked {
+  background-color: #0BD474;
+}
+.pricing-page .form-check-input:checked {
+  background-color: #0BD474;
+  border-color: #000000;
+}
+.pricing-page .form-check .form-check-input {
+  border: 1px solid #000000;
+}
+.pricing-page .request-link {
+  font-weight: normal;
+  font-size: 26px;
+  color: #f2c811;
+  text-decoration: underline;
+}
+.pricing-page .request-link:hover {
+  color: #000000;
+}
+.pricing-page .accordion-body {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Merriweather", sans-serif;
+  color: #000000;
+  padding: 14px 0;
+}
+.pricing-page .accordion-body a {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Merriweather", sans-serif;
+}
+.pricing-page .accordion-button {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Merriweather", sans-serif;
+  color: #333;
+  padding: 14px 0;
+}
+.pricing-page .accordion-button:focus {
+  box-shadow: none;
+}
+.pricing-page .accordion-button::after {
+  background-image: none;
+  font-family: iconfont !important;
+  content: "";
+  color: #000000;
+  font-size: 18px;
+}
+.pricing-page .accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: transparent;
+  box-shadow: none;
+}
+.pricing-page .accordion-button:not(.collapsed):after {
+  background-image: none;
+  color: #BBBBBB;
+}
+.pricing-page .form-control {
+  font-family: "Merriweather";
+  font-weight: normal;
+  font-size: 12px;
+  padding: 8px 10px;
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #EDEFF3;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.pricing-page .form-control:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #000000;
+}
+.pricing-page .form-control::placeholder {
+  color: #6C7B8E;
+}
+.pricing-page .form-control.mw-55px {
+  max-width: 55px;
+}
+.pricing-page .form-control.mh-35px {
+  max-height: 35px;
+}
+.pricing-page .form-control.lh-1 {
+  line-height: 15px !important;
+}
+.pricing-page .form-control.font-family-futura {
+  font-family: "Futura PT";
+}
+.pricing-page ul {
+  list-style-type: none;
+}
+.pricing-page .checkbox .form-check-input {
+  background: #FFFFFF;
+  border: 2px solid #EDEFF3;
+}
+.pricing-page .checkbox {
+  padding-left: 30px;
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+.pricing-page .checkbox input {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: -30px;
+}
+.pricing-page .checkbox input:checked + label::before {
+  border-color: #585858;
+}
+.pricing-page .checkbox input:checked + label::after {
+  font-family: iconfont !important;
+  content: "";
+  display: inline-block;
+  font-size: 9px;
+  color: #585858;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  margin-left: -30px;
+}
+.pricing-page .checkbox label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #202325;
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+}
+.pricing-page .checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  margin-left: -30px;
+  border: 2px solid #EDEFF3;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+.pricing-page .checkbox.disabled label {
+  color: #000000;
+}
+.pricing-page .checkbox.disabled label::before {
+  opacity: 0.54;
+}
+.pricing-page .checkbox input:checked + label::before {
+  border: 2px solid #585858;
+  background-color: transparent;
+}
+.pricing-page .checkbox label::before {
+  border-radius: 0.25rem;
+}
+
+.inner-page .btn-outline-primary {
+  padding: 11px 30px;
+}
+.inner-page ul li {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 19px;
+  color: #848484;
+}
+
 body {
   font-family: "Roboto";
   background-color: #FCFCFC;
@@ -12860,522 +13304,6 @@ input {
   font-size: 12px;
   color: #848484;
   padding: 0 15px;
-}
-
-.pricing-page h1, .pricing-page .h1 {
-  font-family: "Futura PT";
-  font-weight: bold;
-  font-size: 44px;
-}
-.pricing-page h3, .pricing-page .h3 {
-  font-family: "Futura PT";
-  font-weight: bold;
-}
-.pricing-page h4, .pricing-page .h4 {
-  font-family: "Futura PT";
-  font-weight: bold;
-}
-.pricing-page .main-description {
-  font-family: "Futura PT";
-  font-weight: 400;
-  font-size: 21px !important;
-}
-.pricing-page .alert {
-  font-family: "Futura PT";
-  font-weight: 400;
-  font-size: 18px;
-  color: #000000;
-  border-radius: 10px;
-  padding: 26px 40px;
-}
-@media (max-width: 991px) {
-  .pricing-page .alert {
-    padding: 20px 34px;
-  }
-}
-.pricing-page .btn-close {
-  background: none !important;
-  font-size: 12px;
-  padding: 15px;
-  opacity: 1;
-}
-@media (max-width: 991px) {
-  .pricing-page .btn-close {
-    display: none;
-  }
-}
-.pricing-page .btn-close:focus {
-  box-shadow: none;
-}
-.pricing-page .btn-close i:hover {
-  color: #f2c811 !important;
-}
-.pricing-page .border-end-long-style:after {
-  content: "";
-  display: inline;
-  width: 1px;
-  height: 12px;
-  background-color: #E1E1E1;
-  border-radius: 4px;
-  position: absolute;
-}
-.pricing-page .border-end-short-style:after {
-  content: "";
-  display: inline;
-  width: 1px;
-  height: 6px;
-  background-color: #E1E1E1;
-  border-radius: 4px;
-  position: absolute;
-}
-.pricing-page .hero {
-  background: #292929;
-  padding-top: 166px;
-}
-.pricing-page .pricing {
-  background: linear-gradient(to bottom, #292929 55px, #FFFFFF 0);
-}
-.pricing-page .pricing label {
-  font-weight: 700;
-  font-size: 20px;
-  color: #000000;
-  padding: 15px 20px;
-  background: #FFFFFF;
-  border-radius: 10px;
-}
-.pricing-page .pricing .form-check-label {
-  font-family: "Futura PT";
-  font-weight: 400;
-  font-size: 14px;
-  color: #000000;
-}
-.pricing-page .pricing .card {
-  font-family: "Futura PT";
-  background: #FFFFFF;
-  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  padding: 0;
-}
-.pricing-page .pricing .card .card-header {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-  background-color: transparent;
-  padding: 30px;
-}
-.pricing-page .pricing .card .card-header .card-title {
-  font-family: "Futura PT";
-  font-size: 20px;
-}
-.pricing-page .pricing .card .card-text {
-  font-family: "Futura PT";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 13px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #292929;
-}
-.pricing-page .pricing .card .card-body {
-  padding: 30px 25px;
-}
-.pricing-page .pricing .card .card-footer {
-  border-top: 1px dashed rgba(0, 0, 0, 0.2);
-  background-color: transparent;
-  padding: 20px 30px 50px 30px;
-}
-.pricing-page .pricing .card .card-footer .main-description {
-  color: #000000;
-  font-size: 30px !important;
-}
-.pricing-page .pricing .card .card-footer sup {
-  top: -1rem;
-}
-.pricing-page .pricing .card ul li {
-  font-family: "Merriweather";
-  font-size: 12px;
-  padding: 6px 0;
-}
-.pricing-page .pricing .card ul li.inactive {
-  color: #B0BBC9;
-}
-.pricing-page .pricing .card .card-divider {
-  position: relative;
-}
-.pricing-page .pricing .card .card-divider:after {
-  display: block;
-  content: "";
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-  width: calc(100% + 3.125rem);
-  margin-left: -1.563rem;
-  position: absolute;
-  bottom: 30px;
-}
-.pricing-page .pricing .bootstrap-select {
-  flex-grow: 1 !important;
-}
-.pricing-page .pricing .bootstrap-select .dropdown-menu span {
-  display: none;
-}
-.pricing-page .pricing .btn-check:active + .btn-light:focus,
-.pricing-page .pricing .btn-check:checked + .btn-light:focus,
-.pricing-page .pricing .btn-light.active:focus,
-.pricing-page .pricing .btn-light:active:focus,
-.pricing-page .pricing .show > .btn-light.dropdown-toggle:focus {
-  box-shadow: none;
-}
-.pricing-page .pricing .bootstrap-select .dropdown-toggle:focus,
-.pricing-page .pricing .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
-  outline: 0 !important;
-  background-color: #FFFFFF;
-  border: 2px solid #EDEFF3;
-}
-.pricing-page .pricing .dropdown-toggle span {
-  color: #f2c811;
-}
-.pricing-page .pricing .dropdown-toggle span.icon-information {
-  color: #CACACA;
-}
-.pricing-page .pricing .dropdown-toggle::after {
-  border: none;
-  font-family: "icomoon";
-  content: "";
-  font-size: 10px;
-}
-.pricing-page .pricing .dropdown-item.active,
-.pricing-page .pricing .dropdown-item:active {
-  background-color: #f2c811;
-}
-.pricing-page .pricing .tooltip-inner {
-  font-family: "Merriweather";
-  font-weight: 400;
-  text-align: start !important;
-}
-.pricing-page .pricing .range-decor::after {
-  display: block;
-  content: "";
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-  width: calc(100% + 3.125rem);
-  margin-left: -1.563rem;
-  margin-bottom: 30px;
-}
-.pricing-page .pricing .options {
-  background: #F4F7FB;
-  border-radius: 100px;
-  cursor: pointer;
-  padding: 10px 20px;
-  transition: all 0.2s;
-  width: 100%;
-  border: 1px solid transparent;
-}
-.pricing-page .pricing .options .options-body {
-  display: none;
-  padding: 10px 20px;
-  border-top: 1px solid #0BD474;
-}
-.pricing-page .pricing .options.active {
-  background: #F5FDF9;
-  border: 1px solid #0BD474;
-  border-radius: 20px;
-}
-.pricing-page .pricing .options.active .options-body {
-  display: block;
-}
-.pricing-page .pricing .options .options-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-.pricing-page .pricing .options .options-header .label-wrapper {
-  display: flex;
-  align-items: center;
-}
-.pricing-page .pricing .addon {
-  display: none;
-}
-.pricing-page .pricing .addon + label {
-  user-select: none;
-  /* standard syntax */
-  -webkit-user-select: none;
-  /* webkit (safari, chrome) browsers */
-  -moz-user-select: none;
-  /* mozilla browsers */
-  -khtml-user-select: none;
-  /* webkit (konqueror) browsers */
-  -ms-user-select: none;
-  /* IE10+ */
-  cursor: pointer;
-}
-.pricing-page .pricing .addon + label:before {
-  font-family: "icomoon";
-  content: "";
-  font-size: 16px;
-  display: inline-block;
-  min-width: 20px;
-  color: #f2c811;
-  cursor: pointer;
-  transition: tra;
-}
-.pricing-page .pricing .addon:checked + label:before {
-  font-family: "icomoon";
-  content: "";
-  font-size: 16px;
-  color: #f2c811;
-  display: inline-block;
-  min-width: 20px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.pricing-page .form-check.form-switch .form-check-input {
-  width: 38px;
-  height: 20px;
-  background-color: #B0BBC9;
-  border: none;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
-}
-.pricing-page .form-check.form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
-  box-shadow: none;
-}
-.pricing-page .form-check.form-switch .form-check-input:checked {
-  background-color: #0BD474;
-}
-.pricing-page .form-check-input:checked {
-  background-color: #0BD474;
-  border-color: #000000;
-}
-.pricing-page .form-check .form-check-input {
-  border: 1px solid #000000;
-}
-.pricing-page .request-link {
-  font-weight: normal;
-  font-size: 26px;
-  color: #f2c811;
-  text-decoration: underline;
-}
-.pricing-page .request-link:hover {
-  color: #000000;
-}
-.pricing-page .accordion-body {
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Merriweather", sans-serif;
-  color: #000000;
-  padding: 14px 0;
-}
-.pricing-page .accordion-body a {
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Merriweather", sans-serif;
-}
-.pricing-page .accordion-button {
-  font-size: 13px;
-  font-weight: 600;
-  font-family: "Merriweather", sans-serif;
-  color: #333;
-  padding: 14px 0;
-}
-.pricing-page .accordion-button:focus {
-  box-shadow: none;
-}
-.pricing-page .accordion-button::after {
-  background-image: none;
-  font-family: iconfont !important;
-  content: "";
-  color: #000000;
-  font-size: 18px;
-}
-.pricing-page .accordion-button:not(.collapsed) {
-  color: #000000;
-  background-color: transparent;
-  box-shadow: none;
-}
-.pricing-page .accordion-button:not(.collapsed):after {
-  background-image: none;
-  color: #BBBBBB;
-}
-.pricing-page .form-control {
-  font-family: "Merriweather";
-  font-weight: normal;
-  font-size: 12px;
-  padding: 8px 10px;
-  background-color: transparent;
-  color: #000000;
-  border: 2px solid #EDEFF3;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.pricing-page .form-control:focus {
-  background-color: transparent;
-  outline: none;
-  box-shadow: none;
-  border: 2px solid #000000;
-}
-.pricing-page .form-control::placeholder {
-  color: #6C7B8E;
-}
-.pricing-page .form-control.mw-55px {
-  max-width: 55px;
-}
-.pricing-page .form-control.mh-35px {
-  max-height: 35px;
-}
-.pricing-page .form-control.lh-1 {
-  line-height: 15px !important;
-}
-.pricing-page .form-control.font-family-futura {
-  font-family: "Futura PT";
-}
-.pricing-page ul {
-  list-style-type: none;
-}
-.pricing-page .checkbox .form-check-input {
-  background: #FFFFFF;
-  border: 2px solid #EDEFF3;
-}
-.pricing-page .checkbox {
-  padding-left: 30px;
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
-}
-.pricing-page .checkbox input {
-  opacity: 0;
-  position: absolute;
-  z-index: 1;
-  cursor: pointer;
-  margin-left: -30px;
-}
-.pricing-page .checkbox input:checked + label::before {
-  border-color: #585858;
-}
-.pricing-page .checkbox input:checked + label::after {
-  font-family: iconfont !important;
-  content: "";
-  display: inline-block;
-  font-size: 9px;
-  color: #585858;
-  position: absolute;
-  left: 4px;
-  top: 4px;
-  margin-left: -30px;
-}
-.pricing-page .checkbox label {
-  font-size: 12px;
-  font-weight: bold;
-  color: #202325;
-  display: inline-block;
-  position: relative;
-  padding-left: 10px;
-}
-.pricing-page .checkbox label::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  top: 0;
-  margin-left: -30px;
-  border: 2px solid #EDEFF3;
-  border-radius: 0.25rem;
-  background-color: #fff;
-}
-.pricing-page .checkbox.disabled label {
-  color: #000000;
-}
-.pricing-page .checkbox.disabled label::before {
-  opacity: 0.54;
-}
-.pricing-page .checkbox input:checked + label::before {
-  border: 2px solid #585858;
-  background-color: transparent;
-}
-.pricing-page .checkbox label::before {
-  border-radius: 0.25rem;
-}
-
-.home-page h1, .home-page .h1 {
-  font-weight: bold;
-  font-size: 3.125rem;
-}
-.home-page h3, .home-page .h3 {
-  font-weight: bold;
-  font-size: 1.875rem;
-}
-.home-page h4, .home-page .h4 {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-.home-page .hero {
-  padding-top: 150px;
-}
-.home-page .hero-details .hero-block {
-  padding: 30px;
-}
-.home-page .hero-details .hero-block.search label {
-  font-size: 14px;
-  color: #585858;
-  padding: 0;
-}
-.home-page .card {
-  padding: 0 20px 25px 20px;
-}
-.home-page .card .card-title {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 20px;
-}
-.home-page .card .card-body {
-  padding-top: 10px;
-}
-.home-page .badge {
-  font-size: 12px;
-  padding: 9px 15px;
-}
-.home-page .badge.badge-position {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: bold;
-  font-size: 14px;
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  padding: 6px 16px;
-  border-radius: 5px;
-}
-.home-page .dropdown-menu {
-  border: 1px solid #585858;
-  border-radius: 10px;
-}
-.home-page .dropdown-menu .dropdown-item {
-  font-size: 16px;
-  color: #585858;
-}
-.home-page .dropdown-menu .dropdown-item.active {
-  color: #000000;
-  background-color: #FAFAFA;
-  padding: 11px 15px;
-}
-.home-page .dropdown-menu .dropdown-item:hover {
-  color: #000000;
-  background: #FAFAFA;
-}
-.home-page .search .input-group {
-  border: 1px solid #585858;
-}
-.home-page .btn-light {
-  border: 1px solid #585858;
-}
-
-.inner-page .btn-outline-primary {
-  padding: 11px 30px;
-}
-.inner-page ul li {
-  font-family: "Merriweather";
-  font-style: italic;
-  font-weight: 300;
-  font-size: 19px;
-  color: #848484;
 }
 
 @media (max-width: 991px) {
