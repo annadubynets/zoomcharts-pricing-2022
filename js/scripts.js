@@ -31,6 +31,28 @@ $(function() {
 
         syncCheckboxState();
     });
+
+    // the logic which synchronizes the input and range controls of number of users
+    // on the pricing page
+    var pricingRangeGroups = document.querySelectorAll('.pricing-range-group');
+    pricingRangeGroups.forEach(function(rangeGroup) {
+        var formInput = rangeGroup.querySelector('[type="number"]');
+        var formRange = rangeGroup.querySelector('[type="range"]');
+        
+        formInput.addEventListener('change', function() {
+            if (formRange.value != this.value) {
+                formRange.value = this.value;
+                formRange.dispatchEvent(new Event('input', {bubbles:true}));
+            }
+        });
+
+        formRange.addEventListener('input', function() {
+            if (formInput.value != this.value) {
+                formInput.value = this.value;
+                formInput.dispatchEvent(new Event('change', {bubbles:true}));
+            }
+        })
+    });
 })
 
 $(function() {
