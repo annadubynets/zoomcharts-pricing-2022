@@ -17,17 +17,17 @@
         $.extend(true, setting, options);
         // 规定好每张图片处于的位置和状态
         var states = [
-            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0 },
-            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0 },
-            { $zIndex: 2, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0.4 },
+            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0, click: function() {} },
+            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0, click: function() {} },
+            { $zIndex: 2, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0.4, click: function() {} },
 
-            { $zIndex: 3, width: "30%", height: "74.65%", top: "11.98%", left: "0px", $opacity: 0.7 },
-            { $zIndex: 4, width: "50%", height: "98.63%", top: 0, left: "25%", $opacity: 1 },
-            { $zIndex: 3, width: "30%", height: "74.65%", top: "11.98%", left: "70%", $opacity: 0.7 },
+            { $zIndex: 3, width: "30%", height: "74.65%", top: "11.98%", left: "0px", $opacity: 0.7, click: function() { prev(); } },
+            { $zIndex: 4, width: "50%", height: "98.63%", top: 0, left: "25%", $opacity: 1, click: function(e) { handleCenteredSlideClick(e); } },
+            { $zIndex: 3, width: "30%", height: "74.65%", top: "11.98%", left: "70%", $opacity: 0.7, click: function() { next(); } },
 
-            { $zIndex: 2, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0 },
-            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0 },
-            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0 }
+            { $zIndex: 2, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0, click: function() {} },
+            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0, click: function() {} },
+            { $zIndex: 1, width: "40%", height: "98.63%", top: 0, left: "34.88%", $opacity: 0, click: function() {} }
         ];
 
         var $lis = $ele.find('li');
@@ -39,8 +39,7 @@
         });
 
         $ele.find('.hi-prev').on('click', function() {
-            states.push(states.shift());
-            move();
+            prev();
         });
 
         $ele.on('mouseenter', function() {
@@ -58,15 +57,28 @@
         function move() {
             $lis.each(function(index, element) {
                 var state = states[index];
+                $(element).off('click');
+                $(element).on('click', state.click);
                 $(element).css('zIndex', state.$zIndex).finish().animate(state, setting.speed).find('img').css('opacity', state.$opacity);
             });
         }
 
-        // 切换到下一张
         function next() {
-            // 原理：把数组最后一个元素移到第一个
             states.unshift(states.pop());
             move();
+        }
+
+        function prev() {
+            states.push(states.shift());
+            move();
+        }
+
+        function handleCenteredSlideClick(e) {
+            console.log(e);
+            var detailsUrl = $(e.target).attr('data-details');
+            if (detailsUrl) {
+                window.open(detailsUrl, '_blank').focus();
+            }
         }
 
         function autoPlay() {
