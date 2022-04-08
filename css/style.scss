@@ -161,6 +161,7 @@ a {
 .bootstrap-select .dropdown-toggle:focus,
 .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
     outline: 0!important;
+    border-color: $black;
 }
 
 textarea {
