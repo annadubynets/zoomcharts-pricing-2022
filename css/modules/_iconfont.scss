@@ -1,10 +1,10 @@
 @font-face {
     font-family: "iconfont";
-    src: url("../fonts/iconfont.eot?95d48e7b3a1021ee558c69ac9e6592b7?#iefix") format("embedded-opentype"),
-url("../fonts/iconfont.woff2?95d48e7b3a1021ee558c69ac9e6592b7") format("woff2"),
-url("../fonts/iconfont.woff?95d48e7b3a1021ee558c69ac9e6592b7") format("woff"),
-url("../fonts/iconfont.ttf?95d48e7b3a1021ee558c69ac9e6592b7") format("truetype"),
-url("../fonts/iconfont.svg?95d48e7b3a1021ee558c69ac9e6592b7#iconfont") format("svg");
+    src: url("../fonts/iconfont.eot?b448da3d1122cb0e9713130407c4a5d0?#iefix") format("embedded-opentype"),
+url("../fonts/iconfont.woff2?b448da3d1122cb0e9713130407c4a5d0") format("woff2"),
+url("../fonts/iconfont.woff?b448da3d1122cb0e9713130407c4a5d0") format("woff"),
+url("../fonts/iconfont.ttf?b448da3d1122cb0e9713130407c4a5d0") format("truetype"),
+url("../fonts/iconfont.svg?b448da3d1122cb0e9713130407c4a5d0#iconfont") format("svg");
 }
 
 i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
@@ -36,15 +36,27 @@ i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
 .iconfont-eye:before {
     content: "\f106";
 }
-.iconfont-information:before {
+.iconfont-facebook:before {
     content: "\f107";
 }
-.iconfont-smile:before {
+.iconfont-information:before {
     content: "\f108";
 }
-.iconfont-star-half:before {
+.iconfont-linkedin:before {
     content: "\f109";
 }
-.iconfont-star:before {
+.iconfont-mail:before {
     content: "\f10a";
+}
+.iconfont-smile:before {
+    content: "\f10b";
+}
+.iconfont-star-half:before {
+    content: "\f10c";
+}
+.iconfont-star:before {
+    content: "\f10d";
+}
+.iconfont-twitter:before {
+    content: "\f10e";
 }

@@ -5,8 +5,12 @@
     "control": "\\f104",
     "ellipse": "\\f105",
     "eye": "\\f106",
-    "information": "\\f107",
-    "smile": "\\f108",
-    "star-half": "\\f109",
-    "star": "\\f10a"
+    "facebook": "\\f107",
+    "information": "\\f108",
+    "linkedin": "\\f109",
+    "mail": "\\f10a",
+    "smile": "\\f10b",
+    "star-half": "\\f10c",
+    "star": "\\f10d",
+    "twitter": "\\f10e"
 }
