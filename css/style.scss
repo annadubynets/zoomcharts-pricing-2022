@@ -541,6 +541,12 @@ input {
         justify-content: center;
         align-items: center;
         font-size: 20px;
+        span {
+            font-size: 14px;
+            @media (max-width: 768px) {
+                font-size: 10px;
+            }
+        }
         &:focus {
             box-shadow: none;
         }
@@ -563,6 +569,7 @@ input {
 
 .page-item.disabled .page-link {
     color: #E0E0E0;
+    background-color: transparent;
 }
 
 .list-item {
@@ -807,6 +814,9 @@ input {
     }
     .pb-80px {
         padding-bottom: 40px;
+    }
+    .pb-100px {
+        padding-bottom: 60px;
     }
     .pb-120px {
         padding-bottom: 40px;
