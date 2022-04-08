@@ -12732,12 +12732,6 @@ p {
     font-size: 16px !important;
   }
 }
-.home-page .btn-primary {
-  background: linear-gradient(to right, #1B9EFF 10%, #BF3EFE 90%) !important;
-}
-.home-page .btn-primary:hover {
-  box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
-}
 .home-page .hero {
   padding-top: 150px;
 }
@@ -12757,6 +12751,11 @@ p {
 @media (max-width: 576px) {
   .home-page .hero-details .hero-block {
     padding: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .home-page .hero-details .hero-bg {
+    min-height: 80vh;
   }
 }
 .home-page .card {
