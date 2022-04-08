@@ -65,6 +65,9 @@ $tooltip-padding-x: .625rem;
 
 .ps-60px {
     padding-left: 60px!important;
+    @media (max-width: 576px) {
+        padding-left: 15px!important;
+    }
 }
 
 .p-50px {

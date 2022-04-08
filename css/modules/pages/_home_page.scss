@@ -2,6 +2,9 @@
     h1 {
         font-weight: bold;
         font-size: 3.125rem;
+        @media (max-width: 576px) {
+            font-size: 2.188rem!important;
+        }
     }
     h3 {
         font-weight: bold;
@@ -10,9 +13,32 @@
     h4 {
         font-weight: bold;
         font-size: 1.5rem;
+        @media (max-width: 576px) {
+            font-size: 1.5rem!important;
+        }
+    }
+    .font-size-20px {
+        @media (max-width: 576px) {
+            font-size: 18px!important;
+        }
+    }
+    .hero-subtitle {
+        font-size: 18px;
+        @media (max-width: 576px) {
+            font-size: 16px!important;
+        }
+    }
+    .btn-primary {
+        background: linear-gradient(to right, $deepskyblue 10%, $mediumpurple 90%)!important;
+        &:hover {
+            box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+        }
     }
     .hero {
         padding-top: 150px;
+        @media (max-width: 576px) {
+            padding-top: 100px;
+        }
     }
     .hero-details {
         .hero-block {
@@ -24,6 +50,9 @@
                     padding: 0;
                 }
             }
+            @media (max-width: 576px) {
+                padding: 15px;
+            }
         }
     }
     .card {
@@ -31,11 +60,19 @@
         .card-title {
             font-family: 'Roboto';
             font-weight: 500;
-            font-size: 20px;
+            font-size: 20px!important;
         }
         .card-body {
             padding-top: 10px;
         }
+        @media (max-width: 576px) {
+            padding: 0 15px 25px 15px;
+        }
+    }
+    .badge-container-top {
+        top: -5%;
+        right: initial;
+        left: 50%;
     }
     .badge {
         font-size: 12px;
@@ -48,6 +85,14 @@
             bottom: 8px;
             right: 8px;
             padding: 6px 16px;
+            border-radius: 5px;
+        }
+        &.badge-position-top {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            font-weight: 500;
+            font-size: 16px!important;
+            margin-left: -50%;
+            padding: 6px 24px;
             border-radius: 5px;
         }
     }
