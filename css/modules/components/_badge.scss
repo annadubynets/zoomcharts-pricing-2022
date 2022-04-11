@@ -1,0 +1,28 @@
+@mixin badge-style {
+    font-size: 12px;
+    padding: 9px 15px;
+    &.badge-position {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: bold;
+        font-size: 14px;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        padding: 6px 16px;
+        border-radius: 5px;
+    }
+    &.badge-position-top {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        font-weight: 500;
+        font-size: 16px!important;
+        margin-left: -50%;
+        padding: 6px 24px;
+        border-radius: 5px;
+    }
+}
+
+@mixin badge-container-top {
+    top: -5%;
+    right: initial;
+    left: 50%;
+}

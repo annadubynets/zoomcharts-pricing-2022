@@ -26,4 +26,13 @@
             background: $black;
         }
     }
+    .card {
+        @include card-style;
+    }
+    .badge-container-top {
+        @include badge-container-top;
+    }
+    .badge {
+        @include badge-style;
+    }
 }

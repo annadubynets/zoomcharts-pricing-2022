@@ -11,6 +11,8 @@
 @import "modules/pages/pricing_page";
 @import "modules/pages/home_page";
 @import "modules/pages/inner_page";
+@import "modules/components/card";
+@import "modules/components/badge";
 body {
     font-family: 'Roboto';
     background-color: $whitesmoke;
