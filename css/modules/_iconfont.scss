@@ -1,10 +1,10 @@
 @font-face {
     font-family: "iconfont";
-    src: url("../fonts/iconfont.eot?b448da3d1122cb0e9713130407c4a5d0?#iefix") format("embedded-opentype"),
-url("../fonts/iconfont.woff2?b448da3d1122cb0e9713130407c4a5d0") format("woff2"),
-url("../fonts/iconfont.woff?b448da3d1122cb0e9713130407c4a5d0") format("woff"),
-url("../fonts/iconfont.ttf?b448da3d1122cb0e9713130407c4a5d0") format("truetype"),
-url("../fonts/iconfont.svg?b448da3d1122cb0e9713130407c4a5d0#iconfont") format("svg");
+    src: url("../fonts/iconfont.eot?5743eb6f736303cb7f86485fd2770c83?#iefix") format("embedded-opentype"),
+url("../fonts/iconfont.woff2?5743eb6f736303cb7f86485fd2770c83") format("woff2"),
+url("../fonts/iconfont.woff?5743eb6f736303cb7f86485fd2770c83") format("woff"),
+url("../fonts/iconfont.ttf?5743eb6f736303cb7f86485fd2770c83") format("truetype"),
+url("../fonts/iconfont.svg?5743eb6f736303cb7f86485fd2770c83#iconfont") format("svg");
 }
 
 i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
@@ -21,42 +21,48 @@ i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
 .iconfont-arrow-down:before {
     content: "\f101";
 }
-.iconfont-checkbox:before {
+.iconfont-chat:before {
     content: "\f102";
 }
-.iconfont-close:before {
+.iconfont-checkbox:before {
     content: "\f103";
 }
-.iconfont-control:before {
+.iconfont-close:before {
     content: "\f104";
 }
-.iconfont-ellipse:before {
+.iconfont-control:before {
     content: "\f105";
 }
-.iconfont-eye:before {
+.iconfont-dropdown-arrow:before {
     content: "\f106";
 }
-.iconfont-facebook:before {
+.iconfont-ellipse:before {
     content: "\f107";
 }
-.iconfont-information:before {
+.iconfont-eye:before {
     content: "\f108";
 }
-.iconfont-linkedin:before {
+.iconfont-facebook:before {
     content: "\f109";
 }
-.iconfont-mail:before {
+.iconfont-information:before {
     content: "\f10a";
 }
-.iconfont-smile:before {
+.iconfont-linkedin:before {
     content: "\f10b";
 }
-.iconfont-star-half:before {
+.iconfont-mail:before {
     content: "\f10c";
 }
-.iconfont-star:before {
+.iconfont-smile:before {
     content: "\f10d";
 }
-.iconfont-twitter:before {
+.iconfont-star-half:before {
     content: "\f10e";
+}
+.iconfont-star:before {
+    content: "\f10f";
+}
+.iconfont-twitter:before {
+    content: "\f110";
 }
