@@ -83,12 +83,12 @@
     }
     .btn-close {
         background-image: none;
+        opacity: 1;
         &::after {
             display: inline;
             content: "\f104";
             font-family: iconfont !important;
             color: $deepskyblue;
-            opacity: 1;
         }
         &:hover {
             color: #5979FF;

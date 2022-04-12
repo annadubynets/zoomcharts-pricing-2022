@@ -12944,13 +12944,13 @@ p {
 }
 .inner-page .btn-close {
   background-image: none;
+  opacity: 1;
 }
 .inner-page .btn-close::after {
   display: inline;
   content: "";
   font-family: iconfont !important;
   color: #1B9EFF;
-  opacity: 1;
 }
 .inner-page .btn-close:hover {
   color: #5979FF;
