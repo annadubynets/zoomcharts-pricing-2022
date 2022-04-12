@@ -644,7 +644,7 @@
                                 <h3>US Department of Transportation - Traffic accident analysis 1990 - 2015</h3>
                             </div>
                             <div class="col-lg-3 offset-lg-3 text-lg-end">
-                                <a href="#" class="btn btn-outline-primary">Download .pbix</a>
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#downloadPbixModal">Download .pbix</button>
                             </div>
                         </div>
                         <div class="row mb-30px">
@@ -671,10 +671,10 @@
                             </div>
                             <div class="col-lg-5 offset-lg-3 d-flex justify-content-end">
                                 <p class="descr-border fw-light">Share template with others
-                                    <span class="ps-3"><a href="#"><i class="iconfont-facebook font-size-18px text-primary pe-2"></i></a>
-                                        <a href="#"><i class="iconfont-twitter font-size-18px text-primary pe-2"></i></a>
-                                        <a href="#"><i class="iconfont-linkedin font-size-18px text-primary pe-2"></i></a>
-                                        <a href="#"><i class="iconfont-mail font-size-18px text-primary pe-2"></i></span></a>
+                                    <span class="ps-3"><a href="#" class="btn-link"><i class="iconfont-facebook font-size-18px pe-2"></i></a>
+                                        <a href="#" class="btn-link"><i class="iconfont-twitter font-size-18px pe-2"></i></a>
+                                        <a href="#" class="btn-link"><i class="iconfont-linkedin font-size-18px pe-2"></i></a>
+                                        <a href="#" class="btn-link"><i class="iconfont-mail font-size-18px pe-2"></i></span></a>
                                 </p>
 
                             </div>
@@ -1356,6 +1356,74 @@
             </div>
         </div>
     </footer>
+
+    <!-- Download .pbix Modal -->
+    <div class="modal fade" id="downloadPbixModal" tabindex="-1" aria-labelledby="downloadPbixModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="text-end pt-3 pe-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-header justify-content-center border-0">
+                    <h3 class="modal-title" id="downloadPbixModalLabel">Try it in your Power BI!</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <a href="#" class="btn btn-outline-primary d-block mb-5">Log in to Download</a>
+                            <div class="border-bottom"></div>
+
+                            <h5 class="my-5 text-center font-size-18px">New here? Fill up the form below and download!</h5>
+
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputFirstName" class="form-label">First Name*</label>
+                                    <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputLastName" class="form-label">Last Name*</label>
+                                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputEmail" class="form-label">E-mail*</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                                </div>
+                                <div class="col-12 pb-2">
+                                    <label for="inputCompany" class="form-label">Company</label>
+                                    <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                                </div>
+                                <div class="col-12 pb-5">
+                                    <div class="checkbox primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="invalidCheckOffers">
+                                        <label class="form-check-label label-style p-0" for="invalidCheckOffers">
+                                            I would like to receive news and special offers
+                                        </label>
+                                    </div>
+                                    <div class="checkbox primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="invalidCheckTerms">
+                                        <label class="form-check-label label-style p-0" for="invalidCheckTerms">
+                                            I agree to <a href="#" class="btn-link font-size-16px">terms and conditions</a>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox primary mb-0">
+                                        <input class="form-check-input" type="checkbox" id="invalidJoinPowerGroup">
+                                        <label class="form-check-label label-style p-0" for="invalidJoinPowerGroup">
+                                            Join PowerGroup<i class="iconfont-information font-size-16px text-secondary align-middle ps-1" data-bs-toggle="tooltip" data-bs-placement="right" title="Text about what it is. Text about what it is. Text about what it is.Text about what it is. Text about what it is."></i>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary d-block mt-0">Download template</button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.bundle.min.js "></script>
