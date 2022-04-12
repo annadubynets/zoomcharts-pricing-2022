@@ -1,10 +1,10 @@
 @font-face {
     font-family: "iconfont";
-    src: url("../fonts/iconfont.eot?5743eb6f736303cb7f86485fd2770c83?#iefix") format("embedded-opentype"),
-url("../fonts/iconfont.woff2?5743eb6f736303cb7f86485fd2770c83") format("woff2"),
-url("../fonts/iconfont.woff?5743eb6f736303cb7f86485fd2770c83") format("woff"),
-url("../fonts/iconfont.ttf?5743eb6f736303cb7f86485fd2770c83") format("truetype"),
-url("../fonts/iconfont.svg?5743eb6f736303cb7f86485fd2770c83#iconfont") format("svg");
+    src: url("../fonts/iconfont.eot?7808a5fbfa537efd91e2414a4d9bb81f?#iefix") format("embedded-opentype"),
+url("../fonts/iconfont.woff2?7808a5fbfa537efd91e2414a4d9bb81f") format("woff2"),
+url("../fonts/iconfont.woff?7808a5fbfa537efd91e2414a4d9bb81f") format("woff"),
+url("../fonts/iconfont.ttf?7808a5fbfa537efd91e2414a4d9bb81f") format("truetype"),
+url("../fonts/iconfont.svg?7808a5fbfa537efd91e2414a4d9bb81f#iconfont") format("svg");
 }
 
 i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
@@ -54,15 +54,18 @@ i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
 .iconfont-mail:before {
     content: "\f10c";
 }
-.iconfont-smile:before {
+.iconfont-play:before {
     content: "\f10d";
 }
-.iconfont-star-half:before {
+.iconfont-smile:before {
     content: "\f10e";
 }
-.iconfont-star:before {
+.iconfont-star-half:before {
     content: "\f10f";
 }
-.iconfont-twitter:before {
+.iconfont-star:before {
     content: "\f110";
+}
+.iconfont-twitter:before {
+    content: "\f111";
 }

@@ -35,4 +35,30 @@
     .badge {
         @include badge-style;
     }
+    .play-button-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .play-btn {
+        background: white;
+        border: 1px solid $deepskyblue;
+        border-radius: 100px;
+        padding: .375rem 1.375rem .375rem .375rem;
+        font-size: 20px;
+        color: $black;
+    }
+    .play-icon-style {
+        width: 39px;
+        height: 39px;
+        background: linear-gradient(221.99deg, #B742FE 4.74%, #1B9EFF 100%);
+        border-radius: 100px;
+        margin-right: 18px;
+    }
 }
