@@ -12834,6 +12834,9 @@ p {
 .inner-page .btn-outline-primary {
   padding: 11px 30px;
 }
+.inner-page ul.list-items {
+  margin-bottom: 40px;
+}
 .inner-page ul.list-items li {
   font-family: "Merriweather";
   font-style: italic;
@@ -12980,6 +12983,9 @@ p {
   }
   .inner-page .hero-details .font-size-19px {
     font-size: 1rem !important;
+  }
+  .inner-page .hero-details ul.list-items {
+    margin-bottom: 10px;
   }
   .inner-page .hero-details ul.list-items li {
     font-size: 1rem;
