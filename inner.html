@@ -658,7 +658,7 @@
                                 <span class="badge badge-position top bg-white text-black mb-1">
                                     <i class="iconfont-eye font-size-12px pe-2"></i>10500
                                 </span>
-                                <div class="play-button-container d-lg-block d-none">
+                                <div class="play-button-container d-lg-flex d-none">
                                     <button type="button" class="btn play-btn d-flex justify-content-center align-items-center">
                                         <div class="play-icon-style d-flex justify-content-center align-items-center"><i class="iconfont-play text-white font-size-16px d-grid"></i></div>
                                         Interract
@@ -666,7 +666,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mb-lg-0 mb-4">
+                        <div class="row mb-lg-5 mb-4">
                             <div class="col-lg-4">
                                 <span class="badge bg-light text-dark mb-3">Business</span>
                                 <span class="badge bg-light text-dark mb-3">Economics</span>
@@ -700,7 +700,7 @@
                                 <h4 class="mb-30px">Kā šo template vari pielietot tu</h4>
                                 <p class="font-family-second fst-italic font-size-19px text-muted mb-40px">Apraksts par to, kādos usecasos tuv ari pielietot šo template. Var būt arī tehnisks apraksts, ko vajag pamainīt, kā ielādēt savus datus u tml.</p>
 
-                                <a href="#" class="btn btn-outline-primary d-lg-inline d-none">Download .pbix</a>
+                                <button type="button" class="btn btn-outline-primary d-lg-inline d-none" data-bs-toggle="modal" data-bs-target="#downloadPbixModal">Download .pbix</button>
                             </div>
                             <div class="col-lg-5 offset-lg-1">
                                 <h4 class="mb-30px">ZoomCharts visuals used</h4>
@@ -721,7 +721,7 @@
                                 <div class="rounded border-dotted py-5 px-4 text-center d-lg-block d-none">
                                     <h4 class="mb-30px">Need some help?</h4>
                                     <p class="font-family-second fst-italic font-size-19px text-muted mb-40px">For help with a template, book a call and we will answer all your questions!</p>
-                                    <a href="#" class="btn btn-outline-primary">Book a call</a>
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bookCallModal">Book a call</button>
                                 </div>
 
                                 <div class="rounded border-dotted py-4 px-3 text-center d-lg-none d-block mb-4">
@@ -1440,6 +1440,59 @@
                                 </div>
 
                                 <button type="submit" class="btn btn-primary d-block mt-0">Download template</button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Book a call Modal -->
+    <div class="modal fade" id="bookCallModal" tabindex="-1" aria-labelledby="bookCallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="text-end pt-3 pe-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-header justify-content-center border-0">
+                    <h3 class="modal-title" id="bookCallModalLabel">Book a call</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <form class="row g-3">
+                                <div class="col-12">
+                                    <label for="inputName" class="form-label">Name*</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputBusinessEmail" class="form-label">Business Email*</label>
+                                    <input type="email" class="form-control" id="inputBusinessEmail" placeholder="Business Email">
+                                </div>
+                                <div class="col-12 pb-5">
+                                    <label for="inputCompany" class="form-label">Company*</label>
+                                    <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                                </div>
+                                <div class="col-12 pb-5 mt-0">
+                                    <div class="checkbox primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="invalidCheckOffers">
+                                        <label class="form-check-label label-style p-0" for="invalidCheckOffers">
+                                            I would like to receive news and special offers
+                                        </label>
+                                    </div>
+                                    <div class="checkbox primary mb-0">
+                                        <input class="form-check-input" type="checkbox" id="invalidCheckTerms">
+                                        <label class="form-check-label label-style p-0" for="invalidCheckTerms">
+                                            I agree to <a href="#" class="btn-link font-size-16px">terms and conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary d-block mt-0">Book a call</button>
 
                             </form>
                         </div>

@@ -12956,7 +12956,7 @@ p {
 }
 .inner-page .btn-close::after {
   display: inline;
-  content: "";
+  content: "";
   font-family: iconfont !important;
   color: #1B9EFF;
 }
