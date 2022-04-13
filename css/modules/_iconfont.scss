@@ -1,10 +1,10 @@
 @font-face {
     font-family: "iconfont";
-    src: url("../fonts/iconfont.eot?7808a5fbfa537efd91e2414a4d9bb81f?#iefix") format("embedded-opentype"),
-url("../fonts/iconfont.woff2?7808a5fbfa537efd91e2414a4d9bb81f") format("woff2"),
-url("../fonts/iconfont.woff?7808a5fbfa537efd91e2414a4d9bb81f") format("woff"),
-url("../fonts/iconfont.ttf?7808a5fbfa537efd91e2414a4d9bb81f") format("truetype"),
-url("../fonts/iconfont.svg?7808a5fbfa537efd91e2414a4d9bb81f#iconfont") format("svg");
+    src: url("../fonts/iconfont.eot?13264d86c35a4e972708f6aa085bdf37?#iefix") format("embedded-opentype"),
+url("../fonts/iconfont.woff2?13264d86c35a4e972708f6aa085bdf37") format("woff2"),
+url("../fonts/iconfont.woff?13264d86c35a4e972708f6aa085bdf37") format("woff"),
+url("../fonts/iconfont.ttf?13264d86c35a4e972708f6aa085bdf37") format("truetype"),
+url("../fonts/iconfont.svg?13264d86c35a4e972708f6aa085bdf37#iconfont") format("svg");
 }
 
 i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
@@ -21,51 +21,57 @@ i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
 .iconfont-arrow-down:before {
     content: "\f101";
 }
-.iconfont-chat:before {
+.iconfont-arrow-next:before {
     content: "\f102";
 }
-.iconfont-checkbox:before {
+.iconfont-arrow-prev:before {
     content: "\f103";
 }
-.iconfont-close:before {
+.iconfont-chat:before {
     content: "\f104";
 }
-.iconfont-control:before {
+.iconfont-checkbox:before {
     content: "\f105";
 }
-.iconfont-dropdown-arrow:before {
+.iconfont-close:before {
     content: "\f106";
 }
-.iconfont-ellipse:before {
+.iconfont-control:before {
     content: "\f107";
 }
-.iconfont-eye:before {
+.iconfont-dropdown-arrow:before {
     content: "\f108";
 }
-.iconfont-facebook:before {
+.iconfont-ellipse:before {
     content: "\f109";
 }
-.iconfont-information:before {
+.iconfont-eye:before {
     content: "\f10a";
 }
-.iconfont-linkedin:before {
+.iconfont-facebook:before {
     content: "\f10b";
 }
-.iconfont-mail:before {
+.iconfont-information:before {
     content: "\f10c";
 }
-.iconfont-play:before {
+.iconfont-linkedin:before {
     content: "\f10d";
 }
-.iconfont-smile:before {
+.iconfont-mail:before {
     content: "\f10e";
 }
-.iconfont-star-half:before {
+.iconfont-play:before {
     content: "\f10f";
 }
-.iconfont-star:before {
+.iconfont-smile:before {
     content: "\f110";
 }
-.iconfont-twitter:before {
+.iconfont-star-half:before {
     content: "\f111";
+}
+.iconfont-star:before {
+    content: "\f112";
+}
+.iconfont-twitter:before {
+    content: "\f113";
 }

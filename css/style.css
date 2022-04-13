@@ -11047,7 +11047,7 @@ textarea.form-control-lg {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/iconfont.eot?7808a5fbfa537efd91e2414a4d9bb81f?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?7808a5fbfa537efd91e2414a4d9bb81f") format("woff2"), url("../fonts/iconfont.woff?7808a5fbfa537efd91e2414a4d9bb81f") format("woff"), url("../fonts/iconfont.ttf?7808a5fbfa537efd91e2414a4d9bb81f") format("truetype"), url("../fonts/iconfont.svg?7808a5fbfa537efd91e2414a4d9bb81f#iconfont") format("svg");
+  src: url("../fonts/iconfont.eot?13264d86c35a4e972708f6aa085bdf37?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?13264d86c35a4e972708f6aa085bdf37") format("woff2"), url("../fonts/iconfont.woff?13264d86c35a4e972708f6aa085bdf37") format("woff"), url("../fonts/iconfont.ttf?13264d86c35a4e972708f6aa085bdf37") format("truetype"), url("../fonts/iconfont.svg?13264d86c35a4e972708f6aa085bdf37#iconfont") format("svg");
 }
 i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   font-family: iconfont !important;
@@ -11064,68 +11064,76 @@ i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   content: "";
 }
 
-.iconfont-chat:before {
+.iconfont-arrow-next:before {
   content: "";
 }
 
-.iconfont-checkbox:before {
+.iconfont-arrow-prev:before {
   content: "";
 }
 
-.iconfont-close:before {
+.iconfont-chat:before {
   content: "";
 }
 
-.iconfont-control:before {
+.iconfont-checkbox:before {
   content: "";
 }
 
-.iconfont-dropdown-arrow:before {
+.iconfont-close:before {
   content: "";
 }
 
-.iconfont-ellipse:before {
+.iconfont-control:before {
   content: "";
 }
 
-.iconfont-eye:before {
+.iconfont-dropdown-arrow:before {
   content: "";
 }
 
-.iconfont-facebook:before {
+.iconfont-ellipse:before {
   content: "";
 }
 
-.iconfont-information:before {
+.iconfont-eye:before {
   content: "";
 }
 
-.iconfont-linkedin:before {
+.iconfont-facebook:before {
   content: "";
 }
 
-.iconfont-mail:before {
+.iconfont-information:before {
   content: "";
 }
 
-.iconfont-play:before {
+.iconfont-linkedin:before {
   content: "";
 }
 
-.iconfont-smile:before {
+.iconfont-mail:before {
   content: "";
 }
 
-.iconfont-star-half:before {
+.iconfont-play:before {
   content: "";
 }
 
-.iconfont-star:before {
+.iconfont-smile:before {
   content: "";
 }
 
-.iconfont-twitter:before {
+.iconfont-star-half:before {
   content: "";
+}
+
+.iconfont-star:before {
+  content: "";
+}
+
+.iconfont-twitter:before {
+  content: "";
 }
 
 .navbar {
@@ -12954,6 +12962,40 @@ p {
 }
 .inner-page .btn-close:hover {
   color: #5979FF;
+}
+.inner-page .hero-details h4, .inner-page .hero-details .h4 {
+  font-size: 1.5rem;
+}
+@media (max-width: 576px) {
+  .inner-page .hero-details h3, .inner-page .hero-details .h3 {
+    font-weight: 500;
+    font-size: 1.25rem !important;
+  }
+  .inner-page .hero-details h4, .inner-page .hero-details .h4 {
+    font-size: 1.125rem !important;
+    color: #585858;
+  }
+  .inner-page .hero-details .mb-40px {
+    margin-bottom: 20px;
+  }
+  .inner-page .hero-details .font-size-19px {
+    font-size: 1rem !important;
+  }
+  .inner-page .hero-details ul.list-items li {
+    font-size: 1rem;
+  }
+  .inner-page .hero-details .badge {
+    font-size: 0.75rem !important;
+  }
+  .inner-page .hero-details .btn-link {
+    font-size: 1.25rem;
+  }
+  .inner-page .hero-details .mb-68px {
+    margin-bottom: 30px;
+  }
+  .inner-page .hero-details .mb-60px {
+    margin-bottom: 20px;
+  }
 }
 
 .checkbox .form-check-input {
