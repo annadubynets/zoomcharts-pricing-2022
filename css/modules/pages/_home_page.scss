@@ -22,6 +22,11 @@
     .card {
         @include card-style;
     }
+    .card-bg {
+        &::before {
+            z-index: 0;
+        }
+    }
     .badge-container-top {
         @include badge-container-top;
     }
@@ -41,11 +46,14 @@
     }
     .hero {
         padding-top: 150px;
+        background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
         @media (max-width: 576px) {
             padding-top: 100px;
+            background: linear-gradient(to bottom, $deepskyblue 10%, #8460FE 90%);
         }
     }
     .hero-details {
+        position: relative;
         .hero-block {
             padding: 30px;
             &.search {
@@ -60,9 +68,18 @@
                 padding: 15px;
             }
         }
-        .hero-bg {
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 50%;
+            left: 0;
+            background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
             @media (max-width: 576px) {
-                min-height: 47vh;
+                height: 39%;
+                background: linear-gradient(to bottom, #8460FE 50%, $mediumpurple 90%);
             }
         }
     }
@@ -115,5 +132,8 @@
             font-family: iconfont !important;
             content: "\f101";
         }
+    }
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 11vw;
     }
 }

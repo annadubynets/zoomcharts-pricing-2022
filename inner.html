@@ -659,7 +659,7 @@
                                     <i class="iconfont-eye font-size-12px pe-2"></i>10500
                                 </span>
                                 <div class="play-button-container d-lg-flex d-none">
-                                    <button type="button" class="btn play-btn d-flex justify-content-center align-items-center">
+                                    <button type="button" class="btn play-btn d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#interractModal">
                                         <div class="play-icon-style d-flex justify-content-center align-items-center"><i class="iconfont-play text-white font-size-16px d-grid"></i></div>
                                         Interract
                                     </button>
@@ -1398,7 +1398,7 @@
                 <div class="modal-body">
                     <div class="row justify-content-center">
                         <div class="col-6">
-                            <a href="#" class="btn btn-outline-primary d-block mb-5">Log in to Download</a>
+                            <button type="button" class="btn btn-outline-primary w-100 mb-5" data-bs-toggle="modal" data-bs-target="#loginModal">Log in to Download</button>
                             <div class="border-bottom"></div>
 
                             <h5 class="my-5 text-center font-size-18px">New here? Fill up the form below and download!</h5>
@@ -1441,9 +1441,125 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary d-block mt-0">Download template</button>
-
+                                <button type="submit" class="btn btn-primary d-block mt-0" data-bs-toggle="modal" data-bs-target="#successModal">Download template</button>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="text-end pt-3 pe-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-header justify-content-center border-0">
+                    <h3 class="modal-title mb-0" id="successModalLabel">Enjoy!</h3>
+                </div>
+                <div class="modal-body pt-3">
+                    <div class="row justify-content-center ">
+                        <div class="col-6 text-center">
+                            <span><img src="images/success-check.svg" alt="Success"></span>
+                            <h5 class="my-5 text-center font-size-18px">Thank you for downloading the template!</h5>
+                            <div class="rounded border-dotted py-5 px-4 text-center mb-5">
+                                <h4 class="mb-4 font-size-18px fw-normal">Here are quick steps how to apply a theme:</h4>
+                                <ul class="list-items ps-3 mb-4">
+                                    <li>Download custom theme</li>
+                                    <li>Apply theme in Power BI</li>
+                                    <li>Enjoy your fresh visuals</li>
+                                </ul>
+                                <a href="#" class="btn btn-link text-decoration-underline">Read the full documentation here</a>
+                            </div>
+                            <p class="text-center font-size-18px mb-5">For any questions, please contact us at
+                                <span class="d-block">
+                                    <a href="mailto:support@zoomcharts.com" class="btn btn-link">support@zoomcharts.com</a>
+                                </span>
+                            </p>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-outline-primary mt-0 mb-4">OK</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Log in Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="text-end pt-3 pe-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-header justify-content-center border-0">
+                    <h3 class="modal-title" id="loginModalLabel">Log in</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <form class="row g-3">
+                                <div class="col-12">
+                                    <label for="inputEmail" class="form-label">E-mail*</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="E-mail">
+                                </div>
+                                <div class="col-12 pb-2">
+                                    <label for="inputPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                </div>
+                                <div class="col-12 text-end pb-4">
+                                    <button type="button" class="btn btn-link text-decoration-underline" data-bs-toggle="modal" data-bs-target="#resetPasswordModal">Forgot password</button>
+                                </div>
+                                <div class="col-12 pb-5 mt-0">
+                                    <div class="checkbox primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="invalidCheckOffers">
+                                        <label class="form-check-label label-style p-0" for="invalidCheckOffers">
+                                            I would like to receive news and special offers
+                                        </label>
+                                    </div>
+                                    <div class="checkbox primary mb-0">
+                                        <input class="form-check-input" type="checkbox" id="invalidJoinPowerGroup">
+                                        <label class="form-check-label label-style p-0" for="invalidJoinPowerGroup">
+                                            Join PowerGroup<i class="iconfont-information font-size-16px text-secondary align-middle ps-1" data-bs-toggle="tooltip" data-bs-placement="right" title="Text about what it is. Text about what it is. Text about what it is.Text about what it is. Text about what it is."></i>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-primary d-block mt-0 mb-4 py-2">Log in</button>
+                                <button type="submit" class="btn btn-outline-primary d-block mt-0 py-2"><span class="pe-3"><img src="images/microsoft.svg" alt="Microsoft" class="h-30"></span> Log in with Microsoft</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset password Modal -->
+    <div class="modal fade" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="text-end pt-3 pe-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-header justify-content-center border-0">
+                    <h3 class="modal-title" id="resetPasswordModalLabel">Reset Password</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <label for="inputEmail" class="form-label">E-mail*</label>
+                            <input type="email" class="form-control mb-5" id="inputEmail" placeholder="E-mail">
+
+                            <button type="submit" class="btn btn-outline-primary w-100 mt-0 mb-4">Reset password</button>
                         </div>
                     </div>
 
@@ -1500,6 +1616,37 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interract Modal -->
+    <div class="modal interract-modal fade" id="interractModal" tabindex="-1" aria-labelledby="interractModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xxl">
+            <div class="modal-content">
+                <div class="modal-header justify-content-between border-0">
+                    <div class="d-flex align-items-center">
+                        <h3 class="modal-title me-5" id="interractModalLabel">US Department of Transportation -<span class="d-block">Traffic accident analysis 1990 - 2015</span></h3>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#downloadPbixModal">Download .pbix</button>
+                        <p class="descr-border fw-light ms-4">Share template with others
+                            <span class="ps-3"><a href="#" class="btn-link"><i class="iconfont-facebook font-size-18px pe-2"></i></a>
+                            <a href="#" class="btn-link"><i class="iconfont-twitter font-size-18px pe-2"></i></a>
+                            <a href="#" class="btn-link"><i class="iconfont-linkedin font-size-18px pe-2"></i></a>
+                            <a href="#" class="btn-link"><i class="iconfont-mail font-size-18px pe-2"></i></span></a>
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="align-self-center font-size-20px">Close</span>
+                        <button type="button" class="btn-close d-flex justify-content-center align-items-center ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <img src="images/dashboard.png" alt="Image" class="w-100">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

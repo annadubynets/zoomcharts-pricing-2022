@@ -1,4 +1,31 @@
 .inner-page {
+    .interract-modal {
+        .modal-header {
+            padding: 14px 20px 0 20px;
+            .btn-close {
+                border: 1px solid #1B9EFF;
+                border-radius: 5px;
+                padding: 1rem;
+                &:hover {
+                    background: #1B9EFF;
+                    border: 1px solid #1B9EFF;
+                    box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
+                }
+                &:hover::after {
+                    color: white;
+                }
+            }
+        }
+        .modal-body {
+            padding: 50px 20px;
+        }
+    }
+    .modal-backdrop {
+        background: rgba(0, 0, 0, 0.4);
+        &.show {
+            opacity: initial;
+        }
+    }
     .btn-outline-primary {
         padding: 11px 30px;
     }

@@ -632,8 +632,7 @@
         </div>
     </section>
 
-    <section class="hero-details position-relative pb-120px">
-        <div class="hero-bg"></div>
+    <section class="hero-details position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-12 wave-animation position-relative card-bg mb-30px d-lg-none d-block">
@@ -665,17 +664,17 @@
             <div class="row justify-content-center mb-lg-5 mb-4">
                 <div class="col-lg-12">
                     <div class="hero-block search position-relative">
-                        <div class="row justify-content-xl-center justify-content-start">
-                            <div class="col-xl-3 col-lg-4 pb-lg-0 pb-2">
+                        <div class="d-flex">
+                            <div class="pb-lg-0 pb-2 ps-0 pe-2">
                                 <label class="form-label">Search</label>
-                                <div class="input-group text-lg-start text-center">
+                                <div class="input-group w-11vw text-lg-start text-center">
                                     <input type="text" class="form-control pe-0" placeholder="Search" aria-label="Username" aria-describedby="basic-addon">
                                     <button class="input-group-text" id="basic-addon">
                                         <span class="icon-search"></span>
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 pb-lg-0 pb-2">
+                            <div class="pb-lg-0 pb-2 px-2">
                                 <label class="form-label">Industry</label>
                                 <select id="inputIndustry" class="selectpicker d-block" placeholder="All">
                                     <option>Custom Visual developement</option>
@@ -686,7 +685,7 @@
                                     <option>Training</option>
                                 </select>
                             </div>
-                            <div class="col-xl-3 col-lg-4 pb-lg-0 pb-2">
+                            <div class="pb-lg-0 pb-2 px-2">
                                 <label class="form-label">Category</label>
                                 <div class="d-xl-flex justify-content-xl-between d-block justify-content-center text-xl-start text-center">
                                     <select id="inputCategory" class="selectpicker d-block" placeholder="All">
@@ -696,7 +695,7 @@
                                     <a href="#" class="btn btn-link font-size-18px text-nowrap ms-xl-3 ms-0 mt-xl-0 mt-3 align-self-center">Clear all</a>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4">
+                            <div class="flex-grow-1 ps-4">
                                 <label class="form-label">Sort by</label>
                                 <select id="inputSortBy" class="selectpicker d-block" placeholder="Most popular">
                                     <option>1</option>
@@ -707,7 +706,10 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+    </section>
+    <section class="card-details position-relative pb-120px">
+        <div class="container">
             <div class="row justify-content-center mb-lg-5 mb-3">
                 <div class="col-xl-4 col-md-6 wave-animation position-relative card-bg mb-30px d-lg-block d-none">
                     <div class="card cursor-pointer h-100">
