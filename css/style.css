@@ -13035,6 +13035,7 @@ p {
 }
 .inner-page .btn-close:hover {
   color: #5979FF;
+  box-shadow: none;
 }
 .inner-page .hero-details h4, .inner-page .hero-details .h4 {
   font-size: 1.5rem;
