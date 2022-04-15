@@ -55,7 +55,7 @@
     .hero-details {
         position: relative;
         .hero-block {
-            padding: 30px;
+            padding: 25px;
             &.search {
                 label {
                     font-size: 1rem;
@@ -74,7 +74,7 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 50%;
+            height: 55%;
             left: 0;
             background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
             @media (max-width: 991px) {
