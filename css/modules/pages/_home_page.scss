@@ -77,6 +77,12 @@
             height: 50%;
             left: 0;
             background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
+            @media (max-width: 991px) {
+                height: 45%;
+            }
+            @media (max-width: 767px) {
+                height: 40%;
+            }
             @media (max-width: 576px) {
                 height: 39%;
                 background: linear-gradient(to bottom, #8460FE 50%, $mediumpurple 90%);
@@ -132,8 +138,5 @@
             font-family: iconfont !important;
             content: "\f101";
         }
-    }
-    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-        width: 11vw;
     }
 }

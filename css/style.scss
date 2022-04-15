@@ -203,6 +203,23 @@ input {
 }
 
 .search {
+    .search-bar {
+        @media (min-width: 992px) {
+            display: flex;
+
+            .filter-col {
+                width: 22%;
+            }
+
+            .filter-col-sm {
+                width: 12%;
+            }
+        }
+
+        .reset-filter-btn {
+            padding: 13px 0;
+        }
+    }
     .input-group-text {
         border: 0;
         border-radius: 69px;

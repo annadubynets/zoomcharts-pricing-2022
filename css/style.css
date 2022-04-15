@@ -12811,6 +12811,16 @@ p {
   left: 0;
   background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
 }
+@media (max-width: 991px) {
+  .home-page .hero-details::before {
+    height: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .home-page .hero-details::before {
+    height: 40%;
+  }
+}
 @media (max-width: 576px) {
   .home-page .hero-details::before {
     height: 39%;
@@ -12864,9 +12874,6 @@ p {
   font-size: 8px;
   font-family: iconfont !important;
   content: "";
-}
-.home-page .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-  width: 11vw;
 }
 
 .inner-page .interract-modal .modal-header {
@@ -13346,6 +13353,20 @@ input {
   color: #CACACA;
 }
 
+@media (min-width: 992px) {
+  .search .search-bar {
+    display: flex;
+  }
+  .search .search-bar .filter-col {
+    width: 22%;
+  }
+  .search .search-bar .filter-col-sm {
+    width: 12%;
+  }
+}
+.search .search-bar .reset-filter-btn {
+  padding: 13px 0;
+}
 .search .input-group-text {
   border: 0;
   border-radius: 69px;
