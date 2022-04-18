@@ -1,10 +1,10 @@
 @font-face {
     font-family: "iconfont";
-    src: url("../fonts/iconfont.eot?4bb8af4c69f6ac8f3187854fb0de5a5d?#iefix") format("embedded-opentype"),
-url("../fonts/iconfont.woff2?4bb8af4c69f6ac8f3187854fb0de5a5d") format("woff2"),
-url("../fonts/iconfont.woff?4bb8af4c69f6ac8f3187854fb0de5a5d") format("woff"),
-url("../fonts/iconfont.ttf?4bb8af4c69f6ac8f3187854fb0de5a5d") format("truetype"),
-url("../fonts/iconfont.svg?4bb8af4c69f6ac8f3187854fb0de5a5d#iconfont") format("svg");
+    src: url("../fonts/iconfont.eot?3c0bd759eb3b1ff74a93fbf9a670dfcf?#iefix") format("embedded-opentype"),
+url("../fonts/iconfont.woff2?3c0bd759eb3b1ff74a93fbf9a670dfcf") format("woff2"),
+url("../fonts/iconfont.woff?3c0bd759eb3b1ff74a93fbf9a670dfcf") format("woff"),
+url("../fonts/iconfont.ttf?3c0bd759eb3b1ff74a93fbf9a670dfcf") format("truetype"),
+url("../fonts/iconfont.svg?3c0bd759eb3b1ff74a93fbf9a670dfcf#iconfont") format("svg");
 }
 
 i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
@@ -60,21 +60,18 @@ i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
 .iconfont-mail:before {
     content: "\f10e";
 }
-.iconfont-microsoft:before {
+.iconfont-play:before {
     content: "\f10f";
 }
-.iconfont-play:before {
+.iconfont-smile:before {
     content: "\f110";
 }
-.iconfont-smile:before {
+.iconfont-star-half:before {
     content: "\f111";
 }
-.iconfont-star-half:before {
+.iconfont-star:before {
     content: "\f112";
 }
-.iconfont-star:before {
-    content: "\f113";
-}
 .iconfont-twitter:before {
-    content: "\f114";
+    content: "\f113";
 }
