@@ -344,7 +344,7 @@
         &::after {
             background-image: none;
             font-family: iconfont !important;
-            content: "\f101";
+            content: $iconfont-arrow-down;
             color: $black;
             font-size: 18px;
         }

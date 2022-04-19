@@ -5,7 +5,7 @@
   "main": "generate-fonts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-fonts": "icon-font-generator --cssfontsurl=../fonts --height=1000 --name iconfont -p iconfont --csspath ./css/modules/_iconfont.scss  font-icons/*.svg -o ./fonts"
+    "generate-fonts": "icon-font-generator --csstp=./templates/css.hbs --cssfontsurl=../fonts --height=1000 --name iconfont -p iconfont --csspath ./css/modules/_iconfont.scss  font-icons/*.svg -o ./fonts"
   },
   "repository": {
     "type": "git",

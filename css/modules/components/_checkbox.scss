@@ -24,7 +24,7 @@
 
 .checkbox input:checked+label::after {
     font-family: iconfont !important;
-    content: "\f105";
+    content: $iconfont-checkbox;
     display: inline-block;
     font-size: 9px;
     color: $darkgrey;

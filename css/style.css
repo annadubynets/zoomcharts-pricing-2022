@@ -11047,7 +11047,7 @@ textarea.form-control-lg {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/iconfont.eot?3c0bd759eb3b1ff74a93fbf9a670dfcf?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?3c0bd759eb3b1ff74a93fbf9a670dfcf") format("woff2"), url("../fonts/iconfont.woff?3c0bd759eb3b1ff74a93fbf9a670dfcf") format("woff"), url("../fonts/iconfont.ttf?3c0bd759eb3b1ff74a93fbf9a670dfcf") format("truetype"), url("../fonts/iconfont.svg?3c0bd759eb3b1ff74a93fbf9a670dfcf#iconfont") format("svg");
+  src: url("../fonts/iconfont.eot?c7418fe8a2894c8701986252b236f05a?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?c7418fe8a2894c8701986252b236f05a") format("woff2"), url("../fonts/iconfont.woff?c7418fe8a2894c8701986252b236f05a") format("woff"), url("../fonts/iconfont.ttf?c7418fe8a2894c8701986252b236f05a") format("truetype"), url("../fonts/iconfont.svg?c7418fe8a2894c8701986252b236f05a#iconfont") format("svg");
 }
 i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   font-family: iconfont !important;
@@ -11060,6 +11060,7 @@ i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Icon constants */
 .iconfont-arrow-down:before {
   content: "";
 }

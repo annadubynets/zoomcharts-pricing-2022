@@ -114,7 +114,7 @@
         opacity: 1;
         &::after {
             display: inline;
-            content: "\f106";
+            content: $iconfont-close;
             font-family: iconfont !important;
             color: $deepskyblue;
         }
