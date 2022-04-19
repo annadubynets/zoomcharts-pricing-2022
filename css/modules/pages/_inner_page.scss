@@ -56,6 +56,10 @@
     }
     .card {
         @include card-style;
+        .card-title {
+            color: $black!important;
+            size: 24px;
+        }
         @media (min-width: 992px) {
             padding: 0 30px 25px 30px;
         }

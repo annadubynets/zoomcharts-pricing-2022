@@ -12961,6 +12961,10 @@ p {
     padding: 0 15px 25px 15px;
   }
 }
+.inner-page .card .card-title {
+  color: #000000 !important;
+  size: 24px;
+}
 @media (min-width: 992px) {
   .inner-page .card {
     padding: 0 30px 25px 30px;
