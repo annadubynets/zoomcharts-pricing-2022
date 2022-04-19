@@ -56,13 +56,6 @@
     }
     .card {
         @include card-style;
-        .card-title {
-            color: $black!important;
-            size: 24px;
-        }
-        @media (min-width: 992px) {
-            padding: 0 30px 25px 30px;
-        }
     }
     .badge-container-top {
         @include badge-container-top;
@@ -166,6 +159,22 @@
             }
             .mb-60px {
                 margin-bottom: 20px;
+            }
+        }
+        .card {
+            h4 {
+                font-size: 24px!important;
+                font-weight: 700!important;
+                color: $black!important;
+            }
+
+            .card-title {
+                color: $black!important;
+                font-size: 20px!important;
+                font-weight: 500!important;
+            }
+            @media (min-width: 992px) {
+                padding: 0 30px 25px 30px;
             }
         }
     }
