@@ -13153,7 +13153,7 @@ p {
 
 .checkbox input:checked + label::after {
   font-family: iconfont !important;
-  content: "";
+  content: "";
   display: inline-block;
   font-size: 9px;
   color: #585858;
