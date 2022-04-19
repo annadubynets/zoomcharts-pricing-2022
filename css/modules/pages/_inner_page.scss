@@ -88,6 +88,7 @@
         background: linear-gradient(221.99deg, #B742FE 4.74%, #1B9EFF 100%);
         border-radius: 100px;
         margin-right: 18px;
+        padding-left: 2px;
     }
     .form-label {
         margin-bottom: 6px;
@@ -167,7 +168,6 @@
                 font-weight: 700!important;
                 color: $black!important;
             }
-
             .card-title {
                 color: $black!important;
                 font-size: 20px!important;
@@ -182,7 +182,6 @@
         .thubms-slider {
             position: relative;
             margin-top: 0.8rem;
-
             .owl-prev {
                 width: 15px;
                 height: 16px;
@@ -190,9 +189,8 @@
                 top: calc(50% - 8px);
                 left: 0;
                 display: block !important;
-                border:0px solid black;
+                border: 0px solid black;
             }
-            
             .owl-next {
                 width: 15px;
                 height: 16px;
@@ -200,21 +198,19 @@
                 top: calc(50% - 8px);
                 right: 0;
                 display: block !important;
-                border:0px solid black;
+                border: 0px solid black;
             }
-            .owl-prev i, .owl-next i {
-                transform : scale(1,6); 
+            .owl-prev i,
+            .owl-next i {
+                transform: scale(1, 6);
                 color: $deepskyblue;
             }
-
             .owl-nav {
                 position: static;
             }
-
             .item {
                 padding: 4px;
             }
-
             .center {
                 .item {
                     border: 1px solid $deepskyblue;
