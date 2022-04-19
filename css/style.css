@@ -12733,14 +12733,14 @@ p {
 .home-page .card-bg::before {
   z-index: 0;
 }
-.home-page .card-report {
-  padding: 29px 29px 29px 60px;
-}
-.home-page .card-report .card-body {
+.home-page .card-report .card {
   padding: 0;
 }
-@media (max-width: 576px) {
-  .home-page .card-report {
+.home-page .card-report .card .card-body {
+  padding: 29px 29px 29px 60px;
+}
+@media (max-width: 992px) {
+  .home-page .card-report .card .card-body {
     padding: 15px 15px 50px 15px;
   }
 }

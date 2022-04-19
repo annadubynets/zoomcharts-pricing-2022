@@ -28,12 +28,14 @@
         }
     }
     .card-report {
-        padding: 29px 29px 29px 60px;
-        .card-body {
+        .card {
             padding: 0;
-        }
-        @media (max-width: 576px) {
-            padding: 15px 15px 50px 15px;
+            .card-body {
+                padding: 29px 29px 29px 60px;
+                @media (max-width: 992px) {
+                    padding: 15px 15px 50px 15px;
+                }
+            }
         }
     }
     .badge-container-top {
