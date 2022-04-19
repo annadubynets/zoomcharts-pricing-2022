@@ -12961,6 +12961,11 @@ p {
     padding: 0 15px 25px 15px;
   }
 }
+@media (min-width: 992px) {
+  .inner-page .card {
+    padding: 0 30px 25px 30px;
+  }
+}
 .inner-page .badge-container-top {
   top: -5%;
   right: initial;

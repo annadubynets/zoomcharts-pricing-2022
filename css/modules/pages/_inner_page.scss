@@ -56,6 +56,9 @@
     }
     .card {
         @include card-style;
+        @media (min-width: 992px) {
+            padding: 0 30px 25px 30px;
+        }
     }
     .badge-container-top {
         @include badge-container-top;
