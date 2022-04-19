@@ -11598,6 +11598,10 @@ p {
   max-width: 1920px;
 }
 
+.rounded-1 {
+  border-radius: 5px !important;
+}
+
 .rounded {
   border-radius: 10px !important;
 }
