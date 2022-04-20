@@ -43,22 +43,22 @@
                     top: $scrolled-navbar-sm-height;
                 }
             }
-        }
-    }
-    .btn-close {
-        background: none!important;
-        font-size: 12px;
-        padding: 15px;
-        opacity: 1;
-        @media (max-width: 991px) {
-            display: none;
-        }
-        &:focus {
-            box-shadow: none;
-        }
-        i {
-            &:hover {
-                color: $yellow!important;
+            .btn-close {
+                background: none!important;
+                font-size: 12px;
+                padding: 15px;
+                opacity: 1;
+                @media (max-width: 991px) {
+                    display: none;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                i {
+                    &:hover {
+                        color: $yellow!important;
+                    }
+                }
             }
         }
     }

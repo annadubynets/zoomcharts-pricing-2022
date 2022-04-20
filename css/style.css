@@ -12356,21 +12356,21 @@ p {
     top: 42px;
   }
 }
-.pricing-page .btn-close {
+.pricing-page .alert.sticky-alert .btn-close {
   background: none !important;
   font-size: 12px;
   padding: 15px;
   opacity: 1;
 }
 @media (max-width: 991px) {
-  .pricing-page .btn-close {
+  .pricing-page .alert.sticky-alert .btn-close {
     display: none;
   }
 }
-.pricing-page .btn-close:focus {
+.pricing-page .alert.sticky-alert .btn-close:focus {
   box-shadow: none;
 }
-.pricing-page .btn-close i:hover {
+.pricing-page .alert.sticky-alert .btn-close i:hover {
   color: #f2c811 !important;
 }
 .pricing-page .border-end-long-style:after {
