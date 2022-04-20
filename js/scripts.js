@@ -155,12 +155,19 @@ $(function() {
  */
 
 $(function() {
+    var mobileSlider = $('.inner-page .mobile-slider');
+    if (!mobileSlider.length) {
+        // no slider on the page, skip initialization
+        return;
+    }
     var topSlider = $("#inner-slider-top");
     var bottomSlider = $("#inner-slider-bottom");
 
     if (!topSlider.length || !bottomSlider.length) {
         return;
     }
+
+    updateSlidesCount();
 
     var thumbnailItemClass = '.owl-item';
 
@@ -200,10 +207,11 @@ $(function() {
         navText : ['<i class="iconfont-arrow-prev"></i>','<i class="iconfont-arrow-next"></i>'],
         onInitialized: function (e) {
             var thumbnailCurrentItem =  $(e.target).find(thumbnailItemClass).eq(this._current);
-            console.log(thumbnailCurrentItem.find('.item').attr('data-number'))
+            var number = thumbnailCurrentItem.find('.item').attr('data-number');
+            updateCurrentSlide(number);
             setTimeout(function(){ 
                 $owl_slider = topSlider.data('owl.carousel');
-                $owl_slider.to(thumbnailCurrentItem.index(), 100, true);
+                $owl_slider.to(number, 100, true);
             }, 500)
         },
     })
@@ -215,6 +223,14 @@ $(function() {
         var centeredItem = $(el.target).find(".owl-item.active.center");
         $owl_slider = topSlider.data('owl.carousel');
         $owl_slider.to(centeredItem.index(), 100, true);
+        updateCurrentSlide(centeredItem.index());
     });
 
+    function updateCurrentSlide(slideNumber) {
+        mobileSlider.find('.current-slide').text(parseInt(slideNumber) + 1);
+    }
+
+    function updateSlidesCount() {
+        mobileSlider.find('.slides-count').text(bottomSlider.find('.item').length);
+    }
 });
