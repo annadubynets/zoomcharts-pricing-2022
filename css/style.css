@@ -13038,7 +13038,7 @@ p {
   padding: 23px 0 0 0;
 }
 .inner-page .modal-body {
-  padding: 50px 25px;
+  padding: 50px 25px 100px 25px;
 }
 .inner-page .btn-close {
   background-image: none;
