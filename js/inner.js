@@ -82,3 +82,19 @@
         mobileSlider.find('.slides-count').text(bottomSlider.find('.item').length);
     }
 });
+
+$(function() {
+    var label = $('.report-name-label');
+    if (label.length == 0) return;
+
+    $('.interact-modal').on('shown.bs.modal', function() {
+        label.flowtype({
+            minimum   : 380,
+            maximum   : 1320,
+            minFont   : 10,
+            maxFont   : 30,
+            fontRatio : 24,
+            lineRatio : 1.45
+        });
+    });
+});

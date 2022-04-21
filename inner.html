@@ -654,7 +654,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-lg-12 d-none d-lg-block position-relative">
-                                <div data-bs-toggle="modal" data-bs-target="#interractModal">
+                                <div data-bs-toggle="modal" data-bs-target="#interactModal">
                                     <img src="images/inner-bg.png" alt="Inner" class="w-100 rounded-1">
                                     <span class="badge badge-position top bg-white text-black mb-1">
                                         <i class="iconfont-eye font-size-12px pe-2"></i>10500
@@ -1683,31 +1683,30 @@
         </div>
     </div>
 
-    <!-- Interract Modal -->
-    <div class="modal interract-modal fade" id="interractModal" tabindex="-1" aria-labelledby="interractModalLabel" aria-hidden="true">
+    <!-- Interact Modal -->
+    <div class="modal interact-modal fade" id="interactModal" tabindex="-1" aria-labelledby="interactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xxl">
             <div class="modal-content">
-                <div class="modal-header justify-content-between align-items-lg-center align-items-start border-0">
-                    <div class="d-lg-flex d-block align-items-center">
-                        <h3 class="modal-title me-5" id="interractModalLabel">US Department of Transportation -<span class="d-block">Traffic accident analysis 1990 - 2015</span></h3>
-                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#downloadPbixModal">Download .pbix</button>
-                        <p class="descr-border fw-light ms-lg-4 ms-0">Share template with others
-                            <span class="ps-3"><a href="#" class="btn-link"><i class="iconfont-facebook font-size-18px pe-2"></i></a>
-                            <a href="#" class="btn-link"><i class="iconfont-twitter font-size-18px pe-2"></i></a>
-                            <a href="#" class="btn-link"><i class="iconfont-linkedin font-size-18px pe-2"></i></a>
-                            <a href="#" class="btn-link"><i class="iconfont-mail font-size-18px pe-2"></i></span></a>
-                        </p>
+                <div class="modal-header justify-content-between align-items-center align-items-start border-0">
+                    <h3 class="modal-title me-5 flex-grow-1 report-name-label" id="interactModalLabel">US Department of Transportation - Traffic accident analysis 1990 - 2015</h3>
+                    
+                    <button type="button" class="btn btn-outline-primary text-nowrap" data-bs-toggle="modal" data-bs-target="#downloadPbixModal">Download .pbix</button>
+                    
+                    <div class="d-flex align-items-center fw-light mx-4 text-nowrap">
+                        <span class="pe-3 text-muted">Share</span>
+                        <a href="#" class="btn-link pe-2"><i class="iconfont-facebook font-size-18px d-grid"></i></a>
+                        <a href="#" class="btn-link pe-2"><i class="iconfont-twitter font-size-18px d-grid"></i></a>
+                        <a href="#" class="btn-link pe-2"><i class="iconfont-linkedin font-size-18px d-grid"></i></a>
+                        <a href="#" class="btn-link pe-2"><i class="iconfont-mail font-size-18px d-grid"></i></a>
                     </div>
-                    <div class="d-flex">
-                        <span class="align-self-center font-size-20px">Close</span>
-                        <button type="button" class="btn-close d-flex justify-content-center align-items-center ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="d-flex close-btn-wrapper align-items-center" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="align-self-center font-size-20px cursor-pointer">Close</span>
+                        <button type="button" class="btn-close d-flex justify-content-center align-items-center ms-3"></button>
                     </div>
                 </div>
                 <div class="modal-body">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <img src="images/dashboard.png" alt="Image" class="w-100">
-                        </div>
+                    <div class="internal-block">
+                        <iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiYzlhNDhhZGItYjE5My00MTA3LWI3MjUtMzdjMjg1MmU2OGQ4IiwidCI6IjQ2NTRiNmYxLTBlNDctNDU3OS1hOGExLTAyZmU5ZDk0M2M3YiIsImMiOjl9" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -1718,6 +1717,7 @@
     <script src="js/bootstrap.bundle.min.js "></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/flowtype.js"></script>
     <script src="js/inner.js"></script>
     <script src="js/scripts.js"></script>
 </body>
