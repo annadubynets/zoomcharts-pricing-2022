@@ -13035,6 +13035,9 @@ p {
   font-size: 20px;
   color: #000000;
 }
+.inner-page .play-btn:hover {
+  box-shadow: 0 4px 16px 0 #1B9EFF;
+}
 .inner-page .play-icon-style {
   width: 39px;
   height: 39px;
