@@ -1,4 +1,11 @@
 .inner-page {
+    .book-call-modal {
+        @media (min-width: 1200px){
+            .modal-xl {
+                max-width: 1000px;
+            }
+        }
+    }
     .interact-modal {
         .modal-header {
             padding: 14px 20px 0 20px;
