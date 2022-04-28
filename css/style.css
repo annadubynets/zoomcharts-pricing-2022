@@ -11047,7 +11047,7 @@ textarea.form-control-lg {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/iconfont.eot?c7418fe8a2894c8701986252b236f05a?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?c7418fe8a2894c8701986252b236f05a") format("woff2"), url("../fonts/iconfont.woff?c7418fe8a2894c8701986252b236f05a") format("woff"), url("../fonts/iconfont.ttf?c7418fe8a2894c8701986252b236f05a") format("truetype"), url("../fonts/iconfont.svg?c7418fe8a2894c8701986252b236f05a#iconfont") format("svg");
+  src: url("../fonts/iconfont.eot?39aef7ba664f8ef8a4232ea803e645c0?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2?39aef7ba664f8ef8a4232ea803e645c0") format("woff2"), url("../fonts/iconfont.woff?39aef7ba664f8ef8a4232ea803e645c0") format("woff"), url("../fonts/iconfont.ttf?39aef7ba664f8ef8a4232ea803e645c0") format("truetype"), url("../fonts/iconfont.svg?39aef7ba664f8ef8a4232ea803e645c0#iconfont") format("svg");
 }
 i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   font-family: iconfont !important;
@@ -11097,44 +11097,48 @@ i[class^=iconfont-]:before, i[class*=" iconfont-"]:before {
   content: "";
 }
 
-.iconfont-eye:before {
+.iconfont-envelope:before {
   content: "";
 }
 
-.iconfont-facebook:before {
+.iconfont-eye:before {
   content: "";
 }
 
-.iconfont-information:before {
+.iconfont-facebook:before {
   content: "";
 }
 
-.iconfont-linkedin:before {
+.iconfont-information:before {
   content: "";
 }
 
-.iconfont-mail:before {
+.iconfont-linkedin:before {
   content: "";
 }
 
-.iconfont-play:before {
+.iconfont-mail:before {
   content: "";
 }
 
-.iconfont-smile:before {
+.iconfont-play:before {
   content: "";
 }
 
-.iconfont-star-half:before {
+.iconfont-smile:before {
   content: "";
 }
 
-.iconfont-star:before {
+.iconfont-star-half:before {
   content: "";
 }
 
-.iconfont-twitter:before {
+.iconfont-star:before {
   content: "";
+}
+
+.iconfont-twitter:before {
+  content: "";
 }
 
 .navbar {

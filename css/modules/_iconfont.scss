@@ -1,10 +1,10 @@
 @font-face {
     font-family: "iconfont";
-    src: url("../fonts/iconfont.eot?c7418fe8a2894c8701986252b236f05a?#iefix") format("embedded-opentype"),
-url("../fonts/iconfont.woff2?c7418fe8a2894c8701986252b236f05a") format("woff2"),
-url("../fonts/iconfont.woff?c7418fe8a2894c8701986252b236f05a") format("woff"),
-url("../fonts/iconfont.ttf?c7418fe8a2894c8701986252b236f05a") format("truetype"),
-url("../fonts/iconfont.svg?c7418fe8a2894c8701986252b236f05a#iconfont") format("svg");
+    src: url("../fonts/iconfont.eot?39aef7ba664f8ef8a4232ea803e645c0?#iefix") format("embedded-opentype"),
+url("../fonts/iconfont.woff2?39aef7ba664f8ef8a4232ea803e645c0") format("woff2"),
+url("../fonts/iconfont.woff?39aef7ba664f8ef8a4232ea803e645c0") format("woff"),
+url("../fonts/iconfont.ttf?39aef7ba664f8ef8a4232ea803e645c0") format("truetype"),
+url("../fonts/iconfont.svg?39aef7ba664f8ef8a4232ea803e645c0#iconfont") format("svg");
 }
 
 i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
@@ -28,16 +28,17 @@ $iconfont-close: "\f106";
 $iconfont-control: "\f107";
 $iconfont-dropdown-arrow: "\f108";
 $iconfont-ellipse: "\f109";
-$iconfont-eye: "\f10a";
-$iconfont-facebook: "\f10b";
-$iconfont-information: "\f10c";
-$iconfont-linkedin: "\f10d";
-$iconfont-mail: "\f10e";
-$iconfont-play: "\f10f";
-$iconfont-smile: "\f110";
-$iconfont-star-half: "\f111";
-$iconfont-star: "\f112";
-$iconfont-twitter: "\f113";
+$iconfont-envelope: "\f10a";
+$iconfont-eye: "\f10b";
+$iconfont-facebook: "\f10c";
+$iconfont-information: "\f10d";
+$iconfont-linkedin: "\f10e";
+$iconfont-mail: "\f10f";
+$iconfont-play: "\f110";
+$iconfont-smile: "\f111";
+$iconfont-star-half: "\f112";
+$iconfont-star: "\f113";
+$iconfont-twitter: "\f114";
 
 .iconfont-arrow-down:before {
     content: $iconfont-arrow-down;
@@ -65,6 +66,9 @@ $iconfont-twitter: "\f113";
 }
 .iconfont-ellipse:before {
     content: $iconfont-ellipse;
+}
+.iconfont-envelope:before {
+    content: $iconfont-envelope;
 }
 .iconfont-eye:before {
     content: $iconfont-eye;
