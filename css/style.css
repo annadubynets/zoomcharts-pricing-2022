@@ -13305,7 +13305,7 @@ a {
   color: #585858;
   background-color: #FFFFFF;
   border: 1px solid #1B9EFF;
-  border-radius: 50px;
+  border-radius: 100px;
   padding: 12px 50px;
 }
 .btn-outline-primary:hover {
@@ -13318,9 +13318,9 @@ a {
   font-weight: normal;
   font-size: 20px;
   color: #FFFFFF;
-  background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
+  background: linear-gradient(90deg, #2996FF 0%, #B742FE 100%);
   border: none;
-  border-radius: 25px;
+  border-radius: 100px;
   padding: 11px 50px;
 }
 .btn-primary:hover {
@@ -13574,7 +13574,7 @@ input {
 .card-bg::before {
   content: "";
   position: absolute;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05) !important;
   background-color: #FFFFFF;
   border-radius: 10px;
   height: 85%;

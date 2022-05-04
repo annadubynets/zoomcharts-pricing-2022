@@ -52,7 +52,7 @@ a {
     color: $darkgrey;
     background-color: $white;
     border: 1px solid $deepskyblue;
-    border-radius: 50px;
+    border-radius: 100px;
     padding: 12px 50px;
     &:hover {
         border: 1px solid $deepskyblue;
@@ -65,9 +65,9 @@ a {
     font-weight: normal;
     font-size: 20px;
     color: $white;
-    background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
+    background: linear-gradient(90deg, #2996FF 0%, #B742FE 100%);
     border: none;
-    border-radius: 25px;
+    border-radius: 100px;
     padding: 11px 50px;
     &:hover {
         box-shadow: 0 4px 16px 0 rgba(65, 132, 234, 0.75);
@@ -206,16 +206,13 @@ input {
     .search-bar {
         @media (min-width: 992px) {
             display: flex;
-
             .filter-col {
                 width: 22%;
             }
-
             .filter-col-sm {
                 width: 12%;
             }
         }
-
         .reset-filter-btn {
             padding: 13px 0;
         }
@@ -338,7 +335,7 @@ input {
     &::before {
         content: "";
         position: absolute;
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05)!important;
+        box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05)!important;
         background-color: $white;
         border-radius: 10px;
         height: 85%;
