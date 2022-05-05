@@ -13583,6 +13583,9 @@ input {
   left: 15px;
   right: 15px;
 }
+.card-bg:hover::before {
+  box-shadow: 0px 15px 46px rgba(0, 0, 0, 0.16) !important;
+}
 
 .card {
   background-color: transparent;
