@@ -82,8 +82,16 @@
 @font-face {
     font-family: 'Futura PT';
     src: url('../fonts/FuturaPT-Book.eot');
-    src: local('../fonts/Futura PT Book'), local('FuturaPT-Book'), url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaPT-Book.woff') format('woff'), url('../fonts/FuturaPT-Book.ttf') format('truetype');
+    src: url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaPT-Book.otf') format('otf'), url('../fonts/FuturaPT-Book.svg#FuturaPT-Book') format('svg'), url('../fonts/FuturaPT-Book.ttf') format('truetype'), url('../fonts/FuturaPT-Book.woff') format('woff'), url('../fonts/FuturaPT-Book.woff2') format('woff2');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Light.eot');
+    src: url('../fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaPT-Light.otf') format('otf'), url('../fonts/FuturaPT-Light.svg#FuturaPT-Light') format('svg'), url('../fonts/FuturaPT-Light.ttf') format('truetype'), url('../fonts/FuturaPT-Light.woff') format('woff'), url('../fonts/FuturaPT-Light.woff2') format('woff2');
+    font-weight: 300;
     font-style: normal;
 }
 
