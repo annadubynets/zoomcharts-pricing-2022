@@ -5,6 +5,7 @@ $grey: #848484;
 $mediumpurple: #BF3EFE;
 $deepskyblue: #1B9EFF;
 $yellow: #f2c811;
+$green: #0BD474;
 $white: #FFFFFF;
 $whitesmoke: #FCFCFC;
 $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
@@ -27,6 +28,18 @@ $tooltip-max-width: 13rem;
 $tooltip-font-size: .688rem;
 $tooltip-padding-y: .875rem;
 $tooltip-padding-x: .625rem;
+.font-family-futura {
+    font-family: 'Futura PT';
+}
+
+.pt-30px {
+    padding-top: 30px;
+}
+
+.pt-100px {
+    padding-top: 100px;
+}
+
 .pt-116px {
     padding-top: 116px;
 }
@@ -37,6 +50,14 @@ $tooltip-padding-x: .625rem;
 
 .pb-120px {
     padding-bottom: 120px;
+}
+
+.pb-39px {
+    padding-bottom: 39px;
+}
+
+.pb-30px {
+    padding-bottom: 30px;
 }
 
 .pb-60px {

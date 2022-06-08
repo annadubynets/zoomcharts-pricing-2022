@@ -1,0 +1,387 @@
+.trial-page {
+    h1 {
+        font-family: 'Futura PT';
+        font-weight: 300;
+        font-size: 2.5rem;
+        color: #3C4858!important;
+    }
+    h2 {
+        font-family: 'Futura PT';
+        font-weight: bold;
+        font-size: 1.875rem;
+        color: $black!important;
+    }
+    h3 {
+        font-family: 'Futura PT';
+        font-weight: bold;
+        font-size: 1.313rem;
+        color: $black!important;
+    }
+    .title {
+        font-family: 'Futura PT';
+        font-weight: 400;
+        font-size: 1.313rem;
+        color: #3C4858!important;
+    }
+    .subtitle {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 25px;
+        color: #555D6D;
+    }
+    .description {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #3C4858;
+    }
+    ol {
+        font-family: 'Merriweather';
+        margin: 0 0 1.5em;
+        padding: 0;
+        counter-reset: item;
+        color: #3C4858;
+        font-size: 14px;
+    }
+    ol>li {
+        margin: 0;
+        padding: 0 0 0 2em;
+        text-indent: -2em;
+        list-style-type: none;
+        counter-increment: item;
+        &::before {
+            display: inline-block;
+            width: 1.5em;
+            padding-right: 0.5em;
+            font-weight: bold;
+            text-align: right;
+            content: counter(item) ".";
+        }
+    }
+    .step {
+        .card {
+            background: #FFFFFF;
+            box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.09);
+            border-radius: 15px;
+            padding: 0;
+            .card-body {
+                padding: 1.875rem 3.75rem;
+                .card-text {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #3C4858;
+                }
+                .card-title-divider::after {
+                    display: block;
+                    content: "";
+                    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+                    width: calc(100% + 36px);
+                    margin-left: -1.875rem;
+                    position: absolute;
+                }
+                .card-divider:after {
+                    display: block;
+                    content: "";
+                    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+                    width: calc(100% + 36px);
+                    margin-left: -1.875rem;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+            .card-header {
+                padding: 30px 0 15px 0;
+                background-color: transparent;
+                border-bottom: none;
+                &::before {
+                    display: block;
+                    content: "";
+                    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+                    width: 100%;
+                    margin-left: 0;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+            .card-footer {
+                padding: 30px;
+                &::before {
+                    display: block;
+                    content: "";
+                    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+                    width: 100%;
+                    margin-left: -30px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            &.step {
+                border-top: 2px solid #EAC211;
+                .card-body {
+                    padding: 30px;
+                }
+            }
+        }
+    }
+    .card {
+        .card-footer {
+            padding: 0;
+            background-color: transparent;
+            border-top: none;
+        }
+        &.disabled {
+            .card-body>*,
+            .card-footer>* {
+                opacity: 0.5;
+            }
+        }
+    }
+    .bg-danger {
+        background-color: #FF0000!important;
+    }
+    .badge {
+        font-family: 'Futura PT';
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 2px 6px;
+        &.badge-position-right {
+            position: absolute;
+            top: -9px;
+            right: 155px;
+            z-index: 1;
+            opacity: 1!important;
+        }
+    }
+    .download-block {
+        background: #EBFCF4;
+        border-radius: 5px;
+        padding: 10px 46px;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #3C4858;
+    }
+    .more-info-link {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 164%;
+        text-decoration-line: underline;
+        color: #3669EC;
+        &[aria-expanded=true] {
+            display: none;
+        }
+    }
+    .prev-link {
+        font-family: 'Futura PT';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+    }
+    .btn-warning {
+        background: linear-gradient(180deg, #F2C811 44.58%, #E6BB00 100%);
+        border-radius: 5px;
+        font-family: 'Futura PT';
+        font-weight: bold;
+        box-shadow: none;
+        &:hover {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08), 0px 4px 10px rgba(230, 187, 0, 0.3);
+        }
+    }
+    .btn-secondary {
+        font-family: 'Futura PT';
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+        border: 1px solid #F1F1F1;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+        padding: 15px;
+        &:hover {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)!important;
+        }
+    }
+    .form-control {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        border: 1px solid #D2D2D2;
+        border-radius: 5px;
+        &::placeholder {
+            color: #ACACAC;
+        }
+    }
+    .visuals-circle {
+        width: 47px;
+        height: 47px;
+        background: #F5F5F5;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avatar {
+        width: 49px;
+        height: 49px;
+    }
+    .form-wizard-steps {
+        font-family: 'Futura PT';
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #3C4858;
+        li {
+            width: 25%;
+            float: left;
+            position: relative;
+        }
+    }
+    .form-wizard-steps li::after {
+        background-color: #E5E5E5;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+    }
+    .form-wizard-steps li span {
+        background-color: white;
+        border: 1px solid #E5E5E5;
+        border-radius: 50%;
+        display: inline-block;
+        height: 38px;
+        line-height: 38px;
+        position: relative;
+        text-align: center;
+        width: 38px;
+        z-index: 1;
+    }
+    .form-wizard-steps li:last-child::after {
+        width: 50%;
+    }
+    .form-wizard-steps li.active span,
+    .form-wizard-steps li.activated span {
+        background-color: #0BD474;
+        color: #ffffff;
+        border: none;
+    }
+    .form-wizard-steps li.active::after,
+    .form-wizard-steps li.activated::after {
+        background-color: #0BD474;
+        left: 50%;
+        width: 50%;
+        border-color: #0BD474;
+    }
+    .form-wizard-steps li.activated::after {
+        width: 100%;
+        border-color: #0BD474;
+    }
+    .form-wizard-steps li:last-child::after {
+        left: 0;
+    }
+    @media screen and (max-width: 767px) {
+        .wizard-content-left {
+            height: auto;
+        }
+        .title {
+            font-size: 1.313rem!important;
+        }
+        h1 {
+            font-size: 1.563rem!important;
+        }
+        h2 {
+            font-size: 1.25rem!important;
+        }
+        h3 {
+            font-size: 1.125rem!important;
+        }
+        .font-size-54px {
+            font-size: 40px!important;
+        }
+        .subtitle {
+            font-size: .875rem!important;
+            line-height: 1.125rem!important;
+            span {
+                font-size: 14px!important;
+            }
+        }
+        .description {
+            font-size: 14px!important;
+        }
+        .pt-100px {
+            padding-top: 70px;
+        }
+        .pb-30px {
+            padding-bottom: 15px;
+        }
+        .pb-39px {
+            padding-bottom: 29px;
+        }
+        .badge {
+            font-size: 11px!important;
+            &.badge-position-right {
+                right: 255px;
+            }
+        }
+        .step {
+            .card {
+                .card-body {
+                    padding: 1.25rem 1.875rem 1.563rem 1.875rem;
+                    h3 {
+                        font-size: 21px!important;
+                    }
+                }
+                .card-header {
+                    padding: 1.25rem;
+                    &::before {
+                        margin-left: -20px;
+                    }
+                }
+                .card-footer {
+                    padding: 1.25rem;
+                    &::before {
+                        margin-left: -20px;
+                    }
+                }
+                &.step {
+                    .card-body {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+        .form-wizard-steps {
+            font-size: 14px;
+            li span {
+                height: 26px;
+                line-height: 26px;
+                width: 26px;
+            }
+        }
+    }
+}

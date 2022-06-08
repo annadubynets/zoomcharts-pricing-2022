@@ -78,6 +78,14 @@
     color: $deepskyblue!important;
 }
 
+.text-success {
+    color: $green!important;
+}
+
+.text-dim-gray {
+    color: #3C4858;
+}
+
 .bg-linear-gradient {
     background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
     &:hover {
