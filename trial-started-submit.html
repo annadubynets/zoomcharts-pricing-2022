@@ -763,7 +763,7 @@
 
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-warning d-block">add to report</a>
+                            <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#add-report-modal">add to report</button>
                         </div>
                     </div>
                 </div>
@@ -772,10 +772,10 @@
                         <div class="card-body p-0">
                             <img src="images/drill-down-timeseries-pro.png" alt="Drill Down TimeSeries PRO">
                             <h3 class="title mb-1 mt-lg-3 mt-2 me-1">Drill Down TimeSeries PRO</h3>
-                            <p class="description text-dim-gray mb-4">Perform a multi-level analysis of your data and explore your timeline in a simple and comprehensive way.</p>
+                            <p class="description mb-4">Perform a multi-level analysis of your data and explore your timeline in a simple and comprehensive way.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-warning d-block">add to report</a>
+                            <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#add-report-modal">add to report</button>
                         </div>
                     </div>
                 </div>
@@ -1331,6 +1331,83 @@
             </div>
         </div>
     </footer>
+
+    <!-- Add to report Modal -->
+    <div class="modal fade" id="add-report-modal" tabindex="-1" aria-labelledby="add-report-modal" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="text-end">
+                    <button type="button" class="btn-close m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-header">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-9 text-center">
+                            <h3 class="mb-0">Add Drill Down Visuals to your report</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+
+                    <div class="row">
+                        <div class="col-lg-6 pb-lg-0 pb-3">
+                            <div class="modal-block h-100">
+                                <ol class="mb-2 text-start">
+                                    <li>click on (...) in the <span class="fw-bold">Visualizations</span> pane</li>
+                                    <li>select <span class="fw-bold">Get more visuals</span>
+                                        <img src="images/get-visuals-1.png" alt="get visuals" class="py-3 w-100">
+                                    </li>
+
+                                    <li>search for <span class="fw-bold">Drill Down Timeline PRO </span>in Power BI AppSource.</li>
+                                </ol>
+                                <div class="input-group w-auto">
+                                    <span class="input-group-addon pe-2">
+                                        <i class="iconfont-search text-light-grey align-middle font-size-18px pe-2"></i>
+                                    </span>
+                                    <input type="text" id="search-result" class="form-control" value="Drill Down Timeline Pro">
+                                    <span class="input-group-addon copy-target btn ps-2" data-target-id="search-result" title="Click to copy">
+                                        copy
+                                        <i class="iconfont-copy align-middle font-size-18px ps-2"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-start">
+                            <div class="modal-block h-100">
+                                <ol start="4" class="mb-3 text-start position-relative decor-list">
+                                    <li start="4">click <span class="fw-bold">Add</span> to add the visual to your report.
+                                        <img src="images/visual-report.png" alt="visual report" class="pt-3 pb-4 w-100">
+                                    </li>
+                                </ol>
+
+                                <p class="font-family-second font-size-14px text-dim-gray mb-3">Additional options:</p>
+                                <ul class="text-start list-unstyled ps-0">
+                                    <li class="pb-2 d-flex">
+                                        <span class="pe-3 align-text-bottom"><img src="images/download.svg" alt="download"></span>
+                                        <span><a href="#" class="more-info-link">Download in AppSource</a></span>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="pe-3 align-text-bottom"><img src="images/request.svg" alt="request"></span>
+                                        <span>Request your Power BI admin to add visuals to Organizational visuals by sending him this link:</span>
+                                    </li>
+                                </ul>
+                                <div class="input-group w-auto">
+                                    <input type="text" id="admin-url" class="form-control" value="https://appsource.microsoft">
+                                    <span class="input-group-addon copy-target btn ps-2" data-target-id="admin-url" title="Click to copy">
+                                        copy
+                                        <i class="iconfont-copy align-middle font-size-18px ps-2"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary m-0" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
