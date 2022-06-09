@@ -13234,25 +13234,25 @@ p {
   .trial-page .badge.badge-position-right {
     right: 255px;
   }
-  .trial-page .step .card .card-body {
+  .trial-page .trial-start .card .card-body {
     padding: 1.25rem 1.875rem 1.563rem 1.875rem;
   }
-  .trial-page .step .card .card-body h3, .trial-page .step .card .card-body .h3 {
+  .trial-page .trial-start .card .card-body h3, .trial-page .trial-start .card .card-body .h3 {
     font-size: 21px !important;
   }
-  .trial-page .step .card .card-header {
+  .trial-page .trial-start .card .card-header {
     padding: 1.25rem;
   }
-  .trial-page .step .card .card-header::before {
+  .trial-page .trial-start .card .card-header::before {
     margin-left: -20px;
   }
-  .trial-page .step .card .card-footer {
+  .trial-page .trial-start .card .card-footer {
     padding: 1.25rem;
   }
-  .trial-page .step .card .card-footer::before {
+  .trial-page .trial-start .card .card-footer::before {
     margin-left: -20px;
   }
-  .trial-page .step .card.step .card-body {
+  .trial-page .trial-start .card.step .card-body {
     padding: 20px;
   }
   .trial-page .form-wizard-steps {
