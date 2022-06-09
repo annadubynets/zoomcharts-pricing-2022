@@ -742,7 +742,7 @@
                             <p class="description mb-4">Perform a multi-level analysis of your data and explore your timeline in a simple and comprehensive way.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-warning d-block">add to report</a>
+                            <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#add-report-modal">add to report</button>
                         </div>
                     </div>
                 </div>
@@ -1327,6 +1327,16 @@
                                     <img src="images/get-visuals-1.png" alt="get visuals" class="py-3">
                                     <li>search for <span class="fw-bold">Drill Down Timeline PRO </span>in Power BI AppSource.</li>
                                 </ol>
+                                <div class="input-group w-auto">
+                                    <span class="input-group-addon pe-2">
+                                        <i class="iconfont-search text-light-grey align-middle font-size-18px pe-2"></i>
+                                    </span>
+                                    <input type="text" id="copyTarget" class="form-control" value="Drill Down Timeline Pro">
+                                    <span id="copyButton" class="input-group-addon btn ps-2" title="Click to copy">
+                                        copy
+                                        <i class="iconfont-copy align-middle font-size-18px ps-2"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 text-start">
