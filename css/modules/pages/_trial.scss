@@ -514,6 +514,21 @@
                 width: 26px;
             }
         }
+        .modal-body {
+            padding: 25px 36px;
+        }
+        .modal-block {
+            border: none;
+            padding: 0;
+        }
+        .modal-block .decor-list::before {
+            width: calc(100% + 70px);
+            margin-left: -52px;
+        }
+        .modal-footer {
+            padding: 20px 30px;
+            border-top: 1px dashed rgba(0, 0, 0, 0.2);
+        }
     }
     @media (min-width: 992px) {
         .modal-lg,

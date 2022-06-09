@@ -13263,6 +13263,21 @@ p {
     line-height: 26px;
     width: 26px;
   }
+  .trial-page .modal-body {
+    padding: 25px 36px;
+  }
+  .trial-page .modal-block {
+    border: none;
+    padding: 0;
+  }
+  .trial-page .modal-block .decor-list::before {
+    width: calc(100% + 70px);
+    margin-left: -52px;
+  }
+  .trial-page .modal-footer {
+    padding: 20px 30px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  }
 }
 @media (min-width: 992px) {
   .trial-page .modal-lg,
