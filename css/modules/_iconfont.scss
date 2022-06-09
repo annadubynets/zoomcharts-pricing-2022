@@ -1,10 +1,10 @@
 @font-face {
     font-family: "iconfont";
-    src: url("../fonts/iconfont.eot?89cc65657da4044044270a54e2482839?#iefix") format("embedded-opentype"),
-url("../fonts/iconfont.woff2?89cc65657da4044044270a54e2482839") format("woff2"),
-url("../fonts/iconfont.woff?89cc65657da4044044270a54e2482839") format("woff"),
-url("../fonts/iconfont.ttf?89cc65657da4044044270a54e2482839") format("truetype"),
-url("../fonts/iconfont.svg?89cc65657da4044044270a54e2482839#iconfont") format("svg");
+    src: url("../fonts/iconfont.eot?030ce6d6c01567b2672231bbe305278f?#iefix") format("embedded-opentype"),
+url("../fonts/iconfont.woff2?030ce6d6c01567b2672231bbe305278f") format("woff2"),
+url("../fonts/iconfont.woff?030ce6d6c01567b2672231bbe305278f") format("woff"),
+url("../fonts/iconfont.ttf?030ce6d6c01567b2672231bbe305278f") format("truetype"),
+url("../fonts/iconfont.svg?030ce6d6c01567b2672231bbe305278f#iconfont") format("svg");
 }
 
 i[class^="iconfont-"]:before, i[class*=" iconfont-"]:before {
@@ -27,21 +27,26 @@ $iconfont-check: "\f105";
 $iconfont-checkbox: "\f106";
 $iconfont-close: "\f107";
 $iconfont-control: "\f108";
-$iconfont-dropdown-arrow: "\f109";
-$iconfont-ellipse: "\f10a";
-$iconfont-envelope: "\f10b";
-$iconfont-eye: "\f10c";
-$iconfont-facebook: "\f10d";
-$iconfont-information: "\f10e";
-$iconfont-linkedin: "\f10f";
-$iconfont-mail: "\f110";
-$iconfont-next: "\f111";
-$iconfont-play: "\f112";
-$iconfont-prev: "\f113";
-$iconfont-smile: "\f114";
-$iconfont-star-half: "\f115";
-$iconfont-star: "\f116";
-$iconfont-twitter: "\f117";
+$iconfont-copy: "\f109";
+$iconfont-download: "\f10a";
+$iconfont-dropdown-arrow: "\f10b";
+$iconfont-ellipse: "\f10c";
+$iconfont-envelope: "\f10d";
+$iconfont-eye: "\f10e";
+$iconfont-facebook: "\f10f";
+$iconfont-information: "\f110";
+$iconfont-linkedin: "\f111";
+$iconfont-mail: "\f112";
+$iconfont-modal-close: "\f113";
+$iconfont-next: "\f114";
+$iconfont-play: "\f115";
+$iconfont-prev: "\f116";
+$iconfont-request: "\f117";
+$iconfont-search: "\f118";
+$iconfont-smile: "\f119";
+$iconfont-star-half: "\f11a";
+$iconfont-star: "\f11b";
+$iconfont-twitter: "\f11c";
 
 .iconfont-arrow-down:before {
     content: $iconfont-arrow-down;
@@ -67,6 +72,12 @@ $iconfont-twitter: "\f117";
 .iconfont-control:before {
     content: $iconfont-control;
 }
+.iconfont-copy:before {
+    content: $iconfont-copy;
+}
+.iconfont-download:before {
+    content: $iconfont-download;
+}
 .iconfont-dropdown-arrow:before {
     content: $iconfont-dropdown-arrow;
 }
@@ -91,6 +102,9 @@ $iconfont-twitter: "\f117";
 .iconfont-mail:before {
     content: $iconfont-mail;
 }
+.iconfont-modal-close:before {
+    content: $iconfont-modal-close;
+}
 .iconfont-next:before {
     content: $iconfont-next;
 }
@@ -99,6 +113,12 @@ $iconfont-twitter: "\f117";
 }
 .iconfont-prev:before {
     content: $iconfont-prev;
+}
+.iconfont-request:before {
+    content: $iconfont-request;
+}
+.iconfont-search:before {
+    content: $iconfont-search;
 }
 .iconfont-smile:before {
     content: $iconfont-smile;

@@ -304,6 +304,122 @@
     .form-wizard-steps li:last-child::after {
         left: 0;
     }
+    .btn-close {
+        background-image: none;
+        opacity: 1;
+        &::after {
+            display: inline;
+            content: $iconfont-modal-close;
+            font-family: iconfont !important;
+            color: $black;
+        }
+        &:hover {
+            color: #5979FF;
+            box-shadow: none;
+        }
+    }
+    ul {
+        padding-left: 1rem;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 164.2%;
+        color: #3C4858;
+        li {
+            vertical-align: super;
+        }
+        li.download::marker {
+            display: inline;
+            content: $iconfont-download;
+            font-family: iconfont !important;
+            color: $yellow;
+            font-size: 20px;
+        }
+        li.request::marker {
+            display: inline;
+            content: $iconfont-request;
+            font-family: iconfont !important;
+            color: $yellow;
+            font-size: 20px;
+        }
+    }
+    .modal-backdrop {
+        background: rgba(0, 0, 0, 0.35);
+    }
+    .modal-backdrop.show {
+        opacity: initial;
+    }
+    .modal-content {
+        background: #FFFFFF;
+        box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.09);
+        border-radius: 3px;
+        border: none;
+    }
+    .modal-block {
+        border: 1px dashed #C4C4C4;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .modal-header {
+        justify-content: center;
+        padding: 0;
+        border-bottom: 0;
+    }
+    .modal-body {
+        padding: 25px 74px;
+    }
+    .modal-footer {
+        padding: 0 74px 40px 74px;
+        border-top: none;
+    }
+    #copyButton {
+        cursor: pointer;
+    }
+    #copyTarget {
+        border-left: none;
+    }
+    .copied {
+        opacity: 1;
+        position: absolute;
+        left: 55px;
+    }
+    .copy-to-clipboard {
+        .input-group {
+            .form-control {
+                border-bottom-right-radius: 0!important;
+                border-top-right-radius: 0!important;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .btn {
+                border-bottom-left-radius: 0!important;
+                border-top-left-radius: 0!important;
+            }
+        }
+    }
+    .input-group {
+        border: 1px solid #C4C4C4;
+        padding: 12px 15px;
+        .input-group-addon {
+            font-family: 'Futura PT';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #3C4858;
+            padding: 0;
+            align-self: end;
+        }
+        .form-control {
+            border: none;
+            padding: 0;
+            text-overflow: ellipsis;
+        }
+    }
     @media screen and (max-width: 767px) {
         .wizard-content-left {
             height: auto;
@@ -382,6 +498,12 @@
                 line-height: 26px;
                 width: 26px;
             }
+        }
+    }
+    @media (min-width: 992px) {
+        .modal-lg,
+        .modal-xl {
+            max-width: 860px;
         }
     }
 }
