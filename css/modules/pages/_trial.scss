@@ -44,20 +44,23 @@
         counter-reset: item;
         color: #3C4858;
         font-size: 14px;
+        padding-left: 1rem;
     }
     ol>li {
         margin: 0;
-        padding: 0 0 0 2em;
-        text-indent: -2em;
-        list-style-type: none;
-        counter-increment: item;
+        padding: 0 0 0 4px;
+        //list-style-type: none;
+        //counter-increment: item;
+        &::marker {
+            font-weight: bold;
+        }
         &::before {
             display: inline-block;
             width: 1.5em;
             padding-right: 0.5em;
             font-weight: bold;
             text-align: right;
-            content: counter(item) ".";
+            //content: counter(item) ".";
         }
     }
     .step {
@@ -144,6 +147,9 @@
     .bg-danger {
         background-color: #FF0000!important;
     }
+    .text-danger {
+        color: #FF5A5A!important;
+    }
     .badge {
         font-family: 'Futura PT';
         font-weight: 700;
@@ -227,6 +233,7 @@
         line-height: 23px;
         border: 1px solid #D2D2D2;
         border-radius: 5px;
+        padding: 9px 16px;
         &::placeholder {
             color: #ACACAC;
         }
@@ -326,9 +333,6 @@
         font-size: 14px;
         line-height: 164.2%;
         color: #3C4858;
-        li {
-            vertical-align: super;
-        }
         li.download::marker {
             display: inline;
             content: $iconfont-download;
@@ -360,6 +364,17 @@
         border: 1px dashed #C4C4C4;
         border-radius: 10px;
         padding: 30px;
+        .decor-list {
+            &::before {
+                display: block;
+                content: "";
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+                width: calc(100% + 60px);
+                margin-left: -45px;
+                position: absolute;
+                bottom: 0;
+            }
+        }
     }
     .modal-header {
         justify-content: center;
@@ -401,7 +416,7 @@
     }
     .input-group {
         border: 1px solid #C4C4C4;
-        padding: 12px 15px;
+        padding: 8px 15px;
         .input-group-addon {
             font-family: 'Futura PT';
             font-style: normal;

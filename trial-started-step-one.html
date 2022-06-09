@@ -722,8 +722,8 @@
                     <div class="card p-0 h-100">
                         <div class="card-body p-0">
                             <img src="images/drill-down-timeline-pro.png" alt="Drill Down Timeline PRO">
-                            <div class="d-flex align-items-center">
-                                <h3 class="title mb-1 mt-lg-3 mt-2 me-1">Drill Down Timeline PRO</h3>
+                            <div class="d-flex align-items-center mt-lg-3 mt-2 mb-1">
+                                <h3 class="title mb-0 me-1">Drill Down Timeline PRO</h3>
                                 <span class="badge bg-danger">NEW!</span>
                             </div>
                             <p class="description mb-4">Explore time-based data using columns or measures and multiple chart types: line, column, area.</p>
@@ -1322,17 +1322,17 @@
                                 <ol class="mb-2 text-start">
                                     <li>click on (...) in the <span class="fw-bold">Visualizations</span> pane</li>
                                     <li>select <span class="fw-bold">Get more visuals</span>
-
+                                        <img src="images/get-visuals-1.png" alt="get visuals" class="py-3 w-100">
                                     </li>
-                                    <img src="images/get-visuals-1.png" alt="get visuals" class="py-3">
+
                                     <li>search for <span class="fw-bold">Drill Down Timeline PRO </span>in Power BI AppSource.</li>
                                 </ol>
                                 <div class="input-group w-auto">
                                     <span class="input-group-addon pe-2">
                                         <i class="iconfont-search text-light-grey align-middle font-size-18px pe-2"></i>
                                     </span>
-                                    <input type="text" id="copyTarget" class="form-control" value="Drill Down Timeline Pro">
-                                    <span id="copyButton" class="input-group-addon btn ps-2" title="Click to copy">
+                                    <input type="text" id="search-result" class="form-control" value="Drill Down Timeline Pro">
+                                    <span class="input-group-addon copy-target btn ps-2" data-target-id="search-result" title="Click to copy">
                                         copy
                                         <i class="iconfont-copy align-middle font-size-18px ps-2"></i>
                                     </span>
@@ -1341,22 +1341,26 @@
                         </div>
                         <div class="col-lg-6 text-start">
                             <div class="modal-block h-100">
-                                <ol class="mb-2 text-start">
-                                    <li>click <span class="fw-bold">Add</span> to add the visual to your report.</li>
-                                    <img src="images/visual-report.png" alt="visual report" class="py-3">
-                                </ol>
-                                <p class="font-family-second font-size-14px text-dim-gray mb-3">Additional options:</p>
-                                <ul class="text-start">
-                                    <li class="download pb-2">
-                                        <a href="#" class="more-info-link ps-3">Download in AppSource</a>
+                                <ol start="4" class="mb-3 text-start position-relative decor-list">
+                                    <li start="4">click <span class="fw-bold">Add</span> to add the visual to your report.
+                                        <img src="images/visual-report.png" alt="visual report" class="pt-3 pb-4 w-100">
                                     </li>
-                                    <li class="request ps-3">
-                                        Request your Power BI admin to add visuals to Organizational visuals by sending him this link:
+                                </ol>
+
+                                <p class="font-family-second font-size-14px text-dim-gray mb-3">Additional options:</p>
+                                <ul class="text-start list-unstyled ps-0">
+                                    <li class="pb-2 d-flex">
+                                        <span class="pe-3 align-text-bottom"><img src="images/download.svg" alt="download"></span>
+                                        <span><a href="#" class="more-info-link">Download in AppSource</a></span>
+                                    </li>
+                                    <li class="d-flex">
+                                        <span class="pe-3 align-text-bottom"><img src="images/request.svg" alt="request"></span>
+                                        <span>Request your Power BI admin to add visuals to Organizational visuals by sending him this link:</span>
                                     </li>
                                 </ul>
                                 <div class="input-group w-auto">
-                                    <input type="text" id="copyTarget" class="form-control" value="https://appsource.microsoft">
-                                    <span id="copyButton" class="input-group-addon btn ps-2" title="Click to copy">
+                                    <input type="text" id="admin-url" class="form-control" value="https://appsource.microsoft">
+                                    <span class="input-group-addon copy-target btn ps-2" data-target-id="admin-url" title="Click to copy">
                                         copy
                                         <i class="iconfont-copy align-middle font-size-18px ps-2"></i>
                                     </span>

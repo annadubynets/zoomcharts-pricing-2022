@@ -11735,6 +11735,10 @@ p {
   color: #3C4858;
 }
 
+.text-medium-gray {
+  color: #555D6D;
+}
+
 .bg-linear-gradient {
   background: linear-gradient(to right, #BF3EFE 10%, #1B9EFF 90%);
 }
@@ -12810,13 +12814,14 @@ p {
   counter-reset: item;
   color: #3C4858;
   font-size: 14px;
+  padding-left: 1rem;
 }
 .trial-page ol > li {
   margin: 0;
-  padding: 0 0 0 2em;
-  text-indent: -2em;
-  list-style-type: none;
-  counter-increment: item;
+  padding: 0 0 0 4px;
+}
+.trial-page ol > li::marker {
+  font-weight: bold;
 }
 .trial-page ol > li::before {
   display: inline-block;
@@ -12824,7 +12829,6 @@ p {
   padding-right: 0.5em;
   font-weight: bold;
   text-align: right;
-  content: counter(item) ".";
 }
 .trial-page .step .card {
   background: #FFFFFF;
@@ -12903,6 +12907,9 @@ p {
 }
 .trial-page .bg-danger {
   background-color: #FF0000 !important;
+}
+.trial-page .text-danger {
+  color: #FF5A5A !important;
 }
 .trial-page .badge {
   font-family: "Futura PT";
@@ -12987,6 +12994,7 @@ p {
   line-height: 23px;
   border: 1px solid #D2D2D2;
   border-radius: 5px;
+  padding: 9px 16px;
 }
 .trial-page .form-control::placeholder {
   color: #ACACAC;
@@ -13087,9 +13095,6 @@ p {
   line-height: 164.2%;
   color: #3C4858;
 }
-.trial-page ul li {
-  vertical-align: super;
-}
 .trial-page ul li.download::marker {
   display: inline;
   content: "";
@@ -13120,6 +13125,15 @@ p {
   border: 1px dashed #C4C4C4;
   border-radius: 10px;
   padding: 30px;
+}
+.trial-page .modal-block .decor-list::before {
+  display: block;
+  content: "";
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  width: calc(100% + 60px);
+  margin-left: -45px;
+  position: absolute;
+  bottom: 0;
 }
 .trial-page .modal-header {
   justify-content: center;
@@ -13157,7 +13171,7 @@ p {
 }
 .trial-page .input-group {
   border: 1px solid #C4C4C4;
-  padding: 12px 15px;
+  padding: 8px 15px;
 }
 .trial-page .input-group .input-group-addon {
   font-family: "Futura PT";

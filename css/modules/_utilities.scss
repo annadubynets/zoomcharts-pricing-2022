@@ -90,6 +90,10 @@
     color: #3C4858;
 }
 
+.text-medium-gray {
+    color: #555D6D;
+}
+
 .bg-linear-gradient {
     background: linear-gradient(to right, $mediumpurple 10%, $deepskyblue 90%);
     &:hover {

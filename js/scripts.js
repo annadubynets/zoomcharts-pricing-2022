@@ -168,7 +168,8 @@ jQuery(document).ready(function() {
         return succeed;
     }
 
-    $("#copyButton, #copyTarget").on("click", function() {
-        copyToClipboard(document.getElementById("copyTarget"));
+    $(".copy-target").on("click", function() {
+        var target = $(this).attr("data-target-id");
+        copyToClipboard(document.getElementById(target));
     });
 })();
