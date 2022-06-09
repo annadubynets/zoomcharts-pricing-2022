@@ -12981,7 +12981,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding: 15px;
+  padding: 15px 30px;
 }
 .trial-page .btn-secondary:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
