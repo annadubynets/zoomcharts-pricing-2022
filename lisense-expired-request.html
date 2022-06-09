@@ -625,7 +625,7 @@
                     <h1 class="mb-lg-4 mb-2">Welcome to your ZoomCharts account!
                     </h1>
                     <p class="font-family-second subtitle text-dim-gray mb-2">Thank you for trying out Drill Down Visuals for Power BI by ZoomCharts</p>
-                    <p class="font-family-second font-size-14px text-medium-gray">To continue using all visuals with full features, please request a quote.</p>
+                    <p class="font-family-second font-size-14px text-medium-gray">The request has been approved and sent for further processing. We will contact you shortly.</p>
                 </div>
             </div>
 
@@ -635,15 +635,30 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12 text-center">
-                                    <h3 class="mb-0">Get a Quote</h3>
+                                    <h3 class="mb-3">Get a Quote</h3>
                                 </div>
                             </div>
-                            <div class="row justify-content-center align-items-center h-100">
+                            <div class="row justify-content-center pb-2">
                                 <div class="col-lg-8 text-center">
-                                    <p class="font-family-second font-size-14px text-dim-gray mb-5">The request has been approved and sent for further processing. We will contact you shortly.</p>
-                                    <div>
-                                        <a href="lisense-expired-request.html" class="btn-secondary px-5">OK</a>
-                                    </div>
+                                    <form class="row">
+                                        <div class="col-12 pb-2">
+                                            <input type="text" class="form-control" id="inputName" placeholder="Name*">
+                                        </div>
+                                        <div class="col-12 pb-2">
+                                            <input type="text" class="form-control" id="inputCompany" placeholder="Company*">
+                                        </div>
+                                        <div class="col-12 pb-2">
+                                            <input type="email" class="form-control" id="inputWorkEmail" placeholder="Work Email*">
+                                        </div>
+                                        <div class="col-12 pb-2">
+                                            <input type="phone" class="form-control" id="inputWorkPhone" placeholder="Work Phone">
+                                        </div>
+                                        <div class="col-12 pb-3">
+                                            <textarea class="form-control" id="describe" rows="3" placeholder="Please describe your use case"></textarea>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-warning d-block">request a quote</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
