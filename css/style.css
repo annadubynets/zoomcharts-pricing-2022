@@ -12869,7 +12869,7 @@ p {
   background-color: transparent;
   border-bottom: none;
 }
-.trial-page .trial-start .card .card-header::before {
+.trial-page .trial-start .card .card-header::after {
   display: block;
   content: "";
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
@@ -12877,6 +12877,17 @@ p {
   margin-left: 0;
   position: absolute;
   bottom: 0;
+}
+.trial-page .trial-start .card .card-header.header-decor::before {
+  display: block;
+  content: "";
+  height: 21px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  border-top-left-radius: 15px;
+  background: linear-gradient(0deg, transparent 87%, #eac211 87%);
+  border-top-right-radius: 15px;
 }
 .trial-page .trial-start .card .card-footer {
   padding: 30px;
@@ -12889,9 +12900,6 @@ p {
   margin-left: -30px;
   position: absolute;
   top: 0;
-}
-.trial-page .trial-start .card.step {
-  border-top: 2px solid #EAC211;
 }
 .trial-page .trial-start .card.step .card-body {
   padding: 30px;
