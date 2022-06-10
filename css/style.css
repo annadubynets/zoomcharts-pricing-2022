@@ -13137,11 +13137,11 @@ p {
 .trial-page .modal-block .decor-list::before {
   display: block;
   content: "";
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
   width: calc(100% + 60px);
-  margin-left: -45px;
+  margin-left: -30px;
   position: absolute;
-  bottom: 0;
+  bottom: 37px;
 }
 .trial-page .modal-header {
   justify-content: center;
